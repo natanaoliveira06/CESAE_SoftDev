@@ -13,11 +13,11 @@ public class Ex_02 {
         int num1, num2, resultado;
 
         // Ler num1
-        System.out.print("Insira um número: ");
+        System.out.print("Insira o número: ");
         num1= input.nextInt();
 
         // Ler num2
-        System.out.print("Insira um número: ");
+        System.out.print("Insira o número: ");
         num2= input.nextInt();
 
         // Calcular a soma de num1+num2
@@ -32,7 +32,7 @@ public class Ex_02 {
         // Apresentar a subtração
         System.out.println("Subtração: " + resultado);
 
-        // Calcular a multiplicação de num1+num2
+        // Calcular a multiplicação
         resultado = num1*num2;
 
         // Apresentar a multiplicação

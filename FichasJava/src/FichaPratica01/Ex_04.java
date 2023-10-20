@@ -10,14 +10,14 @@ public class Ex_04 {
         Scanner input = new Scanner(System.in);
 
         // Declarar variáveis
-        double area, raio, pi=3.14;
+        double area, raio, pi = 3.14;
 
         // Ler raio
         System.out.print("Insira o raio da circunferência: ");
-        raio= input.nextInt();
+        raio = input.nextDouble();
 
         // Calcular a area
-        area = pi*(raio*raio);
+        area = pi * raio * raio;
 
         // Apresentar a area
         System.out.println("Área da circunferência: " + area);
