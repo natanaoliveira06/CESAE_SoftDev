@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ex_03 {
     public static void main(String[] args) {
 
-        // Instanciar o Scanner (obrigatório em todos os exercícios)
+        // Instanciar o Scanner
         Scanner input = new Scanner(System.in);
 
         // Declarar variáveis
