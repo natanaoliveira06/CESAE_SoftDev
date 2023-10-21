@@ -9,15 +9,21 @@ public class Ex_05 {
         Scanner input = new Scanner(System.in);
 
         // Declarar variáveis
-        int v1, v2;
+        double valor1, valor2;
 
+        // Ler valor 1
+        System.out.print("Insira valor 1: ");
+        valor1 = input.nextDouble();
 
-        // Ler valores
-        System.out.print("Valor1 : " + v1);
-        v1= input.nextInt();
+        // Ler valor 2
+        System.out.print("Insira valor 2: ");
+        valor2 = input.nextDouble();
 
-        System.out.print("Valor 2 : " + v2);
-        v2= input.nextInt();
+        if (valor1 > valor2) {
+            System.out.println("-" + valor2 + " " + valor1);
+        } else {
+            System.out.println("-" + valor1 + " " + valor2);
+        }
 
     }
 }
