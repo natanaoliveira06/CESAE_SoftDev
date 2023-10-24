@@ -20,9 +20,9 @@ public class Ex_05 {
         valor2 = input.nextDouble();
 
         if (valor1 > valor2) {
-            System.out.println("-" + valor2 + " " + valor1);
+            System.out.println('-' + valor2 + ' ' + valor1);
         } else {
-            System.out.println("-" + valor1 + " " + valor2);
+            System.out.println('-' + valor1 + ' ' + valor2);
         }
 
     }
