@@ -6,14 +6,13 @@ public class Ex_09 {
 
         // Declarar variáveis
         int numero, par=2;
-        numero=9;
+        numero=15;
 
         while (par<=numero) {
             System.out.println(par);
             par = par+2;
 
         }
-
 
     }
 }
