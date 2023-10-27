@@ -11,7 +11,7 @@ public class Ex_09 {
         // Declarar variáveis
         int num1, num2, num3;
 
-        // Ler valor 1
+        // Ler valores
         System.out.print("Ler número 1: ");
         num1= input.nextInt();
 
