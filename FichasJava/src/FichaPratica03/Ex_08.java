@@ -8,41 +8,32 @@ public class Ex_08 {
         Scanner input = new Scanner(System.in);
 
 
+        /*ERRADO */
+
+
+
         // Declarar variáveis
-        int numInserido, media=0, quantInseridos=0;
+        int numInserido, soma, media, quantInseridos = 0;
 
         System.out.print("Insira um número: ");
         numInserido = input.nextInt();
-
+        soma = numInserido;
 
         while (numInserido != -1) {
             System.out.print("Insira um número: ");
             numInserido = input.nextInt();
 
-            if (numInserido ==-1){
-                quantInseridos = quantInseridos+1;
-                media = (media + numInserido -1)/quantInseridos-1;
+            soma = soma + numInserido;
+            quantInseridos = quantInseridos + 1;
+            media = soma / (quantInseridos);
 
-                System.out.println("Média: " +media);
+            if (numInserido == -1) {
+                System.out.println("Média: " + media);
             }
 
 
-
-
-
-
-
         }
 
 
-
-
-
-
-
-
-
-
-
-        }
+    }
 }
