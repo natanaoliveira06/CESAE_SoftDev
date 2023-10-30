@@ -20,8 +20,9 @@ public class Ex_13 {
         //Descontar o número inserido
         quantInseridos--;     //quantInseridos=quantInseridos-1;
 
-        //Guardar número inserido
+        //Comparar número inserido com Anterior
         numAnterior = numero;
+
 
         while (quantInseridos > 0) {
             System.out.print("Insira um número: ");
@@ -30,14 +31,23 @@ public class Ex_13 {
                         }
 
         if (numAnterior > numero) {
-            System.out.println("NÃO CRESCENTE");
-        }else {
-            System.out.println("CRESCENTE");
-
+            System.out.println("NÃO CRESCENTE!");
+        }else{
+            System.out.println("CRESCENTE!");
         }
 
     }
 
 }
+
+
+
+/*
+- Para a sequencia crescente o numero seguinte tem que ser sempre maior.
+
+- O boleano tem resposta de sim ou não
+
+
+ */
 
 
