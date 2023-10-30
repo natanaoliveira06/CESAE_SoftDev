@@ -8,24 +8,24 @@ public class Ex_05 {
         Scanner input = new Scanner(System.in);
 
         // Declarar variáveis
-        int num1, num2 ;
+        int inicio, num2 ;
         System.out.print("Insira um número: ");
-        num1= input.nextInt();
+        inicio= input.nextInt();
         System.out.print("Insira um número: ");
         num2= input.nextInt();
 
-        if (num1==num2){
+        if (inicio==num2){
             System.out.println("Os números são iguais");
             }else{
 
-            while (num1 <= num2) {
-            System.out.println(num1);
-            num1= num1+1;
+            while (inicio <= num2) {
+            System.out.println(inicio);
+           inicio++; // inicio= inicio+1
         }
 
-        while (num1 >= num2) {
-            System.out.println(num1);
-            num1= num1-1;
+        while (inicio >= num2) {
+            System.out.println(inicio);
+            inicio= inicio-1;
         }
 
         }

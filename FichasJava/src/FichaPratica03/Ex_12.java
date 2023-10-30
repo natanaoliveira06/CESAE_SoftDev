@@ -7,9 +7,7 @@ public class Ex_12 {
 
         Scanner input = new Scanner(System.in);
 
-        int inicio=0, fim, intervalo;
-        intervalo=inicio;
-
+        int inicio, fim, intervalo;
 
 
         System.out.print("Introduza um valor de início: ");
@@ -17,8 +15,14 @@ public class Ex_12 {
         System.out.print("Introduza um valor de fim: ");
         fim = input.nextInt();
 
-        while (intervalo % 5 == 0 ) {
-            System.out.println(intervalo);
+        while (inicio<=fim) {
+
+            if (inicio%5==0){
+                System.out.println(inicio);
+                inicio=inicio+5;
+            }
+
+
         }
 
 

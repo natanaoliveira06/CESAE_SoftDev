@@ -8,8 +8,9 @@ public class Ex_06 {
 
         while (numInicial <= 100) {
             System.out.println(numInicial);
-            soma = numInicial + soma;
-            numInicial = numInicial + 1;
+             soma+= numInicial; // soma = soma + numInicial;
+
+            numInicial++; // numInicial = numInicial + 1;
         }
 
 

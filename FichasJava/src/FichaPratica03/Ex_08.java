@@ -7,11 +7,6 @@ public class Ex_08 {
 
         Scanner input = new Scanner(System.in);
 
-
-        /*ERRADO */
-
-
-
         // Declarar variáveis
         int numInserido, soma, media, quantInseridos = 0;
 
@@ -19,21 +14,22 @@ public class Ex_08 {
         numInserido = input.nextInt();
         soma = numInserido;
 
+
         while (numInserido != -1) {
             System.out.print("Insira um número: ");
             numInserido = input.nextInt();
 
             soma = soma + numInserido;
             quantInseridos = quantInseridos + 1;
-            media = soma / (quantInseridos);
+        }
+
+        media = (soma+1) / quantInseridos; // Soma + 1 porque a inserção do -1 está a contar quando foi inserido
 
             if (numInserido == -1) {
                 System.out.println("Média: " + media);
             }
 
-
         }
 
 
-    }
 }

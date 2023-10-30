@@ -7,17 +7,29 @@ public class Ex_13 {
 
         Scanner input = new Scanner(System.in);
 
-        int quantInseridos, numInseridos;
+        int quantInseridos, numInseridos, numGuardado;
 
-        System.out.print("Quantos números de seja inserir?: ");
+        System.out.print("Quantos números deseja inserir?: ");
         quantInseridos = input.nextInt();
 
-        while (quantInseridos<=0) {
+        System.out.print("Insira um número: ");
+        numInseridos = input.nextInt();
+        numGuardado = numInseridos;
+        quantInseridos--; //quantInseridos=quantInseridos-1;
+
+        while (quantInseridos > 0) {
             System.out.print("Insira um número: ");
             numInseridos = input.nextInt();
-            quantInseridos=quantInseridos;
-        }
+            quantInseridos--; //quantInseridos=quantInseridos-1;
 
+
+            if (numGuardado < numInseridos) {
+
+            }
+            numGuardado = numInseridos;
+        }
+        System.out.println("Crescente");
 
     }
 }
+

@@ -9,18 +9,29 @@ public class Ex_07 {
 
 
         // Declarar variáveis
-        int numInserido, numMenos;
+        int numInserido, numMenor, numMaior;
 
         System.out.print("Insira um número: ");
         numInserido = input.nextInt();
-        numMenos=numInserido-5;
+
+        numMenor=numInserido-5;
+        numMaior=numInserido+5;
 
 
-        while (numMenos<= numInserido+5) {
-            System.out.println(numMenos);
-            numMenos = numMenos + 1;
+        while (numMenor<numInserido) {
+            System.out.println(numMenor);
+            numMenor++;  // numMenor = numMenor + 1;
         }
 
+        numInserido++;
+        System.out.println();
+
+        //Imprimir sucessores
+
+        while (numInserido<=numMaior) {
+            System.out.println(numInserido);
+            numInserido++;
+        }
 
     }
 }
