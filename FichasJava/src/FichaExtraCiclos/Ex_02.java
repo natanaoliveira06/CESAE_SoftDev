@@ -4,8 +4,7 @@ public class Ex_02 {
     public static void main(String[] args) {
 
 
-
-        for (int numero=3; numero<=255 && numero%3==0; numero=numero+3){
+        for (int numero=3; numero<=255 && numero%3==0; numero+=3){
             System.out.println(numero);
         }
 

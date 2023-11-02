@@ -7,24 +7,34 @@ public class Ex_04 {
 
         Scanner input = new Scanner(System.in);
 
-        int numero, divisor=1;
+        // Declarar variáveis
+        int numero;
+        boolean primo = true;
 
+        // Ler numero
         System.out.print("Insira um número: ");
-        numero = input.nextInt();
+        numero= input.nextInt();
 
-/*
-        while (numero>=divisor) {
+        for(int divisor=2; divisor<numero;divisor++){
 
+            System.out.println("Vou tentar dividir "+numero+"%"+divisor);
 
+            // Vou avaliar se há algum divisor de número que não 1 ou ele mesmo
+
+            if(numero%divisor==0){
+
+                // Número deixa de ser primo
+                System.out.println("Número deixou de ser primo");
+                primo=false;
+            }
 
         }
 
-
-
-        /*for (numero; numero%=0; numero%1=0) {
-            System.out.println("É primo");
-    }
-*/
+        if(primo){
+            System.out.println("Primo");
+        }else{
+            System.out.println("Não Primo");
+        }
 
     }
 }

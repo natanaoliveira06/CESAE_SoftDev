@@ -5,26 +5,40 @@ import java.util.Scanner;
 public class Ex_03 {
     public static void main(String[] args) {
 
+
         Scanner input = new Scanner(System.in);
 
-        int valorSecreto, aposta, nTentativas;
+        // Declarar variáveis
+        double valorSecreto, aposta, quantTentativas = 0;
 
+        //Ler valor Secreto
+        System.out.print("JOGADOR A:\nInsira um número secreto (entre 0 e 100): ");
+        valorSecreto = input.nextDouble();
 
-        System.out.print("JOGADOR 1:\nInsira um número (entre 0 e 100): ");
-        valorSecreto = input.nextInt();
+        //Ler tentativas
+            do {
+                // Aumentar uma tentativa (iniciou com 0) acada jogada
+                quantTentativas++;
 
-        System.out.print("JOGADOR 2:\nTente acertar o número secreto.\nPrimeira tentativa: ");
-        aposta = input.nextInt();
-        nTentativas = 1;
+                // Ler as apostas
+                System.out.print("\nJOGADOR B:\nTente acertar o valor inserido pelo jogador A: ");
+                aposta = input.nextDouble();
 
+                // Se o número Secreto for maior
+                if (aposta<valorSecreto) {
+                    System.out.println("Número secreto é maior\n");
+                }
 
-        while (aposta != valorSecreto) {
-            System.out.print("Insira outra tentativa: ");
-            aposta = input.nextInt();
-            nTentativas++;
+                // Se o número Secreto for menor
+                if (aposta>valorSecreto) {
+                    System.out.println("Número secreto é menor\n");
+                }
+
+            }
+            while (aposta!=valorSecreto); // Só para de perguntar tentativas quando os números forem iguais
+            System.out.println("PARABÉNS!! Acertou o número secreto");
+            System.out.println("Tentou " + quantTentativas + " vezes");
         }
 
-        System.out.println("PARABÉNS!!! Você acertou em " + nTentativas + " tentativas.");
-
-          }
     }
+
