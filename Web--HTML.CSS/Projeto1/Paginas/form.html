@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <p id="topo"></p>
+
+    <header>
+        <img src="/Imagens/logo.png" alt="logotipo Cesae">
+        <br>
+        <nav>
+            <a href="https://www.cesae.pt" target="_blank">Ir página Cesae</a>
+            <a href="/index.html">Home</a>
+            <a href="/Paginas/softdev.html"></a>
+            <a href="/Paginas/about.html">Sobre Nós</a>
+            <a href="/Paginas/form.html">Contacto</a>
+        </nav>
+
+    </header>
+
+    <br>
+    <hr>
+    <h1 style="text-align: center;background-color: rgb(0, 238, 255);">Formulário de Contacto</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit praesentium, sunt,
+        architecto et aperiam odit amet at consequuntur fuga, accusamus quis odio numquam.
+        Cupiditate nemo odit sint rerum velit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit praesentium, sunt,
+        architecto et aperiam odit amet at consequuntur fuga, accusamus quis odio numquam.
+        Cupiditate nemo odit sint rerum velit.</p>
+
+
+    <!-- <form action="/action_page.php" method="post" autocomplete="on"> -->
+    
+<!-- reponsividade do form, dividido em 2 colunas campo label e campo de recolha de dados -->
+<!-- https://www.w3schools.com/css/css_form.asp -->
+
+    <div class="formarea">
+    
+        <form action="">
+        <fieldset>
+            <legend>Formulário de Contacto</legend>
+
+            <div class="col-25">
+                <label for="form-nome">Nome:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="form-nome" id="form-nome" placeholder="Insira o seu nome" required>
+            </div>
+            <br>
+            <div class="col-25">
+                <label for="form-email">Email</label>
+            </div>
+            <div class="col-75">
+                <input type="email" name="form-email" id="form-email" value="@gmail.com">
+            </div>
+            <br>
+            <div>
+                <label for="form-tel">Telefone</label>
+                <input type="tel" name="form-tel" id="form-tel" value="+351">
+            </div>
+            <br>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id=" password">
+            </div>
+            <br>
+            <div>
+                <label for="form-dn">Data de Nascimento</label>
+                <input type="date" name="form-dn" id="form-dn" min="2023-10-01" max="2023-11-15"> 
+            </div>
+            <br>
+            <div class="operadora">
+                <label for="form-operadora">Qual a sua operadora de telecom:</label>
+                <br>
+                <input type="radio" name="form-operadora" id="form-operadora-meo">
+                <label for="form-operadora-meo">Meo</label>
+                <br>
+                <input type="radio" name="form-operadora" id="form-operadora-nos">
+                <label for="form-operadora-nos">NOS</label>
+                <br>
+                <input type="radio" name="form-operadora" id="form-operadora-vodafone">
+                <label for="form-operadora-vodafone">VOdafone</label>
+            </div>
+            <br>
+            <div class="operadora">
+                <label for="form-equipamentos">Selecione os seus equipamentos</label>
+                <br>
+                <input type="checkbox" id="equip1" name="equip1" value="TV">
+                <label for="equip1">SmartTV</label>
+
+                <input type="checkbox" id="equip2" name="equip2" value="PC">
+                <label for="equip2">PC</label>
+                <br>
+                <input type="checkbox" id="equip3" name="equip3" value="DVD">
+                <label for="equip3">Leitor DVD</label>
+                <input type="checkbox" id="equip4" name="equip4" value="Consola Jogos">
+                <label for="equip4">Consola Jogos</label>
+            </div>
+            <br>
+            <div>
+                <label for="form-curso">Selecione o seu curso</label>
+                <br>
+                <select name="form-curso" id="form-curso">
+                    <option value="" disabled selected>Escolha um dos cursos</option>
+                    <option value="form-curso-wdm">SoftDeve</option>
+                    <option value="Culinária">Culinária</option>
+                    <option value="Barman">Barman</option>
+                    <option value="Pastelaria">Pastelaria</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="form-mensagem">Deixe o seu comentário</label>
+                <br>
+                <textarea name="form-mensagem" id="form-mensagem" style="width: 70%;height: 50px;"></textarea>
+                <!-- <textarea name="form-mensagem" id="form-mensagem" rows="5" cols="100"></textarea> -->
+            </div>
+
+            <br>
+
+            <div>
+                <label for="myfile">Select a file:</label>
+                <input type="file" id="myfile" name="myfile">
+            </div>
+
+<br>
+<br>
+
+            <div>
+                <input type="reset" value="limpar">
+                <input type="submit" onclick="alert('Parabéns submeteu a sua questão')" value="Enviar">
+            </div>
+
+        </fieldset>
+
+    </form>
+</div>
+
+
+    <br>
+
+    <footer>
+        <hr>
+        <a href="https://www.facebook.com/CesaeDigital/?locale=pt_PT" target="_blank"><img src="/Imagens/facebook.png"
+                alt="facebook CesaeDigital"></a>
+        <a href="https://pt.linkedin.com/company/cesae-digital" target="_blank"><img src="/Imagens/linkedin.png"
+                alt="linkedin CesaeDigital"></a>
+        <a href="https://www.youtube.com/c/cesaedigital" target="_blank"><img src="/Imagens/youtube.png"
+                alt="youtube CesaeDigital"></a>
+
+        <h6>&copy;2021 CesaeDigital | Todos os direitos reservados | Desenvolvido por.... </h6>
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
