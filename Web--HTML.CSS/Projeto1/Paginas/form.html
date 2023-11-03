@@ -19,19 +19,34 @@
     <header>
         <img src="/Imagens/logo.png" alt="logotipo Cesae">
         <br>
-        <nav>
+        <!-- <nav>
+            <a href="https://www.cesae.pt" target="_blank">Ir página Cesae</a>
+            <a href="index.html">Home</a>
+            <a href="Paginas/softdev.html">SoftwareDev</a>
+            <a href="Paginas/about.html">Sobre Nós</a>
+            <a href="Paginas/form.html">Contacto</a>
+        </nav> -->
+        <div class="topnav">
             <a href="https://www.cesae.pt" target="_blank">Ir página Cesae</a>
             <a href="/index.html">Home</a>
-            <a href="/Paginas/softdev.html"></a>
+            <a href="/Paginas/softdev.html">SoftwareDev</a>
             <a href="/Paginas/about.html">Sobre Nós</a>
-            <a href="/Paginas/form.html">Contacto</a>
-        </nav>
-
+            <a class="active" href="/Paginas/form.html">Contacto</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
     </header>
+    <div>
+        <img src="/Imagens/banner-contato.jpg" alt="" style="width: 1900px; height: 300px;">
+    </div>
 
+    <h1 style="text-align: center;">Formulário de Contacto</h1>
     <br>
-    <hr>
-    <h1 style="text-align: center;background-color: rgb(0, 238, 255);">Formulário de Contacto</h1>
+    <br>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit praesentium, sunt,
         architecto et aperiam odit amet at consequuntur fuga, accusamus quis odio numquam.
@@ -40,18 +55,23 @@
         architecto et aperiam odit amet at consequuntur fuga, accusamus quis odio numquam.
         Cupiditate nemo odit sint rerum velit.</p>
 
+        <br>
+        <br>
 
     <!-- <form action="/action_page.php" method="post" autocomplete="on"> -->
     
 <!-- reponsividade do form, dividido em 2 colunas campo label e campo de recolha de dados -->
 <!-- https://www.w3schools.com/css/css_form.asp -->
 
+
     <div class="formarea">
     
         <form action="">
         <fieldset>
             <legend>Formulário de Contacto</legend>
-
+            <br>
+            <div class="text-form-center"> 
+                <br>
             <div class="col-25">
                 <label for="form-nome">Nome:</label>
             </div>
@@ -63,68 +83,81 @@
                 <label for="form-email">Email</label>
             </div>
             <div class="col-75">
-                <input type="email" name="form-email" id="form-email" value="@gmail.com">
+                <input type="email" name="form-email" id="form-email" value="seu-email@gmail.com">
             </div>
             <br>
-            <div>
+            <div class="col-25">
                 <label for="form-tel">Telefone</label>
+            </div>
+            <div class="col-75">
                 <input type="tel" name="form-tel" id="form-tel" value="+351">
-            </div>
-            <br>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" name="password" id=" password">
-            </div>
-            <br>
-            <div>
+            </div>            
+            <br>                           
+            <div class="col-25">
                 <label for="form-dn">Data de Nascimento</label>
-                <input type="date" name="form-dn" id="form-dn" min="2023-10-01" max="2023-11-15"> 
             </div>
+            <div class="col-75">
+                <input type="date" name="form-dn" id="form-dn" min="2023-10-01" max="2023-11-15">
+            </div>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <hr>
+            
             <br>
             <div class="operadora">
-                <label for="form-operadora">Qual a sua operadora de telecom:</label>
+                <label class="titulo-form" ; for="form-operadora">Selecione sua unidade:</label>
+                <br>
                 <br>
                 <input type="radio" name="form-operadora" id="form-operadora-meo">
-                <label for="form-operadora-meo">Meo</label>
+                <label for="form-operadora-meo">Porto</label>
                 <br>
                 <input type="radio" name="form-operadora" id="form-operadora-nos">
-                <label for="form-operadora-nos">NOS</label>
+                <label for="form-operadora-nos">Aveiro</label>
                 <br>
                 <input type="radio" name="form-operadora" id="form-operadora-vodafone">
-                <label for="form-operadora-vodafone">VOdafone</label>
+                <label for="form-operadora-vodafone">Braga</label>
+                <br>
+                <input type="radio" name="form-operadora" id="form-operadora-nos">
+                <label for="form-operadora-nos">Viseu</label>
+                <br><input type="radio" name="form-operadora" id="form-operadora-nos">
+                <label for="form-operadora-nos">S. João da Madeira</label>
+                <br>
             </div>
             <br>
             <div class="operadora">
-                <label for="form-equipamentos">Selecione os seus equipamentos</label>
+                <label class="titulo-form" ; for="form-equipamentos">Modelo de aulas</label>
                 <br>
-                <input type="checkbox" id="equip1" name="equip1" value="TV">
-                <label for="equip1">SmartTV</label>
+                <br>
+                <input type="checkbox" id="equip1" name="equip1" value="Presencial">
+                <label for="equip1">Presencial</label>
 
-                <input type="checkbox" id="equip2" name="equip2" value="PC">
-                <label for="equip2">PC</label>
-                <br>
-                <input type="checkbox" id="equip3" name="equip3" value="DVD">
-                <label for="equip3">Leitor DVD</label>
-                <input type="checkbox" id="equip4" name="equip4" value="Consola Jogos">
-                <label for="equip4">Consola Jogos</label>
+                <input type="checkbox" id="equip2" name="equip2" value="OnLine">
+                <label for="equip2">OnLine</label>
+                <br>                
             </div>
             <br>
             <div>
-                <label for="form-curso">Selecione o seu curso</label>
+                <label class="titulo-form" ; for="form-curso">Selecione o seu curso</label>
+                <br>
                 <br>
                 <select name="form-curso" id="form-curso">
                     <option value="" disabled selected>Escolha um dos cursos</option>
-                    <option value="form-curso-wdm">SoftDeve</option>
-                    <option value="Culinária">Culinária</option>
-                    <option value="Barman">Barman</option>
-                    <option value="Pastelaria">Pastelaria</option>
+                    <option value="form-curso-wdm">Software Development</option>
+                    <option value="Base de dados">Base de dados</option>
+                    <option value="Análise de dados">Análise de dados</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
                 </select>
             </div>
             <br>
+            <br>
+            <br>
             <div>
-                <label for="form-mensagem">Deixe o seu comentário</label>
+                <label class="titulo-form" ; for="form-mensagem">Deixe o seu comentário</label>
                 <br>
-                <textarea name="form-mensagem" id="form-mensagem" style="width: 70%;height: 50px;"></textarea>
+                <textarea name="form-mensagem" id="form-mensagem" style="width: 70%;height: 150px;"></textarea>
                 <!-- <textarea name="form-mensagem" id="form-mensagem" rows="5" cols="100"></textarea> -->
             </div>
 
@@ -142,6 +175,8 @@
                 <input type="reset" value="limpar">
                 <input type="submit" onclick="alert('Parabéns submeteu a sua questão')" value="Enviar">
             </div>
+
+        </div>
 
         </fieldset>
 

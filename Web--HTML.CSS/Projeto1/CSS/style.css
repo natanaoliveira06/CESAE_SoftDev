@@ -25,14 +25,35 @@ footer {
 
 }
 
+h1 {
+    color: #043761;
+}
+
+p {
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+
 header img {
-    width: 70%;
-    max-width: 600px;
+    width: 10%;
+        max-width: 600px;
     min-width: 400px;
 }
 
-footer {
-    color: blue;
+/* SECÇÃO ESPECIFICA PARA A PÁGINA HOME */
+
+.footer {
+    color: white;
+    background-color: #797979;
+    font-size: 12px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+h5 {
+    font-size: 12px;
+    font-weight: bold;
 }
 
 footer img {
@@ -40,6 +61,15 @@ footer img {
     min-width: 30px;
     width: 30px;
 }
+
+.copyright-content {
+    background-color: #043761;
+    color: white;
+}
+
+/* ---------------- */
+
+
 
 
 * {box-sizing: border-box;}
@@ -51,22 +81,23 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #e9e9e9;
+  background-color: #043761;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: black;
+  color: white;
   text-align: center;
-  padding: 14px 16px;
+  margin-left: 100px;
+  padding: 14px 16px; 
   text-decoration: none;
   font-size: 17px;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+    background-color: #2196F3;
+    color: white;
 }
 
 .topnav a.active {
@@ -124,11 +155,6 @@ body {
 /* SECÇÃO ESPECIFICA PARA A PÁGINA HOME */
 
 
-
-
-
-
-
 .areaiframes {
     width: 80%;
     margin-left: auto;
@@ -156,9 +182,6 @@ body {
         border: none;
     }
 }
-
-
-
 
 
 
@@ -205,20 +228,22 @@ tr:hover {
 /* SECCAO ESPECIFICA PARA A PAGINA FORM */
 
 .formarea {
-    width: 70%;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#form-nome {
-    background-color: aquamarine;
+legend {
+    font-weight: bold;
 }
 
-.operadora {
-    border-style: dashed;
-    background-color: azure;
+.titulo-form {
+    font-weight: bold;
 }
+
 
 input[type=reset] {
-    background-color: #04AA6D;
+    background-color: #85a3bb;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -229,7 +254,7 @@ input[type=reset] {
 }
 
 input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #043761;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -254,13 +279,24 @@ textarea {
     float: left;
     width: 25%;
     margin-top: 6px;
+    
 }
 
 .col-75 {
-    float: left;
+     float: left;
     width: 75%;
     margin-top: 6px;
+    
 }
+
+.text-form-center {
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+
+
+
 
 /* SECCAO ESPECIFICA PARA A PAGINA ABOUT */
 

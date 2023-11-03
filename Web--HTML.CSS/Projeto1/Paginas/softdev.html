@@ -17,13 +17,26 @@
     <header>
         <img src="/Imagens/logo.png" alt="logotipo Cesae">
         <br>
-        <nav>
+        <!-- <nav>
+            <a href="https://www.cesae.pt" target="_blank">Ir página Cesae</a>
+            <a href="index.html">Home</a>
+            <a href="Paginas/softdev.html">SoftwareDev</a>
+            <a href="Paginas/about.html">Sobre Nós</a>
+            <a href="Paginas/form.html">Contacto</a>
+        </nav> -->
+        <div class="topnav">
             <a href="https://www.cesae.pt" target="_blank">Ir página Cesae</a>
             <a href="/index.html">Home</a>
-            <a href="/Paginas/softdev.html">SoftwareDev</a>
+            <a class="active" href="/Paginas/softdev.html">SoftwareDev</a>
             <a href="/Paginas/about.html">Sobre Nós</a>
             <a href="/Paginas/form.html">Contacto</a>
-        </nav>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
 
     </header>
 

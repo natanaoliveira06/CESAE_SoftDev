@@ -1,18 +1,13 @@
 package FichaPratica03;
 
+import java.util.Scanner;
+
 public class OUTRO {
     public static void main(String[] args) {
 
 
-        int num = 1;
+        Scanner input = new Scanner(System.in);
 
-        System.out.println(num++);
-
-        System.out.println(++num);
-
-        System.out.println(num--);
-
-        System.out.println(--num);
 
     }
 }
