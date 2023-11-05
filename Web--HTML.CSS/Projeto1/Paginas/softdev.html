@@ -1,236 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
 
-
-</head>
-
-<body>
-
+  <body>
     <p id="topo"></p>
 
     <header>
-        <img src="/Imagens/logo.png" alt="logotipo Cesae">
-        <br>
-        <!-- <nav>
-            <a href="https://www.cesae.pt" target="_blank">Ir página Cesae</a>
-            <a href="index.html">Home</a>
-            <a href="Paginas/softdev.html">SoftwareDev</a>
-            <a href="Paginas/about.html">Sobre Nós</a>
-            <a href="Paginas/form.html">Contacto</a>
-        </nav> -->
-        <div class="topnav">
-            <a href="https://www.cesae.pt" target="_blank">Ir página Cesae</a>
-            <a href="/index.html">Home</a>
-            <a class="active" href="/Paginas/softdev.html">SoftwareDev</a>
-            <a href="/Paginas/about.html">Sobre Nós</a>
-            <a href="/Paginas/form.html">Contacto</a>
-            <div class="search-container">
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
+      <div class="topnav">
+        <img src="/Imagens/logo.png" alt="logotipo Cesae" />
+
+        <a href="https://www.cesae.pt" target="_blank">Ir página Cesae</a>
+        <a href="/index.html">Home</a>
+        <a class="active" href="/Paginas/softdev.html">SoftwareDev</a>
+        <a href="/Paginas/about.html">Sobre Nós</a>
+        <a href="/Paginas/form.html">Contacto</a>
+        <br />
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit">Submit</button>
+          </form>
         </div>
-
+      </div>
     </header>
+    <hr />
 
-    <br>
-    <hr>
+    <div>
+      <img
+        class="img-cape"
+        src="/Imagens/software-development-banner.jpg"
+        alt=""
+      />
+    </div>
+    <br />
+    <br />
+    <div class="text-border">
+      <h1>FORMADORES DE SOFTWARE DEVELOPER</h1>
+      <br />
+      <br />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit
+        praesentium, sunt, architecto et aperiam odit amet at consequuntur fuga,
+        accusamus quis odio numquam. Cupiditate nemo odit sint rerum velit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit
+        praesentium, sunt, architecto et aperiam odit amet at consequuntur fuga,
+        accusamus quis odio numquam. Cupiditate nemo odit sint rerum velit.
+      </p>
 
-    <h1 style="text-align: center;background-color: rgb(0, 238, 255);">Formadores da formação de Software Developer</h1>
+      <br /><br />
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit praesentium, sunt,
-        architecto et aperiam odit amet at consequuntur fuga, accusamus quis odio numquam.
-        Cupiditate nemo odit sint rerum velit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit praesentium, sunt,
-        architecto et aperiam odit amet at consequuntur fuga, accusamus quis odio numquam.
-        Cupiditate nemo odit sint rerum velit.</p>
-    
+      <table id="myTable">
+        <tr>
+          <th style="width: 10%">Código</th>
+          <th style="width: 40%">UFCD</th>
+          <th style="width: 25%">Formador</th>
+          <th style="width: 15%">Tema</th>
+          <th style="width: 10%">Horas</th>
+        </tr>
+        <tr>
+          <!-- style exemplo de formação inline -->
+          <td colspan="4" class="colspantext">Softskills</td>
+          <td class="total">50</td>
+        </tr>
+        <tr>
+          <td>COM</td>
+          <td>Comunicação Interpessoal</td>
+          <td>Ricardo Leite</td>
+          <td>COM</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>ING</td>
+          <td>Inglês Técnico</td>
+          <td>Hugo Fernandes</td>
+          <td>ING</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td colspan="4" class="colspantext">Programação</td>
+          <td class="total">50</td>
+        </tr>
+        <tr>
+          <td>COM</td>
+          <td>Comunicação Interpessoal</td>
+          <td>Ricardo Leite</td>
+          <td>COM</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>ING</td>
+          <td>Inglês Técnico</td>
+          <td>Hugo Fernandes</td>
+          <td>ING</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>ING</td>
+          <td>Inglês Técnico</td>
+          <td>Hugo Fernandes</td>
+          <td>ING</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td colspan="4" class="colspantext">Bases de Dados</td>
+          <td class="total">50</td>
+        </tr>
+        <tr>
+          <td>COM</td>
+          <td>Comunicação Interpessoal</td>
+          <td>Ricardo Leite</td>
+          <td>COM</td>
+          <td>25</td>
+        </tr>
 
-    <br><br>
+        <tr>
+          <td colspan="4" class="colspantext">Web</td>
+          <td class="total">50</td>
+        </tr>
+        <tr>
+          <td>COM</td>
+          <td>Comunicação Interpessoal</td>
+          <td>Ricardo Leite</td>
+          <td>COM</td>
+          <td>25</td>
+        </tr>
 
+        <tr>
+          <td colspan="4" class="colspantext">Design</td>
+          <td class="total">50</td>
+        </tr>
+        <tr>
+          <td>COM</td>
+          <td>Comunicação Interpessoal</td>
+          <td>Ricardo Leite</td>
+          <td>COM</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td colspan="4" class="colspantext">Projecto</td>
+          <td class="total">50</td>
+        </tr>
+        <tr>
+          <td>COM</td>
+          <td>Comunicação Interpessoal</td>
+          <td>Ricardo Leite</td>
+          <td>COM</td>
+          <td>25</td>
+        </tr>
 
-<table>
-    <tr>
-        <th style="width:10%;">Código</th>
-        <th style="width:40%">UFCD</th>
-        <th style="width:25%">Formador</th>
-        <th style="width:15%">Tema</th>
-        <th style="width:10%">Horas</th>
-    </tr>
-    <tr>
-        <!-- style exemplo de formação inline -->
-        <td colspan="4" style="font-weight: bold; color: white;background-color: grey;text-align: left;">Softskills</td>
-        <td style="font-weight: bold;">50</td>
-    </tr>
-    <tr>
-        <td>COM</td>
-        <td class="ufcdleft">Comunicação Interpessoal</td>
-        <td>Ricardo Leite</td>
-        <td>COM</td>
-        <td>25</td>
-    </tr>
-    <tr>
-        <td>ING</td>
-        <td class="ufcdleft">Inglês Técnico</td>
-        <td>Hugo Fernandes</td>
-        <td>ING</td>
-        <td>25</td>
-    </tr>
-    <tr>
-        <!-- formatação com class levando o style para CSS -->
-        <td colspan="4" class="colspantext">Programação</td>
-        <td>50</td>
-    </tr>
-    <tr>
-        <td>COM</td>
-        <td>Comunicação Interpessoal</td>
-        <td>Ricardo Leite</td>
-        <td>COM</td>
-        <td>25</td>
-    </tr>
-    <tr>
-        <td>ING</td>
-        <td>Inglês Técnico</td>
-        <td>Hugo Fernandes</td>
-        <td>ING</td>
-        <td>25</td>
-    </tr>
-    <tr>
-        <td>ING</td>
-        <td>Inglês Técnico</td>
-        <td>Hugo Fernandes</td>
-        <td>ING</td>
-        <td>25</td>
-    </tr>
-    <tr>
-        <td colspan="4" class="colspantext">Bases de Dados</td>
-        <td>50</td>
-    </tr>
-    <tr>
-        <td>COM</td>
-        <td>Comunicação Interpessoal</td>
-        <td>Ricardo Leite</td>
-        <td>COM</td>
-        <td>25</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td colspan="4" class="colspantext">Web</td>
-        <td>50</td>
-    </tr>
-    <tr>
-        <td>COM</td>
-        <td>Comunicação Interpessoal</td>
-        <td>Ricardo Leite</td>
-        <td>COM</td>
-        <td>25</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td colspan="4" class="colspantext">Design</td>
-        <td>50</td>
-    </tr>
-    <tr>
-        <td>COM</td>
-        <td>Comunicação Interpessoal</td>
-        <td>Ricardo Leite</td>
-        <td>COM</td>
-        <td>25</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td colspan="4" class="colspantext">Projecto</td>
-        <td>50</td>
-    </tr>
-    <tr>
-        <td>COM</td>
-        <td>Comunicação Interpessoal</td>
-        <td>Ricardo Leite</td>
-        <td>COM</td>
-        <td>25</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td colspan="4" class="colspantext">FPCT</td>
-        <td>50</td>
-    </tr>
-    <tr>
-        <td>COM</td>
-        <td>Comunicação Interpessoal</td>
-        <td>Ricardo Leite</td>
-        <td>COM</td>
-        <td>25</td>
-    </tr>
-    
-   
-    
-</table>
+        <tr>
+          <td colspan="4" class="colspantext">FPCT</td>
+          <td class="total">50</td>
+        </tr>
+        <tr>
+          <td>COM</td>
+          <td>Comunicação Interpessoal</td>
+          <td>Ricardo Leite</td>
+          <td>COM</td>
+          <td>25</td>
+        </tr>
+      </table>
 
+      <br />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <br />
 
+      <table class="table2">
+        <tr>
+          <th style="width: 50%">Features</th>
+          <th>Basic</th>
+          <th>Pro</th>
+        </tr>
+        <tr>
+          <td>Aulas presenciais</td>
+          <td>
+            <svg
+              class="fa fa-check"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-check-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+              />
+            </svg>
+          </td>
+          <td>
+            <svg
+              class="fa fa-check"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-check-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+              />
+            </svg>
+          </td>
+        </tr>
+        <tr>
+          <td>Aulas Online</td>
+          <td>
+            <svg
+              class="fa fa-remove"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-x-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+              />
+            </svg>
+          </td>
+          <td>
+            <svg
+              class="fa fa-check"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-check-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+              />
+            </svg>
+          </td>
+        </tr>
+        <tr>
+          <td>Testes e trabalhos</td>
+          <td>
+            <svg
+              class="fa fa-check"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-check-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+              />
+            </svg>
+          </td>
+          <td>
+            <svg
+              class="fa fa-check"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-check-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+              />
+            </svg>
+          </td>
+        </tr>
+        <tr>
+          <td>Estágio</td>
+          <td>
+            <svg
+              class="fa fa-remove"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-x-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+              />
+            </svg>
+          </td>
+          <td>
+            <svg
+              class="fa fa-check"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-check-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+              />
+            </svg>
+          </td>
+        </tr>
+        <tr>
+          <td>Certificado</td>
+          <td>
+            <svg
+              class="fa fa-remove"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-x-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+              />
+            </svg>
+          </td>
+          <td>
+            <svg
+              class="fa fa-check"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-check-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+              />
+            </svg>
+          </td>
+        </tr>
+      </table>
+    </div>
 
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 
+    <p style="text-align: center"><a href="#topo">Voltar ao topo</a></p>
 
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 
     <footer>
-        <hr>
-        <a href="https://www.facebook.com/CesaeDigital/?locale=pt_PT" target="_blank"><img src="/Imagens/facebook.png"
-                alt="facebook CesaeDigital"></a>
-        <a href="https://pt.linkedin.com/company/cesae-digital" target="_blank"><img src="/Imagens/linkedin.png"
-                alt="linkedin CesaeDigital"></a>
-        <a href="https://www.youtube.com/c/cesaedigital" target="_blank"><img src="/Imagens/youtube.png"
-                alt="youtube CesaeDigital"></a>
+      <div class="images-footer">
+        <img
+          class="logo-footer"
+          src="/Imagens/logo_cesae-digital-branco.png"
+          alt=""
+        />
 
-        <h6>&copy;2021 CesaeDigital | Todos os direitos reservados | Desenvolvido por.... </h6>
+        <div class="footer-icon">
+          <a
+            href="https://www.facebook.com/CesaeDigital/?locale=pt_PT"
+            target="_blank"
+            ><img src="/Imagens/facebook.png" alt="facebook CesaeDigital"
+          /></a>
+          <a
+            href="https://pt.linkedin.com/company/cesae-digital"
+            target="_blank"
+            ><img src="/Imagens/linkedin.png" alt="linkedin CesaeDigital"
+          /></a>
+          <a href="https://www.youtube.com/c/cesaedigital" target="_blank"
+            ><img src="/Imagens/youtube.png" alt="youtube CesaeDigital"
+          /></a>
+        </div>
+      </div>
 
+      <div class="links">
+        <div class="links-col">
+          <h3>ONDE ESTAMOS</h3>
+          <a href="#" target="_blank" class="font-footer">Aveiro</a>
+          <br />
+          <a href="#" target="_blank" class="font-footer">Braga</a>
+          <br />
+          <a href="#" target="_blank" class="font-footer">Leça da Palmeira</a>
+          <br />
+          <a href="#" target="_blank" class="font-footer">Lisboa</a>
+          <br />
+          <a href="#" target="_blank" class="font-footer">Marco de Canaveses</a>
+          <br />
+          <a href="#" target="_blank" class="font-footer"
+            >Oliveira de Azeméis</a
+          >
+          <br />
+          <a href="#" target="_blank" class="font-footer">Porto</a>
+          <br />
+          <a href="#" target="_blank" class="font-footer">S. João da Madeira</a>
+          <br />
+          <a href="#" target="_blank" class="font-footer">Vila do Conde</a>
+          <br />
+          <a href="#" target="_blank" class="font-footer">Viseu</a>
+        </div>
+
+        <div class="links-col">
+          <h3>SERVIÇOS</h3>
+          <a href="#" target="_blank" class="font-footer">Apoio às PME</a>
+          <br />
+          <a href="#" target="_blank" class="font-footer"
+            >Aplicação de Gestão da Formação</a
+          >
+          <br />
+          <a href="#" target="_blank" class="font-footer">Cesae - Angola</a>
+          <br />
+          <a href="#" target="_blank" class="font-footer">+Indústria 2020</a>
+        </div>
+
+        <div class="links-col">
+          <h3>FORMAÇÃO</h3>
+          <a href="#" target="_blank" class="font-footer">Cursos</a>
+          <br />
+          <a href="#" target="_blank" class="font-footer"
+            >Gestão de Projetos de Formação</a
+          >
+          <br />
+          <a href="#" target="_blank" class="font-footer">Centro de Exames</a>
+          <br />
+          <a href="#" target="_blank" class="font-footer"
+            >Qualificação de Formadores</a
+          >
+          <br />
+          <a href="#" target="_blank" class="font-footer">CENTRO QUALIFICA</a>
+        </div>
+      </div>
     </footer>
 
-
-
-</body>
-
+    <div class="copyright-content">
+      <br />
+      <h6>
+        &copy;2021 CesaeDigital | Todos os direitos reservados | Desenvolvido
+        por Natana Oliveira.
+      </h6>
+      <br />
+    </div>
+  </body>
 </html>
