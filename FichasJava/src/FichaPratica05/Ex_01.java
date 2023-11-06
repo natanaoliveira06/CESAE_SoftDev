@@ -10,7 +10,7 @@ public class Ex_01 {
         //Declarar variáveis
         int[] vetor = new int[10];  //Como se declara vetores
 
-        //Ler vetor
+        //Ler vetor - Estrutura de automação para repetir array
         for (int indice = 0; indice < 10; indice++) { //O indice é o "número da gaveta" (número da coluna)
             System.out.print("Insira um número no Vetor[" + indice + "]: ");
             vetor[indice] = input.nextInt();
@@ -21,7 +21,7 @@ public class Ex_01 {
             System.out.println("Vetor[" + indice + "]: " + vetor[indice]);
         }
 
-        //Imprimir o vetor m linha (OPCIONAL)
+        //Imprimir o vetor em linha (OPCIONAL)
         System.out.print("\n[");
         for (int indice = 0; indice < 10; indice++) {
             if (indice<9) {
