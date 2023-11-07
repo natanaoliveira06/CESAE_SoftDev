@@ -22,7 +22,16 @@ inversa de inserção. Exemplo de execução
             vetor[indice] = input.nextInt();
         }
 
-        for (int indice = 0; indice < 14; indice++) {
+         /*
+        //Imprimir o vetor sequencia normal
+         for (int indice = 0; indice < 14; indice++) {
+               System.out.println(vetor[indice]);
+        }
+*/
+        //Imprimir o vetor sequencia invertida
+        for (int indice = 13; indice >= 0; indice--) {  //Altero o primeiro indice para o numero final ao inves do primeiro nº.
+            // Altero o segundo indice para o numero inicial. Porque a matriz vai do ultimo pro primeiro
+            // Ao inves de somar posições, retira-se * -- *
             System.out.println(vetor[indice]);
         }
 

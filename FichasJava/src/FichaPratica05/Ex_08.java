@@ -12,11 +12,18 @@ public class Ex_08 {
         int[][] matriz = new int[3][3];
         String ordem = "";
 
+        //Ler matriz
         for (int linhas = 0; linhas < 3; linhas++) {     //É preciso um ciclo para linhas
             for (int colunas = 0; colunas < 3; colunas++) {  //É preciso um iclo para colunas
-
                 System.out.print("Insira um número na matriz : [" + linhas + "][" + colunas + "] ");
                 matriz[linhas][colunas] = input.nextInt();
+            }
+        }
+
+        //Imprimir matriz na consola
+        for (int linhas = 0; linhas < 3; linhas++) {
+            for (int colunas = 0; colunas < 3; colunas++) {
+
 
                 ordem += matriz[linhas][colunas] + "\t";      //Apresenta os numeros em sequencia na linha com um TAB
 

@@ -2,20 +2,14 @@ package FichaExtraArraysMatrizes;
 
 import java.util.Scanner;
 
-public class Ex_03 {
+public class Ex_04 {
     public static void main(String[] args) {
-
-         /*
-    Escreva um programa que permita preencher um array de tamanho 10 e, seguidamente, pesquisar de o Array
-tem determinado valor. Exemplos de Execução
-     */
 
         Scanner input = new Scanner(System.in);
 
         //Declarar variáveis
         int[] vetor = new int[10];
-        int numPesquisar, igual = 0;
-
+        int numPesquisar, contador;
 
         //Inserir números no array
         for (int indice = 0; indice < vetor.length; indice++) { //O indice é o "número da gaveta" (número da coluna)
@@ -29,19 +23,27 @@ tem determinado valor. Exemplos de Execução
 
 
         //Comparar numero com o array
+        boolean encontrado = false;
 
         for (int indice = 0; indice < vetor.length; indice++) {
             if (vetor[indice] == numPesquisar) {
-                igual = vetor[indice];
+                encontrado = true;
             }
         }
 
-        if (igual==numPesquisar) {
-            System.out.println(numPesquisar + " existe no Array");
-        } else {
-            System.out.println(numPesquisar + " NÃO existe no Array");
+        //Indicar se o valor existe
+        if (encontrado) {
+
+            // imprimir todas as ocorrencias
+         //   numPesquisar = vetor[0];
+
+            for (int indice = 0; indice < vetor.length; indice++) {
+                if (vetor[indice] == numPesquisar) {
+                    System.out.println("Array [" + indice + "]");
+                }
+            }
+
+            }
         }
-
-
     }
-}
+

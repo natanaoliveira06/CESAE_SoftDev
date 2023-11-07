@@ -40,8 +40,8 @@ junto aos elementos da segunda.
 
 
         //É preciso entrar na matriz de novo
-        for (int linhas = 0; linhas < 10; linhas++) {     //É preciso um ciclo para linhas
-            for (int colunas = 0; colunas < 2; colunas++) {  //É preciso um iclo para colunas
+        for (int linhas = 0; linhas < 10; linhas++) {
+            for (int colunas = 0; colunas < 2; colunas++) {
 
                 ordem += matriz[linhas][colunas] + "\t";      //Apresenta os numeros em sequencia na linha com um TAB
 

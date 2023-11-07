@@ -21,9 +21,9 @@ public class Ex_01 {
             vetor[indice] = input.nextInt();
         }
 
-        //Imprimir o vetor
-        for (int indice = 0; indice < 14; indice++) {
-            System.out.println(vetor[indice]);
+        //Imprimir o vetor sequencia normal
+         for (int indice = 0; indice < 14; indice++) {
+               System.out.println(vetor[indice]);
         }
 
 
