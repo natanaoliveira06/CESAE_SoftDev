@@ -1,11 +1,9 @@
 package FichaPratica06;
 
 import java.util.Scanner;
-
 public class Ex_03 {
 
     /*
-
 a) Implemente uma função que determina se um número  é par ou ímpar, a função deve retornar true se par ou false se ímpar.
 b) Implemente uma função que determina se um número  é positivo ou negativo, a função deve retornar true se zero ou positivo, ou false se negativo.
 c) Implemente uma função que determina se um número  é ou não primo, a função deve retornar true se primo ou false se não primo.
@@ -88,7 +86,8 @@ e) Implemente uma função que determina se um número  é triangular, a funçã
      */
     public static boolean triangular(int num) {
 
-        int somatorio = 0;
+        int somatorio = 0, contador =1;
+
         for (int a = 1; a < num; a++) {
             somatorio += a;
             if (somatorio == num) {
