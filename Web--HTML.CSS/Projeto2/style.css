@@ -1,11 +1,12 @@
+
+/* __________NAV BAR__________ */
+
 .navbar-brand{
     padding-left: 25px;
-
 }
 
 .nav-item{
     padding-left: 15px;
-
 }
 
 .navbar-nav {
@@ -14,8 +15,40 @@
     padding-left: 1025px;
 }
 
+.active{
+    color:aquamarine;
+    text-decoration: underline;
+}
+
 .form-control{
     background-color: black;
+}
+
+/* __________CARROSSEL__________ */
+
+.carousel-caption {
+    /* padding-bottom: 685px; */
+    padding-right: 850px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+
+
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+   padding-bottom: 50px;
+    }
+    
+
+.row-2 {
+    padding-top: 10px;
+}
+
+.card-img-overlay {
+    background: linear-gradient(190.99deg,#000000 0,transparent 99.04%);
 }
 
 
@@ -23,3 +56,5 @@
     padding-left: 250px;
     padding-right: 250px;
 }
+
+
