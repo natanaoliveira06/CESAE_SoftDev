@@ -1,0 +1,25 @@
+.navbar-brand{
+    padding-left: 25px;
+
+}
+
+.nav-item{
+    padding-left: 15px;
+
+}
+
+.navbar-nav {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-left: 1025px;
+}
+
+.form-control{
+    background-color: black;
+}
+
+
+.blog{
+    padding-left: 250px;
+    padding-right: 250px;
+}
