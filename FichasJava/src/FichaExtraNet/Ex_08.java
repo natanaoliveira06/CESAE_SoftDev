@@ -23,6 +23,5 @@ public class Ex_08 {
         System.out.println("A soma é: " + soma);
         System.out.println("A média é: " + media);
 
-
     }
 }
