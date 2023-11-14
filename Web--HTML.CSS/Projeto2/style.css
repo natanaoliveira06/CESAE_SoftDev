@@ -5,8 +5,17 @@
     padding-left: 25px;
 }
 
-.nav-item{
+.nav-item a {
     padding-left: 15px;
+    color: white;
+}
+
+.nav-item a:hover {
+    color: rgb(189, 4, 4);
+}
+
+.active{
+    text-decoration: underline;
 }
 
 .navbar-nav {
@@ -15,10 +24,6 @@
     padding-left: 1025px;
 }
 
-.active{
-    color:aquamarine;
-    text-decoration: underline;
-}
 
 .form-control{
     background-color: black;
