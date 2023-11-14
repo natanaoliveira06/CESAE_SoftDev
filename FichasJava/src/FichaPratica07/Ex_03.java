@@ -12,7 +12,6 @@ public class Ex_03 {
     /*
     Escreva um programa que leia o conteúdo de um ficheiro de texto e grave-o num outro arquivo
      */
-
     public static void main(String[] args) throws FileNotFoundException {
 
         //Fazer scanner do arquivo 

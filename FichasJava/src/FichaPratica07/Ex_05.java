@@ -12,27 +12,27 @@ calcule a soma desses números.
 
     public static void main(String[] args) throws FileNotFoundException {
 
+     /*   //Trazer o arquivo para cá
+
+        File ficheiro = new File ("Ficheiros/exercicio_05_31.txt");
+        Scanner fileScanner = new Scanner(ficheiro);
+        */
+
+
+        //Ler o ficheiro (é exatamente igual a escrita acima só que mais simplificado
         Scanner fileScanner = new Scanner(new File("Ficheiros/exercicio_05_31.txt"));
 
-        String linha;
-        int soma;
+        //Declarar as variaveis
+        int num, soma = 0;
 
-        while (fileScanner.hasNextLine()){
-            linha = fileScanner.nextLine();
-            String[]itensDaLinha=linha.split(" ");
-
-            for (int i=0; i<itensDaLinha.length; i++){
-                System.out.println(itensDaLinha[i]);
-
-              /*  if (itensDaLinha[1]){
-                    soma= Integer.parseInt(itensDaLinha[1])
-                }
-*/
-            }
+        while (fileScanner.hasNextLine()) {
+            num = fileScanner.nextInt();
+            soma += num;
         }
+            System.out.println("Soma: " + soma);
 
-
-
-
+        fileScanner.close();
+        }
     }
-}
+
+
