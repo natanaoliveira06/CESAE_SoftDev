@@ -20,149 +20,297 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
 
   <body>
     <header>
-        <!-- NAV BAR -->
-        <nav class="navbar navbar-expand-lg" style="background-color: black;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="/Images/nasaLogo.png" alt="Bootstrap" width="75" height="60">
-                  </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" style="color: rgb(189, 4, 4);" aria-current="page" href="#">Home</a>
-                      </li>            
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">News & Events</a>
+      <!-- NAV BAR -->
+      <nav class="navbar navbar-expand-lg" style="background-color: black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="/Images/nasaLogo.png"
+              alt="Bootstrap"
+              width="75"
+              height="60"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  style="color: rgb(189, 4, 4)"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  >News & Events</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Space.html">Space</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="news&events.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Explore
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Space.html">Space</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="news&events.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Explore
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <!-- <li class="nav-item">
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
                     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                   </li> -->
-                </ul>
-                <form class="d-flex" role="search" data-bs-theme="dark">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
-                  <button class="btn btn-dark" type="submit"> <i class="bi bi-search"></i></button>                
-                </form>
-              </div>
-            </div>
-          </nav>
+            </ul>
+            <form class="d-flex" role="search" data-bs-theme="dark">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-dark" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
-  
-    <!-- CARROSSEL -->   
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/Images/capa1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h1>NASA+</h1>
-              <p>Now Available: NASA+, a new ad-free, no-cost, family-friendly streaming service that embeds you into our missions through new original video series.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/Images/capa2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h1>Exception value</h1>
-              <p>NASA’s unique mission provides benefits in big and small ways. Dollars spent for space exploration create jobs, jumpstart businesses, and grow the economy.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/Images/capa3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h1>Explore the Universe</h1>
-              <p>Stay up-to-date on the latest news from NASA–from Earth to the Moon, the Solar System and beyond. We’ll never share your email address.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+
+    <!-- CARROSSEL -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
-     
-    <div class="blog" >     
-        <h1>Featured News</h1>
-
-     <!-- CARDS -->  
-     <div class="row">    
-        <div class="col-6">
-            <div class="card text-bg-dark" >
-                <img src="/Images/card1.webp" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                  <h6 class="card-text">NASA’s Juno Finds Jupiter’s Winds Penetrate in Cylindrical Layers</h6>
-                </div>
-              </div>
-        </div>
-
-        <div class="col-3">
-            <div class="card text-bg-dark" >
-                <img src="/Images/card2 3.jpg" class="card-img" alt="...">
-                <div class="card-img-overlay">                 
-                  <h6 class="card-text">NASA’s Webb, Hubble Combine to Create Most Colorful View of Universe</h6>
-                </div>
-              </div>
-        </div>
-       
-        <div class="col-3">
-            <div class="row-1">
-                <div class="card text-bg-dark h-50" >
-                    <img src="/Images/card3 2.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay">                 
-                      <h6 class="card-text">NASA Analysis Finds Strong El Niño</h6>
-                    </div>
-                  </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/Images/capa1.jpg" class="d-block w-100" alt="..." />
+          <div
+            class="carousel-caption d-none d-md-block"
+            style="min-width: 600px"
+          >
+            <h1>NASA+</h1>
+            <p>
+              Now Available: NASA+, a new ad-free, no-cost, family-friendly
+              streaming service that embeds you into our missions through new
+              original video series.
+            </p>
           </div>
-
-                <div class="row-2">
-                <div class="card text-bg-dark h-50" >
-                    <img src="/Images/card4.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay">                 
-                      <h6 class="card-text">NASA Sounding Rocket Launches into Alaskan Aurora</h6>                      
-                    </div>
-                  </div>
-            </div>
         </div>
+        <div class="carousel-item">
+          <img src="/Images/capa2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Exception value</h1>
+            <p>
+              NASA’s unique mission provides benefits in big and small ways.
+              Dollars spent for space exploration create jobs, jumpstart
+              businesses, and grow the economy.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/Images/capa3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Explore the Universe</h1>
+            <p>
+              Stay up-to-date on the latest news from NASA–from Earth to the
+              Moon, the Solar System and beyond. We’ll never share your email
+              address.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
 
-      
-</body>
+    <div main>
+      <div class="blog">
+        <h1>Featured News</h1>
 
+        <!-- CARDS -->
+        <div class="row">
+          <div class="col-6">
+            <div class="card text-bg-dark">
+              <img src="/Images/card1.webp" class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <h6 class="card-text">
+                  NASA’s Juno Finds Jupiter’s Winds Penetrate in Cylindrical
+                  Layers
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card text-bg-dark">
+              <img src="/Images/card2 3.jpg" class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <h6 class="card-text">
+                  NASA’s Webb, Hubble Combine to Create Most Colorful View of
+                  Universe
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="row-1">
+              <div class="card text-bg-dark h-50">
+                <img src="/Images/card3 2.jpg" class="card-img" alt="..." />
+                <div class="card-img-overlay">
+                  <h6 class="card-text">NASA Analysis Finds Strong El Niño</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="row-2">
+              <div class="card text-bg-dark h-50">
+                <img src="/Images/card4.jpg" class="card-img" alt="..." />
+                <div class="card-img-overlay">
+                  <h6 class="card-text">
+                    NASA Sounding Rocket Launches into Alaskan Aurora
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+    </div>
+
+    <div footer>
+      <div class="card">
+        <div class="card-body">
+          <div class="card-col">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="/Images/nasaLogo.png"
+                alt="Bootstrap"
+                width="75"
+                height="60"
+              />
+            </a>
+            <h3 class="card-title">
+              The National Aeronautics and Space Administration
+            </h3>
+            <p class="card-text">
+              NASA explores the unknown in air and space, innovates for the
+              benefit of humanity, and inspires the world through discovery.
+            </p>
+            <a href="#" class="btn btn-primary">Join Us</a>
+          </div>
+
+          <div class="card-col">
+            <div class="links">
+              <a href="#" target="_blank" class="font-footer">Home</a>
+              <br />
+              <a href="#" target="_blank" class="font-footer">News & Events</a>
+              <br />
+              <a href="#" target="_blank" class="font-footer">Multimedia</a>
+              <br />
+              <a href="#" target="_blank" class="font-footer">NASA+</a>
+              <br />
+              <a href="#" target="_blank" class="font-footer">Missions</a>
+              <br />
+            </div>
+          </div>
+
+          <div class="card-col">
+            <div class="images-footer">
+              <div class="footer-icon">
+                <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-youtube"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-twitter-x"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        Page Last Updated: Nov 14, 2023 | Page Editor: Natana Oliveira.
+      </div>
+    </div>
+  </body>
 </html>
