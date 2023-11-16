@@ -4,21 +4,45 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
-
 public class Ex_08 {
-    public static void main(String[] args) throws FileNotFoundException {
-/*  Escreva um programa que leia o conteúdo de um ficheiro de texto e grave apenas as linhas que contêm
+    /*  Escreva um programa que leia o conteúdo de um ficheiro de texto e grave apenas as linhas que contêm
 uma palavra específica num outro ficheiro. */
-
+    public static void main(String[] args) throws FileNotFoundException {
 
         //Fazer scanner do arquivo
-        Scanner fileScanner = new Scanner(new File("Ficheiros/exercicio_08.txt"));
+        Scanner in = new Scanner(new File("Ficheiros/exercicio_08.txt"));
 
-        //Ler o arquivo
+        // criar novo ficheiro
+        File newFile = new File("Ficheiros/exercicio_08_new.txt");
+        PrintWriter printWriter = new PrintWriter(newFile);
+
+        // declarar variaveis
+        String linha, palavra = "Vitor";
+        boolean encontrei = false;
+
+        // ler linha atraves do scanner input e escrever no newFile atraves da linha
+        while (in.hasNextLine()) {
+            linha = in.nextLine();
+            String[] itensDaLinha = linha.split(" ");
+
+            // verificar se na linha encontra uma palavra igual
+            for (int i = 0; i < itensDaLinha.length; i++) {
+                if (itensDaLinha[i].equals(palavra)) {
+                    encontrei = true;
+                }
+            }
+            if (encontrei) {
+                printWriter.println(linha);
+            }
+            encontrei = false;
+        }
+        printWriter.close();
+    }
+}
+
+/*
+
         String linha, palavraAtual, palavraEspecifica = "uma";
-
-        // Criar o novo ficheiro
-        File novoFicheiro = new File("Ficheiros/exercicio_08_01.txt");
 
         // Criar um maquina de escrever naquele ficheiro
         PrintWriter escritaNoFicheiro = new PrintWriter(novoFicheiro);
@@ -32,5 +56,5 @@ uma palavra específica num outro ficheiro. */
             }
         }
         escritaNoFicheiro.close();
-    }
-}
+        */
+
