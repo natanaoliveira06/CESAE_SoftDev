@@ -6,12 +6,7 @@ import java.util.Scanner;
 import static TrabalhoPratico_PE.NatanaOliveira_Funcoes.*;
 
 public class MenuADM {
-    /*
-    MENU ADMIN
-5. Imprima qual o jogo mais caro e os clientes que o compraram.
-OU
 
-     */
 
     public static void main(String[] args) throws FileNotFoundException {
 

@@ -234,56 +234,34 @@ public class NatanaOliveira_Funcoes {
         System.out.println("\n**** CLIENTE INSERIDO COM SUCESSO!! ***\n" + nome + "  |  " + contacto + "  |  " + email);
     }
 
-    /*
-
-    public static int lugaresVagos(int numero) {
-
-
-/*
-        int somatorio = 0;
-
-        for (int a = 1; a < numero; a++) {
-            somatorio += a;
-            if (somatorio == numero) {
-                return true;
-            }
-                }
-        while (numero <= 121 && numero % 5 == 0) {
-            if () {
-
-            }
-            numero++;
-        }
-        return numero;
-    }
-*/
-
-    /*
-     /**
-     * Método que avalia se um número é triangular
-     * @param num
-     * @return True - se for triangular || False - se não for triangular
+    /**
+     * Método para apresentar os números triangulares e divisiveis por 5 até 121
+     * @param numeroLugares
+     * @return os números triangulares divisiveis por 5 (até 121)
      */
-    /*
-    public static boolean triangular(int num) {
+    public static int lugaresVagos(int numeroLugares) {
 
-        int somatorio = 0, contador =1;
+        int somatorio = 0, contador = 1; //o somatorio corresponde aos números triangulares
+        numeroLugares = 121;
 
-        for (int a = 1; a < num; a++) {
-            somatorio += a;
-            if (somatorio == num) {
-                return true;
+        while (somatorio < numeroLugares) { //o numero de lugares é o limite para fechar o ciclo
+            somatorio += contador;
+            contador++;
+
+            //se o somatorio (números triangulares) forem igual ou menor que o número limite de lugares
+            //e se também forem divisíveis por 5
+            if (somatorio <= numeroLugares && somatorio % 5 == 0) {
+                System.out.println(somatorio);
             }
         }
-        return false;
+    // Método que avalia se um número é triangular
+
+        return somatorio;
     }
 
-
-
-        //////////////////////////////
+    ///////////////////////////////////////////////////////////////
 }
-*/
 
 
-}
+
 

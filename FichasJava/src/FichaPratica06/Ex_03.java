@@ -1,6 +1,7 @@
 package FichaPratica06;
 
 import java.util.Scanner;
+
 public class Ex_03 {
 
     /*
@@ -81,12 +82,13 @@ e) Implemente uma função que determina se um número  é triangular, a funçã
 
     /**
      * Método que avalia se um número é triangular
+     *
      * @param num
      * @return True - se for triangular || False - se não for triangular
      */
     public static boolean triangular(int num) {
 
-        int somatorio = 0, contador =1;
+        int somatorio = 0, contador = 1;
 
         for (int a = 1; a < num; a++) {
             somatorio += a;

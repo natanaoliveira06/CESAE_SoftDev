@@ -6,7 +6,6 @@ import java.util.Scanner;
 import static TrabalhoPratico_PE.NatanaOliveira_Funcoes.*;
 
 /*
-2. Procurar estacionamento. Sabendo que os lugares de vago são todos os números triangulares múltiplos de 5 num limite de 121 lugares.
 3. Imprima todos os títulos de jogos (sem duplicados).
 4. Dada uma Editora, imprima todas as categorias e os respetivos jogos. (Preferencialmente com formatação visual)
  */
@@ -24,7 +23,7 @@ public class MenuCliente {
             System.out.println("\n\n***** CLIENTE, Bem vindo! *****\n");
             System.out.println("1. Registar cliente ");
             System.out.println("2. Procurar estacionamento");
-            System.out.println("3. Imprimir todos os títulos de jogos)");
+            System.out.println("3. Imprimir todos os títulos de jogos");
             System.out.println("4. Imprimir todas as categorias e os respetivos jogos de uma editora");
             System.out.println("0. Sair do menu Cliente");
 
@@ -39,12 +38,11 @@ public class MenuCliente {
                     break;
 
                 case 2: // Procurar estacionamento
-                    System.out.println("\n***** Procurar estacionamento *****\n");
-                    int numero=0;
-                  //  lugaresVagos(numero);
+                    System.out.println("\n***** Procurar vagas de estacionamento *****\n");
+                    int numeroLugares = 121;
+                    System.out.println("Os lugares vagos são: ");
+                    lugaresVagos(numeroLugares);
 
-
-                    break;
 
                 case 3: // Imprimir todos os títulos de jogos
                     System.out.println("\n");
@@ -63,7 +61,8 @@ public class MenuCliente {
                 default:
                     System.out.println("\nOpção inválida... Tente outra vez!");
             }
-        } while (menuCliente != 0);
+        }
+        while (menuCliente != 0);
 
 
     }
