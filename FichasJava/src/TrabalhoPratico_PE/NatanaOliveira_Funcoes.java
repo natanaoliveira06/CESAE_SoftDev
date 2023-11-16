@@ -1,5 +1,6 @@
 package TrabalhoPratico_PE;
 
+import javax.sound.midi.Soundbank;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -143,32 +144,146 @@ public class NatanaOliveira_Funcoes {
     }
 
     /**
-     * Método para pesquisarCliente
+     * Método para pesquisar Cliente
+     *
      * @param matrizTotal
      * @param idCliente
-     * @throws FileNotFoundException -Caso o ficheiro não seja encontrado
+     * @throws FileNotFoundException - Caso o ficheiro não seja encontrado
      */
     public static void pesquisarCliente(String[][] matrizTotal, String idCliente) throws FileNotFoundException {
 
         matrizTotal = lerFicheiroParaMatriz("src/TrabalhoPratico_PE/GameStart_V2.csv");
 
-        int contador = 0; //contador é 0 para os registros de cliente repetidos não somarem
+        int contador = 1; //contador é 1 para os registros de cliente repetidos não aparecerem
 
         // verificar se na linha encontra uma palavra igual na coluna 2 (vetor[1])
         for (int linha = 0; linha < matrizTotal.length; linha++) {
 
-            if (matrizTotal[linha][1].equals(idCliente) && contador==0) { //Comparar os itens do vetor[1] com o idCliente e o contador 0 para eliminar repetidos
-                System.out.println("Nome do Cliente: " + matrizTotal[linha][2] + "\t|\t" + "Contacto: " + matrizTotal[linha][3] + "\t|\t" + "E-mail: " + matrizTotal[linha][4]);
+            //Comparar os itens do vetor[1] com o idCliente
+            if (matrizTotal[linha][1].equals(idCliente) && contador == 1) { //o contador tem que ser igual a 1, caso seja diferente ele não entra no ciclo e não imprime
+                System.out.println("\nNome do Cliente: " + matrizTotal[linha][2] + "\t|\t" + "Contacto: " + matrizTotal[linha][3] + "\t|\t" + "E-mail: " + matrizTotal[linha][4]);
                 contador++;
             }
         }
     }
 
+    /**
+     * Método para encontrar o jogo mais caro
+     *
+     * @param matrizTotal
+     * @throws FileNotFoundException Caso o ficheiro não seja encontrado
+     */
+    public static String jogoMaisCaro(String[][] matrizTotal) throws FileNotFoundException {
+
+        matrizTotal = lerFicheiroParaMatriz("src/TrabalhoPratico_PE/GameStart_V2.csv");
+
+        double valorJogo = 0, jogoMaisCaro = 0;
+        String nomeJogo = "", nomeJogoMaisCaro = "";
+
+        for (int linha = 0; linha < matrizTotal.length; linha++) { //Entra na matriz
+            valorJogo = Double.parseDouble(matrizTotal[linha][8]); //O valor dos jogos está no vetor [8]
+            nomeJogo = matrizTotal[linha][7];
+
+            //Se o valor do jogo for maior que o jogo mais caro
+            if (valorJogo > jogoMaisCaro) {
+                jogoMaisCaro = valorJogo;// Atualiza o valor mais caro
+                nomeJogoMaisCaro = nomeJogo; // Ligar o nome do jogo mais caro ao valor maior
+            }
+        }
+        System.out.println("\nJogo mais caro: " + nomeJogoMaisCaro + "\t|\t" + "Valor: " + jogoMaisCaro);
+        return nomeJogoMaisCaro;
+    }
+
+    /**
+     * Método para imprimir os compradores do jogo mais caro
+     *
+     * @param nomeJogoMaisCaro
+     * @throws FileNotFoundException Caso o ficheiro não seja encontrado
+     */
+    public static void compradorJogoMaisCaro(String nomeJogoMaisCaro) throws FileNotFoundException {
+
+        String[][] matrizTotal = lerFicheiroParaMatriz("src/TrabalhoPratico_PE/GameStart_V2.csv");
+
+        String linhaJogoMaisCaro = ""; //comparar com a linha
+
+        for (int i = 0; i < matrizTotal.length; i++) {
+            if (matrizTotal[i][7].equals(nomeJogoMaisCaro)) { //comparar os itens das linhas (na coluna nome do jogo ([vetor7])) com o nome do jogo mais caro
+                linhaJogoMaisCaro += matrizTotal[i][2] + "\t|\t"; //Associar a linha com a coluna nome do cliente (vetro[2]) e somar caso tenham repetidos
+            }
+        }
+        System.out.println("\nCompradores: " + (linhaJogoMaisCaro));
+    }
+
+    /**
+     * Método para registar Clientes
+     */
+    public static void registarCliente() {
+
+        String nome, contacto, email;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Insira seu nome: ");
+        nome = input.nextLine();
+
+        System.out.print("Insira seu contacto: ");
+        contacto = input.next();
+
+        System.out.print("Insira seu email: ");
+        email = input.next();
+
+        System.out.println("\n**** CLIENTE INSERIDO COM SUCESSO!! ***\n" + nome + "  |  " + contacto + "  |  " + email);
+    }
+
+    /*
+
+    public static int lugaresVagos(int numero) {
+
+
+/*
+        int somatorio = 0;
+
+        for (int a = 1; a < numero; a++) {
+            somatorio += a;
+            if (somatorio == numero) {
+                return true;
+            }
+                }
+        while (numero <= 121 && numero % 5 == 0) {
+            if () {
+
+            }
+            numero++;
+        }
+        return numero;
+    }
+*/
+
+    /*
+     /**
+     * Método que avalia se um número é triangular
+     * @param num
+     * @return True - se for triangular || False - se não for triangular
+     */
+    /*
+    public static boolean triangular(int num) {
+
+        int somatorio = 0, contador =1;
+
+        for (int a = 1; a < num; a++) {
+            somatorio += a;
+            if (somatorio == num) {
+                return true;
+            }
+        }
+        return false;
+    }
 
 
 
+        //////////////////////////////
+}
+*/
 
-    //////////////////////////////
 
 }
 

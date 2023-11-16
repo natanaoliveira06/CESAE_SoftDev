@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 import static TrabalhoPratico_PE.NatanaOliveira_Funcoes.*;
+
 public class MenuADM {
     /*
     MENU ADMIN
@@ -62,8 +63,10 @@ OU
                     break;
 
                 case 5: // Imprimir o jogo mais caro e os clientes que o compraram
-                    System.out.println("\n*****  *****");
-
+                    System.out.println("\n***** Imprimir o jogo mais caro e os clientes que o compraram *****");
+                  //  jogoMaisCaro(matrizTotal);   NÃO É PRECISO - pois a função compradorJogoMaisCaro já imprime esta
+                    String JogoMaisCaro = jogoMaisCaro(matrizTotal);
+                    compradorJogoMaisCaro(JogoMaisCaro);
                     break;
 
                 case 0:
@@ -74,7 +77,5 @@ OU
                     System.out.println("\nOpção inválida... Tente outra vez!");
             }
         } while (menuAdm != 0);
-
-
     }
 }
