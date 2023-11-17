@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 import static TrabalhoPratico_PE.NatanaOliveira_Funcoes.lerFicheiroParaMatriz;
+import static TrabalhoPratico_PE.NatanaOliveira_Funcoes.menuAdministrador;
 
 public class PaginaInicial {
 
@@ -23,7 +24,10 @@ public class PaginaInicial {
 
         //Ciclo para entrar como utilizador
         do {
+            System.out.println("\n\n**********************************");
             System.out.println("\n\n***** Bem Vindo à GameStart! *****");
+            System.out.println("\n\n**********************************");
+
             System.out.print("\nInsira o tipo de Utilizador (ADMIN || CLIENTE || SAIR): ");
             tipoUtilizador = input.next();
 
@@ -36,7 +40,7 @@ public class PaginaInicial {
                     passwordInserida = input.nextInt();
                     if (passwordInserida==passwordAdm){
                         System.out.println("\n***** ADMINISTRADOR, Bem vindo! ");
-                        //todo ENTRAR NO MENU ADM
+                        menuAdministrador();             //todo ENTRAR NO MENU ADM
                     }else{
                         System.out.println("Password Incorreta"); //todo TENTAR ALTERAR O METODO DE SENHAS
                     }

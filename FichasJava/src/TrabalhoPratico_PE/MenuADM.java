@@ -12,9 +12,7 @@ public class MenuADM {
 
         String[][] matrizTotal = lerFicheiroParaMatriz("src/TrabalhoPratico_PE/GameStart_V2.csv");
 
-        //todo --- Acima já está no outro arquivo
-
-        Scanner input = new Scanner(System.in);
+           Scanner input = new Scanner(System.in);
         int menuAdm;
 
         do {

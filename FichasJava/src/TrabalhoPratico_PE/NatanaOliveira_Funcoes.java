@@ -59,7 +59,6 @@ public class NatanaOliveira_Funcoes {
      * @return Matriz String[][] preenchida com o conteudo
      * @throws FileNotFoundException Caso o ficheiro não seja encontrado
      */
-
     public static String[][] lerFicheiroParaMatriz(String caminhoFicheiro) throws FileNotFoundException {
 
         File ficheiro = new File(caminhoFicheiro);
@@ -89,6 +88,11 @@ public class NatanaOliveira_Funcoes {
 
         return matrizTotal;
     }
+
+
+
+
+    // INICIO DAS FUNÇÕES DO MENU DO ADMINISTRADOR
 
     /**
      * Método para imprimir uma matriz na consola
@@ -214,6 +218,81 @@ public class NatanaOliveira_Funcoes {
         System.out.println("\nCompradores: " + (linhaJogoMaisCaro));
     }
 
+
+    /**
+     * Método para apresentar o Menu do Administrador
+     */
+    public static void menuAdministrador() throws FileNotFoundException {
+
+        String[][] matrizTotal = lerFicheiroParaMatriz("src/TrabalhoPratico_PE/GameStart_V2.csv");
+
+        Scanner input = new Scanner(System.in);
+        int menuAdm;
+
+        do {
+            System.out.println("\n\n***** ADMINISTRADOR, Bem vindo! *****\n");
+            System.out.println("1. Imprimir o relatório");
+            System.out.println("2. Imprimir total de vendas e o valor total");
+            System.out.println("3. Imprimir o calculo total de lucro (20% de lucro em cada jogo)");
+            System.out.println("4. Pesquisar informações associadas a um cliente");
+            System.out.println("5. Imprimir o jogo mais caro e os clientes que o compraram");
+            System.out.println("0. Sair do menu Administrador");
+
+            System.out.print("\nSelecione a opção desejada: ");
+            menuAdm = input.nextInt();
+
+            switch (menuAdm) {
+
+                case 1: // Imprimir o relatório na consola
+                    System.out.println("\n***** Imprimir o relatório *****\n");
+                    imprimirMatrizConsola(matrizTotal);
+                    break;
+
+                case 2: // Imprimir quantas vendas foram executadas e o seu valor total
+                    System.out.println("\n***** Imprimir quantas vendas foram executadas e o seu valor total *****");
+
+                    System.out.println("\nVendas executadas: " + (contarLinhasFicheiro("src/TrabalhoPratico_PE/GameStart_V2.csv") - 1)); //-1 linha do cabeçalho
+                    System.out.println("Valor total das vendas: " + (valorTotalVendas(matrizTotal)) + " EUR"); //puxar a função de valorTotal
+                    break;
+
+                case 3: // Imprimir o calculo total de lucro (20% de lucro em cada jogo)
+                    System.out.println("\n***** Imprimir o calculo total de lucro *****");
+                    System.out.println("Valor total de lucro: " + lucroTotal(valorTotalVendas(matrizTotal)) + " EUR"); //puxar a função de lucro
+                    break;
+
+                case 4: // Dado um idCliente, imprima todas as informações associadas a esse cliente (nome, contacto, email)
+                    System.out.println("\n***** Pesquisar informações associadas a um cliente *****");
+                    System.out.print("\nInsira a idCliente: ");
+                    input.nextLine();
+                    String idCliente = input.nextLine();
+
+                    pesquisarCliente(matrizTotal, idCliente);
+                    break;
+
+                case 5: // Imprimir o jogo mais caro e os clientes que o compraram
+                    System.out.println("\n***** Imprimir o jogo mais caro e os clientes que o compraram *****");
+                    //  jogoMaisCaro(matrizTotal);   NÃO É PRECISO - pois a função compradorJogoMaisCaro já imprime esta
+                    String JogoMaisCaro = jogoMaisCaro(matrizTotal);
+                    compradorJogoMaisCaro(JogoMaisCaro);
+                    break;
+
+                case 0:
+                    System.out.println("\nADMIN, obrigado e até a proxima!");
+                    break;
+
+                default:
+                    System.out.println("\nOpção inválida... Tente outra vez!");
+            }
+        } while (menuAdm != 0);
+    }
+
+
+
+
+
+
+    // INICIO DAS FUNÇÕES DO MENU DO CLIENTE
+
     /**
      * Método para registar Clientes
      */
@@ -236,6 +315,7 @@ public class NatanaOliveira_Funcoes {
 
     /**
      * Método para apresentar os números triangulares e divisiveis por 5 até 121
+     *
      * @param numeroLugares
      * @return os números triangulares divisiveis por 5 (até 121)
      */
@@ -254,10 +334,13 @@ public class NatanaOliveira_Funcoes {
                 System.out.println(somatorio);
             }
         }
-    // Método que avalia se um número é triangular
+        // Método que avalia se um número é triangular
 
         return somatorio;
     }
+
+
+
 
     ///////////////////////////////////////////////////////////////
 }
