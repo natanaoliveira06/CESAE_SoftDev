@@ -12,11 +12,6 @@ public class PaginaInicial {
 
         String[][] matrizTotal = lerFicheiroParaMatriz("src/TrabalhoPratico_PE/GameStart_V2.csv");
 
-        //  imprimirMatrizConsola(matrizTotal);
-
-        // System.out.println(contarLinhasFicheiro("src/TrabalhoPratico_PE/GameStart_V2.csv")-1);
-
-
         Scanner input = new Scanner(System.in);
 
         String tipoUtilizador, ADMIN = "", CLIENTE = "";
@@ -24,11 +19,11 @@ public class PaginaInicial {
 
         //Ciclo para entrar como utilizador
         do {
-            System.out.println("\n\n**********************************");
-            System.out.println("\n\n***** Bem Vindo à GameStart! *****");
-            System.out.println("\n\n**********************************");
+            System.out.println("\n\n**************************************");
+            System.out.println("******* Bem Vindo à GameStart! *******");
+            System.out.println("**************************************");
 
-            System.out.print("\nInsira o tipo de Utilizador (ADMIN || CLIENTE || SAIR): ");
+            System.out.print("\n\nInsira o tipo de Utilizador (ADMIN || CLIENTE || SAIR): ");
             tipoUtilizador = input.next();
 
             //aceitar letras minusculas
@@ -38,10 +33,9 @@ public class PaginaInicial {
                 case "ADMIN":
                     System.out.print("\nPASSWORD: ");
                     passwordInserida = input.nextInt();
-                    if (passwordInserida==passwordAdm){
-                        System.out.println("\n***** ADMINISTRADOR, Bem vindo! ");
+                    if (passwordInserida == passwordAdm) {
                         menuAdministrador();             //todo ENTRAR NO MENU ADM
-                    }else{
+                    } else {
                         System.out.println("Password Incorreta"); //todo TENTAR ALTERAR O METODO DE SENHAS
                     }
                     break;
@@ -58,8 +52,7 @@ public class PaginaInicial {
                     System.out.println("Utilizador inválido... Tente outra vez!");
 
             }
-        }while (tipoUtilizador != "SAIR");
-
+        } while (tipoUtilizador != "SAIR");
 
 
     }

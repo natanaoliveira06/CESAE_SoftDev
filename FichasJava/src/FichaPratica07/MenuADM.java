@@ -1,4 +1,4 @@
-package TrabalhoPratico_PE;
+package FichaPratica07;
 
 import java.io.FileNotFoundException;
 import java.util.Scanner;

@@ -90,8 +90,7 @@ public class NatanaOliveira_Funcoes {
     }
 
 
-
-
+    // *************************************************
     // INICIO DAS FUNÇÕES DO MENU DO ADMINISTRADOR
 
     /**
@@ -230,7 +229,9 @@ public class NatanaOliveira_Funcoes {
         int menuAdm;
 
         do {
-            System.out.println("\n\n***** ADMINISTRADOR, Bem vindo! *****\n");
+            System.out.println("\n\n*****************************************");
+            System.out.println("******* ADMINISTRADOR, Bem vindo! *******");
+            System.out.println("*****************************************\n\n");
             System.out.println("1. Imprimir o relatório");
             System.out.println("2. Imprimir total de vendas e o valor total");
             System.out.println("3. Imprimir o calculo total de lucro (20% de lucro em cada jogo)");
@@ -287,10 +288,6 @@ public class NatanaOliveira_Funcoes {
     }
 
 
-
-
-
-
     // INICIO DAS FUNÇÕES DO MENU DO CLIENTE
 
     /**
@@ -314,7 +311,7 @@ public class NatanaOliveira_Funcoes {
     }
 
     /**
-     * Método para apresentar os números triangulares e divisiveis por 5 até 121
+     * Método para encontrar os lugares de estacionamento que são números triangulares e divisiveis por 5 até 121
      *
      * @param numeroLugares
      * @return os números triangulares divisiveis por 5 (até 121)
@@ -340,10 +337,38 @@ public class NatanaOliveira_Funcoes {
     }
 
 
+    //3. Imprima todos os títulos de jogos (sem duplicados).
 
 
-    ///////////////////////////////////////////////////////////////
+    public static void imprimirTituloJogos(String[][] matrizTotal) throws FileNotFoundException {
+
+
+        matrizTotal = lerFicheiroParaMatriz("src/TrabalhoPratico_PE/GameStart_V2.csv");
+
+        int contador = 0; // O contator conta quantas vezes os jogos estão na matriz
+
+        for (int linha = 0; linha < matrizTotal.length; linha++) { //percorre todas as linhas da matriz
+            for (int indice = 0; indice < matrizTotal.length; indice++) { //percorre novamente as linhas para comparar os nomes dos jogos
+                if (matrizTotal[linha][7].equals(matrizTotal[indice][7])) {
+                    contador++;  // o contador aumenta se encontrar outro jogo igual
+                }
+            }
+            if (contador == 1) { // se o contador for igual a 1, o jogo só aparece uma vez na matriz (retira os repetidos)
+                System.out.println(matrizTotal[linha][7]); // imprimi o jogo na lista
+            }
+           contador = 0; // o contador é zerado para entrar no ciclo de novo e contar os proximos jogos
+        }
+
+
+
+    }
+
+
 }
+
+
+
+
 
 
 

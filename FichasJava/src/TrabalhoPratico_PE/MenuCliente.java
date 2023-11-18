@@ -45,7 +45,8 @@ public class MenuCliente {
 
 
                 case 3: // Imprimir todos os títulos de jogos
-                    System.out.println("\n");
+                    System.out.println("\n***** Imprimir todos os títulos de jogos *****");
+                    imprimirTituloJogos (matrizTotal);
 
                     break;
 
@@ -63,7 +64,6 @@ public class MenuCliente {
             }
         }
         while (menuCliente != 0);
-
 
     }
 }
