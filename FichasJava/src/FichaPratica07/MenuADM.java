@@ -3,7 +3,7 @@ package FichaPratica07;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-import static TrabalhoPratico_PE.NatanaOliveira_Funcoes.*;
+import static TrabalhoPratico_PE.PE_natanaOliveira.*;
 
 public class MenuADM {
 
