@@ -1,12 +1,11 @@
-package TrabalhoPratico_PE;
+package FichaPratica07;
 
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-import static TrabalhoPratico_PE.NatanaOliveira_Funcoes.*;
+import static TrabalhoPratico_PE.PE_natanaOliveira.*;
 
 /*
-3. Imprima todos os títulos de jogos (sem duplicados).
 4. Dada uma Editora, imprima todas as categorias e os respetivos jogos. (Preferencialmente com formatação visual)
  */
 public class MenuCliente {
@@ -14,7 +13,7 @@ public class MenuCliente {
 
         String[][] matrizTotal = lerFicheiroParaMatriz("src/TrabalhoPratico_PE/GameStart_V2.csv");
 
-        //todo --- Acima já está no outro arquivo
+
 
         Scanner input = new Scanner(System.in);
         int menuCliente;
@@ -42,11 +41,11 @@ public class MenuCliente {
                     int numeroLugares = 121;
                     System.out.println("Os lugares vagos são: ");
                     lugaresVagos(numeroLugares);
-
+                    break;
 
                 case 3: // Imprimir todos os títulos de jogos
-                    System.out.println("\n");
-
+                    System.out.println("\n***** Imprimir todos os títulos de jogos *****");
+                    imprimirTituloJogos (matrizTotal);
                     break;
 
                 case 4: // Imprimir todas as categorias e os respetivos jogos de uma editora
@@ -63,8 +62,6 @@ public class MenuCliente {
             }
         }
         while (menuCliente != 0);
-
-
     }
 }
 
