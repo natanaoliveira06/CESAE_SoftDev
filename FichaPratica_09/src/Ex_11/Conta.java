@@ -16,6 +16,10 @@ public class Conta {
         this.titularConta = titularConta;
     }
 
+    public double getSaldo() {
+        return saldo;
+    }
+
     public String getTitularConta() {
         return titularConta;
     }

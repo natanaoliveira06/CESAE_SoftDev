@@ -18,6 +18,7 @@ public class main {
 
         System.out.println("***** Transferencia *****");
         pessoa02.transferencia(1000, pessoa03);
+        System.out.println(pessoa03.getSaldo());
 
 
 
