@@ -26,22 +26,74 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ex_02.main" />
+}</component>
+  <component name="RunManager" selected="Application.Ex_11.main">
+    <configuration name="Ex_06.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ex_06.main" />
       <module name="FichaPratica_09" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ex_02.*" />
+          <option name="PATTERN" value="Ex_06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex_09.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ex_09.main" />
+      <module name="FichaPratica_09" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Ex_09.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex_10.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ex_10.main" />
+      <module name="FichaPratica_09" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Ex_10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex_11.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ex_11.main" />
+      <module name="FichaPratica_09" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Ex_11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ex_01.Main" />
+      <module name="FichaPratica_09" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Ex_01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -51,7 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.main" />
+        <item itemvalue="Application.Ex_11.main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Ex_10.main" />
+        <item itemvalue="Application.Ex_09.main" />
+        <item itemvalue="Application.Ex_06.main" />
       </list>
     </recent_temporary>
   </component>

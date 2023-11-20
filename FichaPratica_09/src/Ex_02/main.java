@@ -14,10 +14,17 @@ public class main {
         //a
         //Apresentar o latido
         floc.ladrar();
-
-        //c
-        caramelo.setLatido("Woff woff");
         caramelo.ladrar();
+        luna.ladrar();
+        System.out.println();
+        //c
+
+        caramelo.setLatido("Woff woff");
+
+        caramelo.ladrar();
+        luna.ladrar();
+        caramelo.ladrar();
+
 
 
 
