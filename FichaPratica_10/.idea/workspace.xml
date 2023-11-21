@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cf2cbfac-aad3-440b-8bf7-8c65b465086e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -21,6 +24,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="2YTlXofWrSmeKzoXhSuCY6w3Ikj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -30,7 +36,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/natan/OneDrive/Documentos/CESAE_SoftDev/FichaPratica_09"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -38,7 +46,20 @@
       <recent name="Alimentos" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Ex_04.main">
+  <component name="RunManager" selected="Application.Ex_01.main">
+    <configuration name="Ex_01.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ex_01.main" />
+      <module name="FichaPratica_10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Ex_01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Ex_03.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Ex_03.main" />
       <module name="FichaPratica_10" />
@@ -80,6 +101,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ex_01.main" />
         <item itemvalue="Application.Ex_04.main" />
         <item itemvalue="Application.Ex_03.main" />
         <item itemvalue="Application.main" />

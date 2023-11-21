@@ -5,9 +5,9 @@ public class main {
 
         Produto tShirtAzul = new Produto("T-shirt Azul", 59.90);
 
-        tShirtAzul.comprar(5);
+        tShirtAzul.comprar(15);
         tShirtAzul.vender(2);
-        tShirtAzul.comprar(10);
-        tShirtAzul.vender(35);
+        tShirtAzul.comprar(3);
+        tShirtAzul.vender(18);
     }
 }

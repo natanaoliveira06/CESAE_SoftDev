@@ -13,7 +13,7 @@ public class main {
         System.out.println();
         baleia.comer("passaro", 500);
         System.out.println();
-        baleia.comer("francesinha", 75);
+        baleia.comer("francesinha", 350);
 
 
     }

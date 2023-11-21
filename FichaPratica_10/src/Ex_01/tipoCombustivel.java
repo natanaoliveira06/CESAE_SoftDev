@@ -1,7 +1,7 @@
 package Ex_01;
 
-public enum tipoCombustivel {
+public enum TipoCombustivel {
 
-    GASOLINA,DIESEL,GLP
+    GASOLINA,DIESEL,GPL
 
 }

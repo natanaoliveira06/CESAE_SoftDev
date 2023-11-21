@@ -3,7 +3,6 @@ package Ex_01;
 public class Pessoa { //class controle de acesso publico
 
     //Definir atributos de instância (da pessoa)
-
     private String nome;  // atributos com privados "encapsulamento"
     private int idade;
     private double altura;
