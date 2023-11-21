@@ -3,23 +3,33 @@ package Ex_11;
 public class main {
     public static void main(String[] args) {
 
-        Conta pessoa01 = new Conta(01, 950, "Alice Silva");
+        Conta pessoa01 = new Conta(01,  "Alice Silva");
 
-        Conta pessoa02 = new Conta(02, 1525, "Maria Barbosa");
-        Conta pessoa03 = new Conta(03, 5300, "Filipe Manso");
+        Conta pessoa02 = new Conta(02,  "Maria Barbosa"); //1825
+        Conta pessoa03 = new Conta(03, "Filipe Manso"); //6300
 
-        System.out.println("\n***** " + pessoa01.getTitularConta() + "***** ");
+        pessoa01.exibirDetalhes();
+        pessoa02.exibirDetalhes();
         System.out.println();
 
         pessoa01.depositar(1000);
-        System.out.println();
-        pessoa01.levantar(120);
+        pessoa01.exibirDetalhes();
+        pessoa02.exibirDetalhes();
         System.out.println();
 
-        System.out.println("***** Transferencia *****");
-        pessoa02.transferencia(1000, pessoa03);
-        System.out.println(pessoa03.getSaldo());
+        pessoa01.levantar(650);
+        pessoa01.exibirDetalhes();
+        pessoa02.exibirDetalhes();
+        System.out.println();
 
+        pessoa01.levantar(2500);
+        pessoa01.exibirDetalhes();
+        pessoa02.exibirDetalhes();
+        System.out.println();
+
+        pessoa01.transferencia(4000, pessoa02);
+        pessoa01.exibirDetalhes();
+        pessoa02.exibirDetalhes();
 
 
     }

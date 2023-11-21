@@ -8,10 +8,9 @@ public class Produto {
     private int quantStock=0;
 
     //Método de construção
-    public Produto(String nome, double preco, int quantStock) {
+    public Produto(String nome, double preco) {
         this.nome = nome;
         this.preco = preco;
-        this.quantStock = quantStock;
     }
 
     //Método COMPRAR
@@ -21,12 +20,12 @@ public class Produto {
     }
 
     //Método VENDER
-
     public void vender(int quantVendida) {
-        this.quantStock-= quantVendida;
-        System.out.println("Quantidade em stock: " + this.quantStock);
 
-        if(quantStock<=0) {
+        if(this.quantStock>=quantVendida) {
+            this.quantStock -= quantVendida;
+            System.out.println("Quantidade em stock: " + this.quantStock);
+        }else {
             System.out.println("Transação não efetuada por falta de stock");
         }
     }

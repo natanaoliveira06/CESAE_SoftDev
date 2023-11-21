@@ -1,10 +1,14 @@
-package Ex_05;
+package Ex_01;
 
 public class Carro {
 
     private String marca;
     private String modelo;
     private int anoFabrico;
+    private int potencia;
+    private int cilindrada;
+    private double consumo;
+
 
     public Carro(String marca, String modelo, int anoFabrico) {
         this.marca = marca;
@@ -15,7 +19,5 @@ public class Carro {
     public void ligar() {  //Metodo ligar
         System.out.println("O " + this.modelo  + " está ligado");
     }
+
 }
-
-
-

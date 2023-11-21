@@ -8,10 +8,12 @@ public class main {
         Aluno natanaOliviera = new Aluno("Natana Oliveira", 30, "Software Developer", 12);
         Aluno pedroAlves = new Aluno("Pedro Alves", 26, "Software Developer", 8.3);
 
+        System.out.println("Aluno: "+ natanaOliviera.getNome());
+        System.out.println(natanaOliviera.situacao());
 
-        natanaOliviera.situacao();
-        System.out.println();
-        pedroAlves.situacao();
+        System.out.println("\nAluno: "+ pedroAlves.getNome());
+        System.out.println(pedroAlves.situacao());
+
 
 
     }

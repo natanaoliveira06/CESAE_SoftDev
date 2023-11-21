@@ -19,8 +19,8 @@ public class Livro {
     }
 
     public void exibirDetalhes() {
-        System.out.println("\n***** LIVROS ***** \nTítulo:" + this.titulo);
+        System.out.println("\nTítulo:" + this.titulo);
         System.out.println("Autor: " + this.autor + "\nCategoria: " + this.categoria);
-        System.out.println("Número de páginas: "+ this.numPaginas + "ISBN: " + this.ISBN);
+        System.out.println("Número de páginas: "+ this.numPaginas + "\nISBN: " + this.ISBN);
     }
 }

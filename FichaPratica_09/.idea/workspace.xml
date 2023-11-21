@@ -36,12 +36,12 @@
   }
 }</component>
   <component name="RunManager" selected="Application.Ex_11.main">
-    <configuration name="Ex_06.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ex_06.main" />
+    <configuration name="Ex_08.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ex_08.main" />
       <module name="FichaPratica_09" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ex_06.*" />
+          <option name="PATTERN" value="Ex_08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ex_01.Main" />
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ex_07.main" />
       <module name="FichaPratica_09" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ex_01.*" />
+          <option name="PATTERN" value="Ex_07.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,10 +104,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Ex_11.main" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Ex_10.main" />
         <item itemvalue="Application.Ex_09.main" />
-        <item itemvalue="Application.Ex_06.main" />
+        <item itemvalue="Application.Ex_08.main" />
+        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>

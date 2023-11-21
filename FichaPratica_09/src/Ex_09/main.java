@@ -3,7 +3,7 @@ package Ex_09;
 public class main {
     public static void main(String[] args) {
 
-        Produto tShirtAzul = new Produto("T-shirt Azul", 59.90,0);
+        Produto tShirtAzul = new Produto("T-shirt Azul", 59.90);
 
         tShirtAzul.comprar(5);
         tShirtAzul.vender(2);

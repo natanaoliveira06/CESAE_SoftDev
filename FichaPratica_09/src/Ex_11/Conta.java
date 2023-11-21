@@ -5,56 +5,44 @@ public class Conta {
     //Declarar atributos
 
     private int numConta;
-    private double saldo;
+    private double saldo = 0;
     private String titularConta;
 
-
     //Método construtor
-    public Conta(int numConta, double saldo, String titularConta) {
+    public Conta(int numConta, String titularConta) {
         this.numConta = numConta;
-        this.saldo = saldo;
-        this.titularConta = titularConta;
-    }
-
-    public double getSaldo() {
-        return saldo;
-    }
-
-    public String getTitularConta() {
-        return titularConta;
+        this.titularConta= titularConta;
     }
 
     //Método transferencia
     public void transferencia(double valorTransferir, Conta contaDestinatario) {
 
-        if(saldo>valorTransferir){
-            this.saldo-=valorTransferir;
+        if (this.saldo >= valorTransferir) { //Transferencia valida
+            System.out.println("Dinheiro transferido: "+ valorTransferir);
+            this.saldo -= valorTransferir;
             contaDestinatario.depositar(valorTransferir);
-            System.out.println("Valor a transferir: " + valorTransferir);
-        }else{
-            System.out.println("Saldo insuficiente!");
+        } else {
+            System.out.println("Saldo insuficiente para realizar transferencia!");
         }
     }
 
-
     //Método depositar
-
     public void depositar(double valorDepositar) {
-        double saldoAtualizado;
-        saldoAtualizado = saldo + valorDepositar;
-        System.out.println("Valor depósito: " + valorDepositar +"\nSaldo atual: " + saldoAtualizado);
+        System.out.println("Depositado: " + valorDepositar);
+        this.saldo += valorDepositar;
     }
 
     //Método levantar
     public void levantar(double valorLevantar) {
-        double saldoAtualizado = 0;
-        if (saldo > 0) {
-            saldoAtualizado = saldo - valorLevantar;
-            System.out.println("Valor a levantar: " + valorLevantar +"\nSaldo atual: " + saldoAtualizado);
+        if (this.saldo >= valorLevantar) {
+            System.out.println("Levantamento efetuado: " + valorLevantar);
         } else {
             System.out.println("SALDO INSUFICIENTE!\nNão é possível realizar a operação.");
         }
+    }
 
+    public void exibirDetalhes() {
+        System.out.println("Número conta: " + this.numConta + "\t| Titular: " + this.titularConta + "\t| Saldo: " + this.saldo);
     }
 
 
