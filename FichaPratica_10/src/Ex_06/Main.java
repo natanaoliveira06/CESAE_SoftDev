@@ -11,7 +11,7 @@ public class Main {
         Atleta atleta5= new Atleta("Ralph J.", "natação", 1.85, 80, "EUA");
         Atleta atleta6= new Atleta("José A.", "futebol", 1.78, 73, "Brasil");
 
-       // Competicao competicao1=new Competicao("Jogos Abertos", "Portugal", new String[]{"Ana B.", "Julia B."});
+      //  Competicao competicao1=new Competicao("Jogos Abertos", "Portugal", 2);
        // Competicao competicao2=new Competicao("Jogos de Verão", "Espanha");
 
 
