@@ -7,26 +7,32 @@ public class Animal {
     private String especie;
     private String paisOrigem;
     double pesoAnimal; // PESO EM Kg
-    private Alimento[] alimetacao;
+    private String[] alimentacao;
 
     // Método construtor do animal
-    public Animal(String nome, String especie, double peso) {
+    public Animal(String nome, String especie, String paisOrigem, double pesoAnimal, String[] alimentacao) {
         this.nome = nome;
         this.especie = especie;
-        this.pesoAnimal = peso;
-    }
-
-    // Dec
-    public Animal() {
-        this.alimetacao = new Alimento[5];
-
+        this.paisOrigem = paisOrigem;
+        this.pesoAnimal = pesoAnimal;
+        this.alimentacao = alimentacao;
     }
 
     //Método para o animal comer
     public void comer(String alimento, double pesoAlimento) { //PESO EM gramas
-        pesoAnimal += pesoAlimento;
-        System.out.println("O animal comeu " + alimento);
 
-
+        for (int i = 0; i < this.alimentacao.length; i++) {
+            if (this.alimentacao[i].equals(alimento)) {
+                this.pesoAnimal += (pesoAlimento/1000);
+                System.out.println("O animal comeu " + alimento);
+                System.out.println("Peso do animal: " + pesoAnimal);
+                return;
+            }
+        }
+        System.out.println("O animal recusou a comida " + alimento);
     }
+
+
 }
+
+

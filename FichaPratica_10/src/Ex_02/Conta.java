@@ -4,7 +4,7 @@ public class Conta {
 
     //Declarar atributos
 
-    private int numConta;
+    private String numConta;
     private double saldo;
     private String titularConta;
     private int anoAbertura = 2023;
@@ -12,19 +12,17 @@ public class Conta {
     private double valorDivida;
 
     //Método construtor
-    public Conta(int numConta, double saldo, String titularConta) {
-        this.numConta = numConta;
+    public Conta(double saldo, String titularConta) {
         this.saldo = saldo;
         this.titularConta = titularConta;
     }
 
-    public double getSaldo() {
-        return saldo;
+    public void exibirDetalhes() {
+        System.out.println("\nTitular: " + this.titularConta);
+        System.out.println("Saldo: " + this.saldo);
+        System.out.println("Margem de emprestimo: " + (saldo * margemEmprestimo));
     }
 
-    public String getTitularConta() {
-        return titularConta;
-    }
 
     //Método pedir Emprestimo
 /*
@@ -45,14 +43,12 @@ public class Conta {
             }
         }
     }*/
-
-    public boolean pedirEmprestimo(int valorEmprestimo) {
+    public boolean pedirEmprestimo(double valorEmprestimo) {
         if (valorDivida > 0) {
             System.out.println("Emprestimo não permitido! Valores em dívida a serem acertados.");
             return false;
-           
         } else {
-            //se o valor do emprestimo for maenor ou igual a margem de emprestimo
+            //se o valor do emprestimo for menor ou igual a margem de emprestimo
             if (valorEmprestimo <= (saldo * margemEmprestimo)) {
                 saldo += valorEmprestimo; //saldo soma o valor do emprestimo
                 valorDivida += valorEmprestimo; //Atualiza o saldo em divida

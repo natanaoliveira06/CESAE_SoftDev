@@ -10,8 +10,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -38,7 +38,33 @@
       <recent name="Alimentos" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Ex_04.main">
+    <configuration name="Ex_03.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ex_03.main" />
+      <module name="FichaPratica_10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Ex_03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex_04.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ex_04.main" />
+      <module name="FichaPratica_10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Ex_04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Ex_02.main" />
       <module name="FichaPratica_10" />
@@ -54,6 +80,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ex_04.main" />
+        <item itemvalue="Application.Ex_03.main" />
         <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
