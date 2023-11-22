@@ -9,14 +9,13 @@ public class Conta {
     private String titularConta;
     private int anoAbertura = 2023;
     private double margemEmprestimo = 0.9;
-    private double valorDivida;
+    private double valorDivida=0;
 
     //Método construtor
     public Conta(double saldo, String titularConta) {
         this.saldo = saldo;
         this.titularConta = titularConta;
     }
-
     public void exibirDetalhes() {
         System.out.println("\nTitular: " + this.titularConta);
         System.out.println("Saldo: " + this.saldo);
@@ -25,6 +24,8 @@ public class Conta {
 
 
     //Método pedir Emprestimo
+
+    //Metodo em void
 /*
     public void pedirEmprestimo(int valorEmprestimo) {
 
@@ -44,6 +45,9 @@ public class Conta {
         }
     }*/
     public boolean pedirEmprestimo(double valorEmprestimo) {
+
+      //  if(valorDivida==0 && this.saldo)
+
         if (valorDivida > 0) {
             System.out.println("Emprestimo não permitido! Valores em dívida a serem acertados.");
             return false;
