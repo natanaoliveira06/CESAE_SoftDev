@@ -1,16 +1,16 @@
-package Ex_01;
+package CorridaVeiculos;
 
-public class Carro {
+public class Veiculo {
 
     private String marca;
     private String modelo;
     private int anoFabrico;
     private int potencia;
     private int cilindrada;
-    private TipoCombustivel tipoCombustivel;
+    TipoCombustivel tipoCombustivel;
     private double consumo;
 
-    public Carro(String marca, String modelo, int anoFabrico, int potencia, int cilindrada, TipoCombustivel tipoCombustivel, double consumo) {
+    public Veiculo(String marca, String modelo, int anoFabrico, int potencia, int cilindrada, TipoCombustivel tipoCombustivel, double consumo) {
         this.marca = marca;
         this.modelo = modelo;
         this.anoFabrico = anoFabrico;
@@ -20,11 +20,15 @@ public class Carro {
         this.consumo = consumo;
     }
 
+    public TipoCombustivel getTipoCombustivel() {
+        return tipoCombustivel;
+    }
+
     public void ligar() {  //Metodo ligar
 
-        int idadeCarro = 2023 - anoFabrico;
+        int idadeVeiculo = 2023 - anoFabrico;
 
-        if (idadeCarro > 30) { //Idade mais de 30
+        if (idadeVeiculo > 30) { //Idade mais de 30
             if (this.tipoCombustivel.equals(TipoCombustivel.DIESEL)) { //Se for a Diesel
                 System.out.println("Deita um pouco de fumo… Custa a pegar… O carro está ligado!\nVrum-vrum-vrum");
             } else { //Outro combustivel
@@ -40,7 +44,7 @@ public class Carro {
         }
     }
 
-    public Carro corrida(Carro adversario) {
+    public Veiculo corrida(Veiculo adversario) {
         if (this.potencia > adversario.potencia) {
             // Ganha o meu carro por potencia
             return this; // Devolve o meu carro (objeto que invocou o método)
@@ -77,17 +81,16 @@ public class Carro {
         return null;
     }
 
-
-// método que receba como parâmetro uma distância (em km), e que calcule o valor consumido em litros do combustível
-
     public double calcularConsumo(double distancia) {
         double consumoLitro;
-
         consumoLitro = (this.consumo*distancia)/100;
-        System.out.println("Consumo: " + consumoLitro + " litros");
+      //  System.out.println("Consumo: " + consumoLitro + " litros");
         return consumoLitro;
     }
 
+    public double getConsumo() {
+        return consumo;
+    }
 
     public void exibirDetalhes() {
         System.out.println(this.marca);
@@ -97,3 +100,5 @@ public class Carro {
         System.out.println("Cilindrada: " + this.cilindrada + " cc.");
     }
 }
+
+
