@@ -33,7 +33,12 @@
 
     <link rel="stylesheet" href="CSS/style.css" />
 
-    <title>SurfSway</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon_SurfSway.png"
+      type="image/x-icon"
+    />
+    <title>Surf Sway</title>
   </head>
 
   <body>
@@ -46,9 +51,10 @@
               <a class="navbar-brand" href="index.html"
                 ><img
                   class="logo"
-                  src="images/logo_200px-01.png"
+                  src="images/logo_SurfSway_200px.png"
                   alt="Surf Sway logo"
               /></a>
+
               <!-- HAMBURGER BUTTON RESPONSIVE -->
               <button
                 class="navbar-toggler shadow-none border-0"
@@ -63,16 +69,22 @@
 
               <!-- SIDEBAR -->
               <div
-                class="sidebar offcanvas offcanvas-end"
+                class="sidebar offcanvas offcanvas-end w-100"
                 tabindex="-1"
                 id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel"
               >
                 <!-- SIDEBAR HEADER -->
-                <div class="offcanvas-header text-white border-bottom">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                    TITULO OU LOGO
-                  </h5>
+                <div class="offcanvas-header text-white">
+                  <a
+                    class="offcanvas-title"
+                    id="offcanvasNavbarLabel"
+                    href="index.html"
+                    ><img
+                      class="logo"
+                      src="images/logo_SurfSway_200px.png"
+                      alt="Surf Sway logo"
+                  /></a>
                   <button
                     type="button"
                     class="btn-close btn-close-white shadow-none"
@@ -80,10 +92,11 @@
                     aria-label="Close"
                   ></button>
                 </div>
+
                 <!-- SIDEBAR BODY -->
                 <div class="offcanvas-body d-flex flex-column p-4">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <!-- <li class="nav-item">
+                  <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <!-- <li class="nav-item"
                       <a class="nav-link active" aria-current="page" href="#"
                         >Home</a
                       >
@@ -121,7 +134,9 @@
               promote diversity and inclusion in surf lineups across the oceans
               and seas around the world.
             </p>
-            <a href="#" class="btn">Our mission</a>
+            <button type="button" class="btn btn-outline-primary">
+              <a class="link-button" href="#">Our mission</a>
+            </button>
           </div>
         </div>
       </div>
