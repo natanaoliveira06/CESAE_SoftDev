@@ -26,10 +26,11 @@ public class main {
         portugal.addIngrediente(new IngredientePizza(pimentoVerde, 6));
 
 
-
         // CRIAR PIZZA NAPOLITANA
         Pizza napolitana = new Pizza("P1992", "Napolitana", "Tão deliciosa que acabou se tornando um patrimônio imaterial da Unesco!", 20, TamanhoPizza.MEDIA);
 
+        System.out.println();
+        System.out.println("Calorias Pizza Portugal: " + portugal.calcularCalorias() + " Kcal");
 
     }
 }

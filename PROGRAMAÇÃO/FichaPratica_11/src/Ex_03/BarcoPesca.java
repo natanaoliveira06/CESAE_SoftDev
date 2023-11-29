@@ -14,7 +14,7 @@ public class BarcoPesca {
     private ArrayList<Peixe> peixesPescados;
     private ArrayList<Marisco> mariscosPescados;
 
-    public BarcoPesca(String nome, String cor, String anoFabrico, int tripulacao, double capacidadeCarga) {
+    public BarcoPesca(String nome, String cor, int anoFabrico, int tripulacao, double capacidadeCarga) {
         this.nome = nome;
         this.cor = cor;
         this.anoFabrico = anoFabrico;
@@ -39,23 +39,27 @@ public class BarcoPesca {
 
 
     // Método pescarPeixe e adicione o animal. Deve verificar a carga do barco
-    public void addPeixe(Peixe peixePescado) {
-
-        if (peixePescado.getPeso() + this.getCargaAtual() > this.capacidadeCarga){ //se o peixe pescado agora + a carga atual
-
+    public void pescarPeixe(Peixe peixeNovo) {
+        if (peixeNovo.getPeso() + this.getCargaAtual() > this.capacidadeCarga) {
+            // O Peso do PeixeNovo mais a cargar atual ultrapassam a capacidade carga
+            System.out.println("Barco sem capacidade de carga: "+this.getCargaAtual());
+            System.out.println(peixeNovo.getPeso()+"Kg. de "+peixeNovo.getEspecie()+" não adicionados");
+        } else {
+            System.out.println(peixeNovo.getEspecie()+" adicionado");
+            this.peixesPescados.add(peixeNovo);
         }
-
-
-        this.peixesPescados.add(peixePescado);
-
-            System.out.println("A carga de peixes excede a capacidade do barco.");
-        }
+    }
 
     // Método pescarMarisco
-    public void addMarisco(Marisco mariscoPescado) {
-        this.mariscosPescados.add(mariscoPescado);
-        if (calcularCargaBarco() > this.capacidadeCarga) {
-            System.out.println("A carga de mariscos excede a capacidade do barco.");
+
+    public void pescarMarisco(Marisco mariscoNovo) {
+        if (mariscoNovo.getPeso() + this.getCargaAtual() > this.capacidadeCarga) {
+            // O Peso do MariscoNovo mais a cargar atual ultrapassam a capacidade carga
+            System.out.println("Barco sem capacidade de carga: "+this.getCargaAtual());
+            System.out.println(mariscoNovo.getPeso()+"Kg. de "+mariscoNovo.getEspecie()+" não adicionados");
+        } else {
+            System.out.println(mariscoNovo.getEspecie()+" adicionado");
+            this.mariscosPescados.add(mariscoNovo);
         }
     }
 
@@ -71,10 +75,32 @@ public class BarcoPesca {
 
     // Método calcularTotal que calcule o total em € dos animais pescados.
 
+    public double calcularPrecoTotal(){
+        double precoTotal=0;
+
+        for(Peixe peixeAtual : this.peixesPescados){
+            double precoPeixeAtual = peixeAtual.getPeso()*peixeAtual.getPreco();
+            precoTotal+=precoPeixeAtual;
+        }
+
+        for(Marisco mariscoAtual : this.mariscosPescados){
+            double precoMariscoAtual = mariscoAtual.getPeso()*mariscoAtual.getPreco();
+            precoTotal+=precoMariscoAtual;
+        }
+
+        return precoTotal;
+    }
+
 
     // Método salarioTripulação, sabendo que o capitão (não conta como tripulante) retira 40% do valor total para gastos/manutenção
     // e salário próprio, sendo que o resultado da função será o restante valor a dividir por cada tripulante
 
+    public double salarioTripulacao(){
+        double salario= this.calcularPrecoTotal();
 
+        // Tirar 40% para o capitão
+        salario=salario*0.6;
+
+        return salario/this.tripulacao;
+    }
 }
-

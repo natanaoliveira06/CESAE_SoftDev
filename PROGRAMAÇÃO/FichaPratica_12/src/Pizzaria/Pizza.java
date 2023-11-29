@@ -32,7 +32,6 @@ public class Pizza {
         if (composicao.size() < 5) { //Se os ingredientes forem menos que 5
             // Adiciona o ingrediente apenas se o limite de 5 não for atingido
             this.composicao.add(ingredienteNovo); //nomeDoArray.add(o que sera adicionado)
-            System.out.println("Ingrediente adicionado: " + ingredienteNovo);
         } else {  // Se tiver mais que 5 ingredientes
             System.out.println("Limite máximo de ingredientes atingido para esta pizza.");
         }
@@ -54,33 +53,40 @@ public class Pizza {
         }
     }
 
-    //Método para Remover um ingrediente (identificando o ingrediente pelo seu id).
-
+    /**
+     * Método para Remover um ingrediente (identificando o ingrediente pelo seu id).
+     *
+     * @param codigoIngredienteRemovido
+     */
 
     public void removeIngrediente(String codigoIngredienteRemovido) {
 
+        // Iterar todos os IngredientesPizza
         for (IngredientePizza ingredienteAtual : this.composicao) { //Vai buscar na classe IngredientesPizza todos os ingredeintes
-            if (ingredienteAtual.getIngrediente().getCodigoIngrediente())
-
-                this.composicao.remove(index); //nomeDoArray.remove(o que sera retirado, neste caso o index)
+            if (ingredienteAtual.getIngrediente().getCodigoIngrediente().equals(codigoIngredienteRemovido)) {
+                this.composicao.remove(ingredienteAtual);
+                return;
+            }
         }
+    }
 
 
+    // Método para Determinar o número de calorias de uma Pizza.
 
+    public double calcularCalorias() {
+        double caloriasTotais = 0;  // Soma das calorias de todos os ingredientes
 
+        // Iterar todos os IngredientesPizza
+        for (IngredientePizza ingredienteAtual : this.composicao) {
+            double quantIngredienteAtual = ingredienteAtual.getQuantidade();
+            double kcalQuantIngredienteAtual = ingredienteAtual.getIngrediente().getCaloriasMedida();
 
+            double kcalIngredienteAtual = quantIngredienteAtual * kcalQuantIngredienteAtual;
 
-
-
-
-
-
-
-        // Método para Determinar o número de calorias de uma Pizza.
-
-        public void caloriasPizza () {
-            double caloriaPizza = 0;  // Soma das calorias de todos os ingredientes
+            caloriasTotais += kcalIngredienteAtual;
         }
+        return caloriasTotais;
+    }
 
 
 
@@ -88,13 +94,6 @@ public class Pizza {
 
 
 /*
-        // Método para Determinar o número de calorias de uma Pizza.
-
-        public void caloriasPizza () {
-            double caloriaPizza = 0;  // Soma das calorias de todos os ingredientes
-        }
-
-
         // Método de descrição detalhada da Pizza, assim como os seus ingredientes.
 
 
@@ -112,8 +111,8 @@ public class Pizza {
 
 
         */
-    }
 }
+
 
 
 
