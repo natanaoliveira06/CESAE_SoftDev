@@ -2,6 +2,7 @@ package Pizzaria;
 
 import Pizzaria.Enums.TamanhoPizza;
 import Pizzaria.Enums.UnidMedida;
+import Pizzaria.Ingredientes.Ingrediente;
 
 public class main {
     public static void main(String[] args) {
@@ -31,6 +32,8 @@ public class main {
 
         System.out.println();
         System.out.println("Calorias Pizza Portugal: " + portugal.calcularCalorias() + " Kcal");
+
+       portugal.detalhesPizza();
 
     }
 }

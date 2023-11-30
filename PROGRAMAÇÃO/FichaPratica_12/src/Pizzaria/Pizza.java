@@ -1,6 +1,7 @@
 package Pizzaria;
 
 import Pizzaria.Enums.TamanhoPizza;
+import Pizzaria.Ingredientes.Ingrediente;
 
 import java.util.ArrayList;
 
@@ -20,13 +21,13 @@ public class Pizza {
         this.tamanho = tamanho;
         this.composicao = new ArrayList<>(5);// Inicializa o ArrayList com capacidade máxima de 5 elementos
     }
-
+/*
     /**
      * Método para Adicionar novos ingredientes a uma Pizza até um máximo de 5
      *
      * @param ingredienteNovo
      */
-
+/*
     public void addIngrediente(IngredientePizza ingredienteNovo) { //Recebe como parametro um ingrediente novo
 
         if (composicao.size() < 5) { //Se os ingredientes forem menos que 5
@@ -36,6 +37,7 @@ public class Pizza {
             System.out.println("Limite máximo de ingredientes atingido para esta pizza.");
         }
     }
+    */
 
     /**
      * Método para editar a quantidade de um ingrediente
@@ -89,29 +91,80 @@ public class Pizza {
     }
 
 
+    // Método de descrição detalhada da Pizza, assim como os seus ingredientes.
+
+    public void detalhesPizza() {
+        int a = 1;
+        System.out.println("\n*****  Pizza " + this.nome + " *****");
+        System.out.println("Código: " + this.codPizza);
+        System.out.println("Descrição: " + this.descricao);
+        System.out.println("Preço: " + this.preco + "€");
+        System.out.println("Tamanho: " + this.tamanho);
+
+        for (IngredientePizza ingredienteAtual : this.composicao) {  // Passa a instância atual de Pizza como parâmetro
+            System.out.print("Ingrediente " + a++ + ": ");
+            ingredienteAtual.exibirDetalhes();
+        }
+        System.out.println();
+    }
 
 
+    public void temBase(){
+        for (IngredientePizza ingredienteAtual : this.composicao) { //Vai buscar na classe IngredientesPizza todos os ingredeintes
 
+        }
+
+    }
+
+    public void addIngrediente(IngredientePizza ingredienteNovo) { //Recebe como parametro um ingrediente novo
+
+        if (composicao.size() < 5) { //Se os ingredientes forem menos que 5
+
+
+            // Adiciona o ingrediente apenas se o limite de 5 não for atingido
+            this.composicao.add(ingredienteNovo); //nomeDoArray.add(o que sera adicionado)
+        } else {  // Se tiver mais que 5 ingredientes
+            System.out.println("Limite máximo de ingredientes atingido para esta pizza.");
+        }
+    }
 
 /*
-        // Método de descrição detalhada da Pizza, assim como os seus ingredientes.
 
+    public void addTopping(IngredientePizza ingredienteNovo, Topping novoTopping, BasePizza baseDefinida) { //Recebe como parametro um ingrediente novo e uma base já escolhida
 
-        public void detalhesPizza () {
-            System.out.println("\n*****  Pizza " + this.nome + " *****");
-            System.out.println("Código: " + this.codPizza);
-            System.out.println("Descrição: " + this.descricao);
-            System.out.println("Preço: " + this.preco + "€");
-            System.out.println("Tamanho: " + this.tamanho);
-            int a = 1;
-            System.out.println("Ingrediente " + a++ + ": ");
-            for (IngredientePizza ingredienteAtual : this.ingrediente) {
-                ingredienteAtual.detalhesIngrediente();                        // Passa a instância atual de Pizza como parâmetro
+        if (composicao.size() < 5) { //Se os ingredientes forem menos que 5
+
+            if (baseDefinida.equals(BasePizza.massaAlta) || baseDefinida.equals(BasePizza.massaFina)) { // Compara as bases para ver se foram escolhidas
+                this.composicao.add(novoTopping);
+                this.composicao;
+                IngredientePizza.
+
+                        composicao.add(ingredienteNovo);
+
             }
 
 
-        */
+
+        for (IngredientePizza ingredienteAtual : this.composicao) { //Vai buscar na classe IngredientesPizza todos os ingredeintes
+            if (ingredienteAtual.getIngrediente().equals(ingredienteAlterar)) { // Compara o ingrediente atual que quer mudar com o da classe da pizza
+                ingredienteAtual.setQuantidade(novaQuantidade); // Setter para alterar a aquantidade
+            }
+        }
+
+
+        if (composicao.size() < 5) { //Se os ingredientes forem menos que 5
+            // Adiciona o ingrediente apenas se o limite de 5 não for atingido
+            this.composicao.add(ingredienteNovo); //nomeDoArray.add(o que sera adicionado)
+        } else {  // Se tiver mais que 5 ingredientes
+            System.out.println("Limite máximo de ingredientes atingido para esta pizza.");
+        }
+    }
+
+         */
+
+
 }
+
 
 
 

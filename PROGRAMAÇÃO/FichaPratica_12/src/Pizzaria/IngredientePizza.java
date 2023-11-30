@@ -1,5 +1,7 @@
 package Pizzaria;
 
+import Pizzaria.Ingredientes.Ingrediente;
+
 public class IngredientePizza {
 
     private Ingrediente ingrediente;
@@ -22,24 +24,22 @@ public class IngredientePizza {
         this.quantidade = quantidade;
     }
 
+    public void exibirDetalhes(){
+        this.ingrediente.detalhesIngrediente();
+        System.out.print(" : " +this.quantidade + " ");
 
-
-
-
-
-
-
-
-
-
-
-    public void detalhesIngrediente(){
-        System.out.println(ingrediente.getCodigoIngrediente() + " | " +
-        ingrediente.getNome() + " | " +
-        ingrediente.getUnidadeMedida() + " | " +
-        ingrediente.getCaloriasMedida());
+        switch (this.ingrediente.getUnidadeMedida()){
+            case Gramas:
+                System.out.println("g.");
+                break;
+            case Litros:
+                System.out.println("L.");
+                break;
+            case Unidades:
+                System.out.println("uni.");
+                break;
+        }
     }
-
 
 }
 
