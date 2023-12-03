@@ -33,12 +33,7 @@
 
     <link rel="stylesheet" href="/CSS/style.css" />
 
-    <link
-      rel="shortcut icon"
-      href="/images/favicon-32x32.png"
-      type="image/x-icon"
-    />
-    <title>Surf Sway</title>
+    <title>SurfSway</title>
   </head>
 
   <body>
@@ -47,13 +42,12 @@
       <div class="navbar">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
           <div class="container-fluid">
-            <a class="navbar-brand" href="/Páginas/index.html"
+            <a class="navbar-brand" href="index.html"
               ><img
                 class="logo"
                 src="/images/logo_SurfSway_200px.png"
                 alt="Surf Sway logo"
             /></a>
-
             <!-- HAMBURGER BUTTON RESPONSIVE -->
             <button
               class="navbar-toggler shadow-none border-0"
@@ -68,20 +62,17 @@
 
             <!-- SIDEBAR -->
             <div
-              class="sidebar offcanvas offcanvas-end w-100"
+              class="sidebar offcanvas offcanvas-end"
               tabindex="-1"
               id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel"
             >
               <!-- SIDEBAR HEADER -->
-              <div class="offcanvas-header text-white">
-                <a
-                  class="offcanvas-title"
-                  id="offcanvasNavbarLabel"
-                  href="index.html"
+              <div class="offcanvas-header">
+                <a class="navbar-brand" href="index.html"
                   ><img
                     class="logo"
-                    src="images/logo_SurfSway_200px.png"
+                    src="/images/logo_SurfSway_200px.png"
                     alt="Surf Sway logo"
                 /></a>
                 <button
@@ -91,30 +82,29 @@
                   aria-label="Close"
                 ></button>
               </div>
-
               <!-- SIDEBAR BODY -->
               <div class="offcanvas-body d-flex flex-column p-4">
-                <ul class="navbar-nav justify-content-end flex-grow-1">
-                  <!-- <li class="nav-item"
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <!-- <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#"
                         >Home</a
                       >
                     </li> -->
                   <li class="nav-item mx-4">
                     <!-- mx-4 altera distancia "margin" entre os links -->
-                    <a class="nav-link" href="about.html">ABOUT US</a>
+                    <a class="nav-link" href="#">ABOUT US</a>
                   </li>
                   <li class="nav-item mx-4">
-                    <a class="nav-link" href="community.html">COMMUNITY</a>
+                    <a class="nav-link" href="#">COMMUNITY</a>
                   </li>
                   <li class="nav-item mx-4">
-                    <a class="nav-link" href="events.html">EVENTS</a>
+                    <a class="nav-link" href="#">EVENTS</a>
                   </li>
                   <li class="nav-item mx-4">
-                    <a class="nav-link" href="blog.html">BLOG</a>
+                    <a class="nav-link" href="#">BLOG</a>
                   </li>
                   <li class="nav-item mx-4">
-                    <a class="nav-link" href="contact.html">CONTACT</a>
+                    <a class="nav-link" href="#">CONTACT</a>
                   </li>
                 </ul>
               </div>
@@ -122,21 +112,9 @@
           </div>
         </nav>
       </div>
-
+      <!-- HERO SECTION -->
       <section class="hero-section">
-        <div class="hero">
-          <div class="hero-img-box">
-            <!-- Background image -->
-            <img
-              class="hero-img-box bg-image"
-              src="/images/cover_surf-chicas.png"
-              class="hero-img"
-              alt="Four girls surfing"
-            />
-            <!-- Gradient mask -->
-            <div class="mask"></div>
-          </div>
-
+        <div class="img-homepage">
           <div class="hero-text-box">
             <h1 class="heading-primary">
               We all have a birthright to enjoy the sea!
@@ -146,50 +124,29 @@
               promote diversity and inclusion in surf lineups across the oceans
               and seas around the world.
             </p>
-            <a href="about.html" class="btn btn--full margin-right-sm"
-              >Our mission</a
-            >
+            <a class="btn btn--full" href="#">Our mission</a>
           </div>
         </div>
       </section>
     </header>
-    <main>
-      <br /><br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br /><br />
-      <p>
-        O tema do trabalho prático fica ao critério do formando, sendo
-        obrigatória a utilização de HTML5, CSS3 e Bootstrap.
-      </p>
-      <p>1. Deve contemplar os pontos seguinte:</p>
-      <p>
-        a. Inclusão de cabeçalhos, barra de navegação e rodapé em todas as
-        páginas;
-      </p>
-      <p>b. Utilização de tags semânticas;</p>
-      <p>
-        c. Personalização de estilo da página com cores, tamanhos e tipo de
-        letra no CSS;
-      </p>
-      <p>
-        d. Links para páginas do projeto (mínimo 2 páginas), páginas externas e
-        email;
-      </p>
-      <p>e. Listas;</p>
-      <p>f. Imagens e vídeo;</p>
-      <p>g. Tabelas (HTML) ou Grid (Bootstrap);</p>
-      <p>h. Carousel (Bootstrap);</p>
-      <p>i. Cards (Bootstrap);</p>
-      <p>j. Formulário de contacto;</p>
-      <p>k. Outros elementos não mencionados</p>
-      <p>
-        2. Deve ser incluída uma página final com a apreciação do trabalho
-        desenvolvido, elementos não pedidos no enunciado e acrescentados ao
-        projeto e autoavaliação
-      </p>
-    </main>
 
+    <main>
+      <div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <h1>OCUPAR A PAGINA TODA</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius esse id
+          itaque. Velit, sunt, consequuntur quod blanditiis sit eveniet facere
+          nostrum est alias quia repellendus quo! Nemo ipsa laborum cum? Velit,
+          uuntur quod blanditiis sit eveniet facere nostrum est alias quia
+          repellendus quo! Nemcum
+        </p>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </div>
+    </main>
+    <!-- FOOTER -->
     <footer>
       <div class="footer">
         <div class="waves">
