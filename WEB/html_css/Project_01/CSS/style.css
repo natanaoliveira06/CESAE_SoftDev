@@ -186,6 +186,8 @@ body {
   font-weight: 700;
 }
 
+
+
 /********************************/
 /********* HERO SECTION *********/
 /********************************/
@@ -434,7 +436,7 @@ hr {
 }
 
 .container {
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   padding: 0;
   /* margin-right: 15px; */
@@ -482,7 +484,7 @@ hr {
 }
 
 .container-form {
-  background-color: #1273db;
+  /* background-color: #1273db; */
   width: 60%;
   margin: 100px 0px 100px 0px;
   padding: 35px;
@@ -491,7 +493,7 @@ hr {
 }
 
 .container-contact {
-  background-color: #d1dfee;
+  /* background-color: #d1dfee; */
   width: 40%;
   margin: 100px 0px 100px 0px;
   padding: 35px;
@@ -500,7 +502,7 @@ hr {
   display: flex;
   flex-direction: column;
   border-radius: 22px;
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.069);
+  /* box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.069); */
   /* align-self: flex-end; */
 }
 
