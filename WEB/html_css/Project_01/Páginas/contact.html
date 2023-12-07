@@ -36,265 +36,336 @@
     <title>SurfSway</title>
   </head>
 
-
   <body>
+    <header class="header">
+      <!-- NAVBAR -->
+      <div class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"
+              ><img
+                class="logo"
+                src="/images/logo_SurfSway_200px.png"
+                alt="Surf Sway logo"
+            /></a>
+            <!-- HAMBURGER BUTTON RESPONSIVE -->
+            <button
+              class="navbar-toggler shadow-none border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-
+            <!-- SIDEBAR -->
+            <div
+              class="sidebar offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <!-- SIDEBAR HEADER -->
+              <div class="offcanvas-header">
+                <a class="navbar-brand" href="index.html"
+                  ><img
+                    class="logo"
+                    src="/images/logo_SurfSway_200px.png"
+                    alt="Surf Sway logo"
+                /></a>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white shadow-none"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <!-- SIDEBAR BODY -->
+              <div class="offcanvas-body d-flex flex-column p-4">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item mx-4">
+                    <!-- mx-4 altera distancia "margin" entre os links -->
+                    <a class="nav-link" href="about.html">ABOUT US</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="community.html">COMMUNITY</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="events.html">EVENTS</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="blog.html">BLOG</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link active" href="contact.html">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="img-contactpage">
+          <div class="hero-text-box">
+            <h1 class="heading-primary center">Say Aloha!</h1>
+          </div>
+        </div>
+      </section>
+    </header>
 
     <main>
+      <div class="container">
+        <!-- FORM -->
+        <div class="container-form">
+          <h2 class="heading-secondary">Contact Us</h2>
 
-      <br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+              <label for="validationCustom01" class="form-label"
+                >First name <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                placeholder="Name"
+                required
+              />
+              <div class="valid-feedback"></div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label"
+                >Last name <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom02"
+                placeholder="Surname"
+                required
+              />
+              <div class="valid-feedback"></div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom03" class="form-label"
+                >Email <span class="required">*</span></label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+                required
+              />
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Incorrect email address</div>
+            </div>
 
-        <div class="container mt-5">
-          <h1>Contact</h1>
-        
-          <div class="container">
-            <form class="row needs-validation" novalidate>
-                <div class="mb-3 col-12">
-                    <label for="EmailAddressInput" class="form-label">Email address</label>
-
-                    <input type="email" class="form-control" id="EmailAddressInput" placeholder="name@example.com" required />
-                    
-                    <div class="invalid-feedback">
-                        Incorrect email address
-                    </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">City</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom03"
+                placeholder="Your city"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom04" class="form-label">Country</label>
+              <select class="form-select" id="validationCustom04">
+                <option selected disabled value="">Select Country</option>
+                <option>Afghanistan</option>
+                <option>Albania</option>
+                <option>Algeria</option>
+                <option>Andorra</option>
+                <option>Angola</option>
+                <option>Antigua and Barbuda</option>
+                <option>Argentina</option>
+                <option>Armenia</option>
+                <option>Australia</option>
+                <option>Austria</option>
+                <option>Azerbaijan</option>
+                <option>Bahamas</option>
+                <option>Bahrain</option>
+                <option>Bangladesh</option>
+                <option>Barbados</option>
+                <option>Belarus</option>
+                <option>Belgium</option>
+                <option>Belize</option>
+                <option>Benin</option>
+                <option>Bhutan</option>
+                <option>Bolivia</option>
+                <option>Bosnia and Herzegovina</option>
+                <option>Botswana</option>
+                <option>Brazil</option>
+                <option>Brunei</option>
+                <option>Bulgaria</option>
+                <option>Burkina Faso</option>
+                <option>Burundi</option>
+                <option>Cabo Verde</option>
+                <option>Cambodia</option>
+                <option>Cameroon</option>
+                <option>Canada</option>
+                <option>Central African Republic</option>
+                <option>Chile</option>
+                <option>China</option>
+                <option>Colombia</option>
+                <option>Costa Rica</option>
+                <option>Croatia</option>
+                <option>Cuba</option>
+                <option>Cyprus</option>
+                <option>Pakistan</option>
+                <option>Palau</option>
+                <option>Palestine State</option>
+                <option>Panama</option>
+                <option>Papua New Guinea</option>
+                <option>Paraguay</option>
+                <option>Peru</option>
+                <option>Philippines</option>
+                <option>Poland</option>
+                <option>Portugal</option>
+                <option>Qatar</option>
+                <option>Romania</option>
+                <option>Russia</option>
+                <option>Rwanda</option>
+                <option>Samoa</option>
+                <option>Sao Tome and Principe</option>
+                <option>Saudi Arabia</option>
+                <option>Senegal</option>
+                <option>Serbia</option>
+                <option>Seychelles</option>
+                <option>Sierra Leone</option>
+                <option>Singapore</option>
+                <option>Slovakia</option>
+                <option>Slovenia</option>
+                <option>Tajikistan</option>
+                <option>Tanzania</option>
+                <option>Thailand</option>
+                <option>Timor-Leste</option>
+                <option>Togo</option>
+                <option>Tonga</option>
+                <option>Trinidad and Tobago</option>
+                <option>Tunisia</option>
+                <option>Turkey</option>
+                <option>Turkmenistan</option>
+                <option>Tuvalu</option>
+                <option>Uganda</option>
+                <option>Ukraine</option>
+                <option>United Arab Emirates</option>
+                <option>United Kingdom</option>
+                <option>United States of America</option>
+                <option>Uruguay</option>
+                <option>Uzbekistan</option>
+                <option>Vanuatu</option>
+                <option>Venezuela</option>
+                <option>Vietnam</option>
+                <option>Yemen</option>
+                <option>Zambia</option>
+                <option>Zimbabwe</option>
+              </select>
+            </div>
+            <div class="col-md-12">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Subject</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+              />
+            </div>
+            <div class="col-md-12">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Message <span class="required">*</span></label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="invalidCheck"
+                  required
+                />
+                <label class="form-check-label" for="invalidCheck">
+                  I agree to the
+                  <a class="link" href="#">Terms and Conditions</a> and
+                  <a class="link" href="#">Privacy Policy</a>.
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
                 </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <a class="btn btn--full" type="submit" href="#">Submit</a>
+            </div>
+          </form>
 
-                <div class="mb-3 col-12">
-                    <label for="DescriptionInput" class="form-label">Description</label>
+          <!-- Optional JavaScript -->
+          <!-- Popper.js first, then Bootstrap JS -->
+          <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+          ></script>
+          <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+            integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+            crossorigin="anonymous"
+          ></script>
 
-                    <textarea class="form-control" id="DescriptionInput" rows="3"></textarea>
-                </div>
+          <script>
+            var forms = document.querySelectorAll(".needs-validation");
 
-                <div class="mb-3 col-12">
-                    <select class="form-select" aria-label="Superhero select">
-                        <option selected>Choose a superhero</option>
-                        <option value="1">Batman</option>
-                        <option value="2">Superman</option>
-                        <option value="3">Yoda</option>
-                    </select>
-                </div>
+            Array.prototype.slice.call(forms).forEach(function (form) {
+              form.addEventListener(
+                "submit",
+                function (event) {
+                  if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
 
-                <div class="col-6">
-                    <input class="form-check-input" type="checkbox" value="" id="Checkbox1" />
-
-                    <label class="form-check-label" for="Checkbox1">
-                        Epic Checkbox
-                    </label>
-                </div>
-
-                <div class="col-6">
-                    <input class="form-check-input" type="checkbox" value="" id="Checkbox2" disabled />
-
-                    <label class="form-check-label" for="Checkbox2">
-                        Disabled Checkbox
-                    </label>
-                </div>
-
-                <div class="col-12">
-                    <hr />
-                </div>
-
-                <div class="mb-3 col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="RadioBoxEpic" id="RadioBox1" checked />
-
-                        <label class="form-check-label" for="RadioBox1">
-                            Radio Box 1
-                        </label>
-                    </div>
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="RadioBoxEpic" id="RadioBox2" />
-
-                        <label class="form-check-label" for="RadioBox2">
-                            Radio Box 2
-                        </label>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <hr />
-                </div>
-
-                <div class="mb-3 col-12">
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" value="" id="Switch" />
-
-                        <label class="form-check-label" for="Switch">
-                            Switch
-                        </label>
-                    </div>
-                </div>
-
-                <div class="mb-3 col-12">
-                    <div class="form-file">
-                        <input type="file" class="form-file-input" id="CustomFile" />
-
-                        <label class="form-file-label" for="CustomFile">
-                            <span class="form-file-text">Choose file</span>
-
-                            <span class="form-file-button">Browse</span>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="mb-3 col-12">
-                    <label for="CustomRange1" class="form-label">Example range</label>
-
-                    <input type="range" class="form-range" min="0" max="100" step="2" value="0" id="CustomRange1" />
-                </div>
-
-                <div class="input-group mb-3 col-12">
-                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's Username" aria-describedby="InputGroup1" required />
-
-                    <span class="input-group-text" id="InputGroup1">@epicwebsite.com</span>
-                    
-                    <div class="invalid-feedback">
-                        Incorrect username
-                    </div>
-                </div>
-                
-                
-                <div class="col-12">
-                    <button class="btn btn-danger" type="submit">Submit</button>
-                </div>
-            </form>
+                  form.classList.add("was-validated");
+                },
+                false
+              );
+            });
+          </script>
         </div>
 
-
-
-<!--         
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              <p>I agree to the processing of my personal data to receive a response to this contact request</p>
-            </label>
+        <div class="container-contact">
+          <img
+            class="round-img"
+            src="/images/Ellipse 1 (1).png"
+            alt="Two girls holding your hands and surfing the same board"
+          />
+          <div class="volunteer-text-box">
+            <h3 class="heading-tertiary">Become a Volunteer</h3>
+            <p class="img-description">
+              If you're passionate about bringing surf into the lives of others,
+              we'd love to have you as a volunteer.
+            </p>
           </div>
-        </div> -->
-    
-
-      
-      <div class="container mt-5">
-        <h1>Contact</h1>
-      
-
-      
-<!-- 
-
-    <form class="row g-3">
-      <div class="col-md-6">
-        <label for="inputEmail4" class="form-label text-dark">First Name</label>
-        <input type="email" class="form-control" id="inputEmail4">
-      </div>
-
-
-      <div class="col-md-4">
-        <label for="validationServer01" class="form-label">First name</label>
-        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-        <div class="valid-feedback">
-          Looks good!
+          <a class="btn btn--full" type="submit" href="#">Apply Here</a>
         </div>
-      </div>
-
-
-
-      <div class="col-md-6">
-        <label for="inputPassword4" class="form-label text-dark">Last Name</label>
-        <input type="password" class="form-control" id="inputPassword4">
-      </div>
-      <div class="col-12">
-        <label for="exampleFormControlInput1" class="form-label  text-dark">Email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="col-md-6">
-        <label for="inputCity" class="form-label text-dark">City</label>
-        <input type="text" class="form-control" id="inputCity">
-      </div>
-      <div class="col-md-6">
-        <label for="inputState" class="form-label text-dark">Country</label>
-        <select id="inputState" class="form-select">
-          <option selected>Select Country</option>
-          <option>...</option>
-        </select>
-      </div>
- -->
-
-
-
-<!-- 
-
-      
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            <p>I agree to the processing of my personal data to receive a response to this contact request</p>
-          </label>
-        </div>
-      </div>
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Sign in</button>
-      </div>
-    </form>
-
-
- -->
-
-
-
-
-
-
-
-
-      <div>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-        <h1>OUR STORY</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius esse idrepellendus quo! Nemcum
-        </p>
-
-        <h1>UPCOMING EVENTS</h1>     
-          
-
-          <br /><br /><br /><br /><br /><br /><br /><br /><br />
-          <br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-        <br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br />
       </div>
     </main>
 
-
-
-
-
-
-
-
-    <div class="row g-3">
-      <div class="col">
-        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-      </div>
-      <div class="col">
-        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
 
     <!-- FOOTER -->
     <footer>

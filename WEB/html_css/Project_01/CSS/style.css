@@ -62,12 +62,6 @@ body {
   overflow-x: hidden; /* Evita a barra de rolagem horizontal causada pelo body margin */
 }
 
-p {
-  color: black;
-}
-h1 {
-  color: black;
-}
 /******************************************************/
 /** Estilos para telas médias e pequenas (até 991px) **/
 /******************************************************/
@@ -174,7 +168,22 @@ h1 {
 }
 
 .logo {
-  height: 6rem;
+  height: 5rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #334376;
+  font-weight: 700;
 }
 
 /********************************/
@@ -209,21 +218,6 @@ h1 {
   margin-left: 160px;
   margin-top: 120px;
   border-radius: 10px;
-}
-
-.nav-link:link,
-.nav-link:visited {
-  text-decoration: none;
-  transition: all 0.3s;
-  font-size: 1rem;
-  font-weight: 600;
-  color: white;
-}
-
-.nav-link:hover,
-.nav-link:active {
-  color: #334376;
-  font-weight: 700;
 }
 
 .heading-primary {
@@ -268,6 +262,10 @@ h1 {
 .btn--full:active {
   background-color: #5f8fc6;
 }
+
+/******************************/
+/************ MAIN ************/
+/******************************/
 
 /********************************/
 /************ FOOTER ************/
@@ -412,9 +410,114 @@ hr {
   }
 }
 
-/********************************/
+/**********************************/
+/********** CONTACT PAGE **********/
+/**********************************/
+
+.img-contactpage {
+  position: relative;
+  text-align: left;
+  margin: 0;
+  color: white;
+  height: 80vh; /* 100% da altura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+      to top right,
+      rgba(30, 30, 30, 0.6),
+      rgba(30, 30, 30, 0.2)
+    ),
+    url("/images/RCAD02395_Longboarding_VS_Shortboarding_Blog.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background-color: red;
+  display: flex;
+  padding: 0;
+  /* margin-right: 15px; */
+  align-items: flex-start;
+}
+
 /********** FORMULÁRIO **********/
-/********************************/
-p{
-  color: black
+.heading-secondary {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.05;
+  color: #334376;
+  letter-spacing: -0.5px;
+  padding-bottom: 50px;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.05;
+  color: #334376;
+  letter-spacing: -0.5px;
+  padding-bottom: 20px;
+}
+
+.form-label {
+  color: #333;
+  font-size: 15px;
+}
+
+.required {
+  color: red;
+}
+
+.form-check {
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-check-label {
+  color: #6f6f6f;
+  font-size: 13px;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.container-form {
+  background-color: #1273db;
+  width: 60%;
+  margin: 100px 0px 100px 0px;
+  padding: 35px;
+  border-radius: 22px;
+  /* box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.069); */
+}
+
+.container-contact {
+  background-color: #d1dfee;
+  width: 40%;
+  margin: 100px 0px 100px 0px;
+  padding: 35px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 22px;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.069);
+  /* align-self: flex-end; */
+}
+
+.round-img {
+  width: 55%;
+  justify-content: center;
+  text-align: center;
+  /* margin: 10px; */
+}
+
+.volunteer-text-box {
+  width: 90%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.img-description {
+  color: #333;
 }
