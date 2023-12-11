@@ -31,8 +31,13 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
+    <script src="/script.js"></script>
     <link rel="stylesheet" href="/CSS/style.css" />
-
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <title>SurfSway</title>
   </head>
 
@@ -118,7 +123,7 @@
     </header>
 
     <main>
-      <div class="container">
+      <div class="album-blue py-5">
         <!-- FORM -->
         <div class="container-form">
           <h2 class="heading-secondary">Contact Us</h2>
@@ -132,7 +137,6 @@
                 type="text"
                 class="form-control"
                 id="validationCustom01"
-                placeholder="Name"
                 required
               />
               <div class="valid-feedback"></div>
@@ -145,20 +149,18 @@
                 type="text"
                 class="form-control"
                 id="validationCustom02"
-                placeholder="Surname"
                 required
               />
               <div class="valid-feedback"></div>
             </div>
             <div class="col-md-12">
-              <label for="validationCustom03" class="form-label"
+              <label for="exampleFormControlInputEmail" class="form-label"
                 >Email <span class="required">*</span></label
               >
               <input
                 type="email"
                 class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
+                id="exampleFormControlInputEmail"
                 required
               />
               <div class="valid-feedback"></div>
@@ -167,12 +169,7 @@
 
             <div class="col-md-6">
               <label for="validationCustom03" class="form-label">City</label>
-              <input
-                type="text"
-                class="form-control"
-                id="validationCustom03"
-                placeholder="Your city"
-              />
+              <input type="text" class="form-control" id="validationCustom03" />
             </div>
             <div class="col-md-6">
               <label for="validationCustom04" class="form-label">Country</label>
@@ -269,13 +266,13 @@
               </select>
             </div>
             <div class="col-md-12">
-              <label for="exampleFormControlInput1" class="form-label"
+              <label for="exampleFormControlSubject" class="form-label"
                 >Subject</label
               >
               <input
                 type="email"
                 class="form-control"
-                id="exampleFormControlInput1"
+                id="exampleFormControlSubject"
               />
             </div>
             <div class="col-md-12">
@@ -303,13 +300,24 @@
                   <a class="link" href="#">Terms and Conditions</a> and
                   <a class="link" href="#">Privacy Policy</a>.
                 </label>
-                <div class="invalid-feedback">
-                  You must agree before submitting.
-                </div>
               </div>
             </div>
+
             <div class="col-12">
-              <a class="btn btn--full" type="submit" href="#">Submit</a>
+              <button
+                class="btn btn-unstyled btn--full"
+                id="send"
+                onclick="message()"
+              >
+                Submit
+              </button>
+            </div>
+
+            <div class="message">
+              <div class="success" id="success">
+                Your message successfully sent!
+              </div>
+              <div class="danger" id="danger">Feilds Can't be Empty!</div>
             </div>
           </form>
 
@@ -333,9 +341,11 @@
               form.addEventListener(
                 "submit",
                 function (event) {
+                  console.log("Submit event detected");
                   if (!form.checkValidity()) {
                     event.preventDefault();
                     event.stopPropagation();
+                    console.log("Form is invalid");
                   }
 
                   form.classList.add("was-validated");
@@ -345,28 +355,45 @@
             });
           </script>
         </div>
+      </div>
 
-        <div class="container-contact">
-          <img
-            class="round-img"
-            src="/images/Ellipse 1 (1).png"
-            alt="Two girls holding your hands and surfing the same board"
-          />
-          <div class="volunteer-text-box">
-            <h3 class="heading-tertiary">Become a Volunteer</h3>
-            <p class="img-description">
-              If you're passionate about bringing surf into the lives of others,
-              we'd love to have you as a volunteer.
-            </p>
+      <div class="album-beige py-5">
+        <!-- CARDS -->
+        <div class="container-card">
+          <div class="container-contact">
+            <img
+              class="round-img"
+              src="/images/roundImg_Volunteer.png"
+              alt="Two girls holding your hands and surfing the same board"
+            />
+            <div class="volunteer-text-box">
+              <h3 class="heading-tertiary">Become a Volunteer</h3>
+              <p class="img-description">
+                If you're passionate about bringing surf into the lives of
+                others, we'd love to have you as a volunteer.
+              </p>
+            </div>
+            <a class="btn btn--full" type="submit" href="#">Apply Here</a>
           </div>
-          <a class="btn btn--full" type="submit" href="#">Apply Here</a>
+
+          <div class="container-contact">
+            <img
+              class="round-img"
+              src="/images/roundImg_Partner.png"
+              alt="Female surfer being photographed"
+            />
+            <div class="volunteer-text-box">
+              <h3 class="heading-tertiary">Partner With Us</h3>
+              <p class="img-description">
+                If you're curious about our business, partnerships, or other
+                marketing opportunities, this is the place for you.
+              </p>
+            </div>
+            <a class="btn btn--full" type="submit" href="#"> Email Us</a>
+          </div>
         </div>
       </div>
     </main>
-
-    <br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br />
-
     <!-- FOOTER -->
     <footer>
       <div class="footer">

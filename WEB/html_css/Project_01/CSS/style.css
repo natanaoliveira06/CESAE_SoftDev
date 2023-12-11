@@ -62,6 +62,14 @@ body {
   overflow-x: hidden; /* Evita a barra de rolagem horizontal causada pelo body margin */
 }
 
+p {
+  color: #333;
+}
+
+.paragraph-blue {
+  color: #334376;
+}
+
 /******************************************************/
 /** Estilos para telas médias e pequenas (até 991px) **/
 /******************************************************/
@@ -145,9 +153,9 @@ body {
   }
 }
 
-/*********************************/
-/************ NAV BAR ************/
-/*********************************/
+/***********************************************/
+/******************* NAV BAR *******************/
+/***********************************************/
 .navbar {
   background-color: transparent;
   text-align: center;
@@ -186,11 +194,16 @@ body {
   font-weight: 700;
 }
 
+.nav-link.active,
+.nav-link.active:link,
+.nav-link.active:visited {
+  color: #334376;
+  font-weight: 700;
+}
 
-
-/********************************/
-/********* HERO SECTION *********/
-/********************************/
+/************************************************/
+/***************** HERO SECTION *****************/
+/************************************************/
 .hero-section {
   margin: 0;
   padding: 0;
@@ -207,10 +220,10 @@ body {
   justify-content: center;
   background: linear-gradient(
       to top right,
-      rgba(30, 30, 30, 0.6),
-      rgba(30, 30, 30, 0.2)
+      rgba(30, 30, 30, 0.45),
+      rgba(30, 30, 30, 0.05)
     ),
-    url("/images/cover_surf-chicas.png");
+    url("/images/cover_HomePage.png");
   background-size: cover;
   background-position: center;
 }
@@ -236,6 +249,13 @@ body {
   line-height: 1.6;
   margin-bottom: 4.8rem;
   color: white;
+}
+
+.btn.btn-unstyled {
+  background-color: #334376;
+  color: inherit;
+  box-shadow: none;
+  /* Adicione outras propriedades que você deseja redefinir */
 }
 
 .btn,
@@ -265,13 +285,286 @@ body {
   background-color: #5f8fc6;
 }
 
-/******************************/
-/************ MAIN ************/
-/******************************/
+/**********************************************/
+/***************** HOME PAGE ******************/
+/**********************************************/
 
-/********************************/
-/************ FOOTER ************/
-/********************************/
+.container-aboutUs {
+  display: flex;
+  margin: 50px 100px 50px 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-square {
+  width: 55%;
+}
+
+.text-aboutUs {
+  color: #334376;
+  font-size: 25px;
+  line-height: 1.6;
+  width: 35%;
+}
+
+/**********************************************/
+/***************** ABOUT PAGE *****************/
+/**********************************************/
+
+.img-aboutpage {
+  position: relative;
+  text-align: left;
+  margin: 0;
+  color: white;
+  height: 80vh; /* 100% da altura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+      to top right,
+      rgba(101, 54, 12, 0.3),
+      rgba(19, 66, 102, 0.35)
+    ),
+    url("/images/cover_AboutPage.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/**********************************************/
+/*************** COMMUNITY PAGE ***************/
+/**********************************************/
+
+.img-communitypage {
+  position: relative;
+  text-align: left;
+  margin: 0;
+  color: white;
+  height: 80vh; /* 100% da altura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+      to top right,
+      rgba(70, 70, 70, 0.25),
+      rgba(90, 85, 45, 0.35)
+    ),
+    url("/images/cover_CommunityPage.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/***********************************************/
+/***************** EVENTS PAGE *****************/
+/***********************************************/
+
+.img-eventspage {
+  position: relative;
+  text-align: left;
+  margin: 0;
+  color: white;
+  height: 80vh; /* 100% da altura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+      to top right,
+      rgba(30, 30, 30, 0.25),
+      rgba(47, 47, 157, 0.35)
+    ),
+    url("/images/cover_EventPage.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+/***********************************************/
+/****************** BLOG PAGE ******************/
+/***********************************************/
+
+.img-blogpage {
+  position: relative;
+  text-align: left;
+  margin: 0;
+  color: white;
+  height: 80vh; /* 100% da altura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+      to top right,
+      rgba(117, 78, 28, 0.25),
+      rgba(44, 82, 132, 0.25)
+    ),
+    url("/images/cover_BlogPage.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/***********************************************/
+/**************** CONTACT PAGE *****************/
+/***********************************************/
+
+.img-contactpage {
+  position: relative;
+  text-align: left;
+  margin: 0;
+  color: white;
+  height: 80vh; /* 100% da altura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+      to top right,
+      rgba(46, 20, 82, 0.3),
+      rgba(99, 78, 38, 0.1)
+    ),
+    url("/images/cover_ContactPage.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/***************** FORMULÁRIO *****************/
+
+.album-blue {
+  background-color: #afc4d8;
+}
+
+.album-beige {
+  background-color: #f4efed;
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.05;
+  color: #334376;
+  letter-spacing: -0.5px;
+  padding-bottom: 50px;
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.05;
+  color: #334376;
+  letter-spacing: -0.5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.container-form {
+  background-color: white;
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 70px 50px 40px 50px;
+  border-radius: 22px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+}
+
+.form-label {
+  color: #333;
+  font-size: 15px;
+}
+
+.required {
+  color: red;
+}
+
+.form-check {
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-check-label {
+  color: #6f6f6f;
+  font-size: 13px;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.message {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.message .success {
+  font-size: 16px;
+  font-weight: 600;
+  color: #198754;
+  position: absolute;
+  animation: buttons 0.3s linear;
+  display: none;
+}
+
+.message .danger {
+  font-size: 16px;
+  font-weight: 600;
+  color: #dc3545;
+  position: absolute;
+  transition: 0.3s;
+  animation: buttons 0.3s linear;
+  display: none;
+}
+
+@keyframes buttons {
+  0% {
+    transform: scale(0.1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.container-card {
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.container-contact {
+  background-color: white;
+  width: 25%;
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-bottom: 100px;
+  padding: 35px 35px 35px 35px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 22px;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.15);
+}
+
+.round-img {
+  width: 90%;
+  justify-content: center;
+  text-align: center;
+}
+
+.volunteer-text-box {
+  width: 90%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.img-description {
+  color: #333;
+}
+
+/***********************************************/
+/******************** FOOTER *******************/
+/***********************************************/
 
 footer {
   display: flex;
@@ -410,116 +703,4 @@ hr {
   100% {
     background-position-x: 1000px;
   }
-}
-
-/**********************************/
-/********** CONTACT PAGE **********/
-/**********************************/
-
-.img-contactpage {
-  position: relative;
-  text-align: left;
-  margin: 0;
-  color: white;
-  height: 80vh; /* 100% da altura da tela */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: linear-gradient(
-      to top right,
-      rgba(30, 30, 30, 0.6),
-      rgba(30, 30, 30, 0.2)
-    ),
-    url("/images/RCAD02395_Longboarding_VS_Shortboarding_Blog.webp");
-  background-size: cover;
-  background-position: center;
-}
-
-.container {
-  /* background-color: red; */
-  display: flex;
-  padding: 0;
-  /* margin-right: 15px; */
-  align-items: flex-start;
-}
-
-/********** FORMULÁRIO **********/
-.heading-secondary {
-  font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 1.05;
-  color: #334376;
-  letter-spacing: -0.5px;
-  padding-bottom: 50px;
-}
-
-.heading-tertiary {
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 1.05;
-  color: #334376;
-  letter-spacing: -0.5px;
-  padding-bottom: 20px;
-}
-
-.form-label {
-  color: #333;
-  font-size: 15px;
-}
-
-.required {
-  color: red;
-}
-
-.form-check {
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.form-check-label {
-  color: #6f6f6f;
-  font-size: 13px;
-  align-items: center;
-  padding-top: 6px;
-}
-
-.container-form {
-  /* background-color: #1273db; */
-  width: 60%;
-  margin: 100px 0px 100px 0px;
-  padding: 35px;
-  border-radius: 22px;
-  /* box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.069); */
-}
-
-.container-contact {
-  /* background-color: #d1dfee; */
-  width: 40%;
-  margin: 100px 0px 100px 0px;
-  padding: 35px;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  border-radius: 22px;
-  /* box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.069); */
-  /* align-self: flex-end; */
-}
-
-.round-img {
-  width: 55%;
-  justify-content: center;
-  text-align: center;
-  /* margin: 10px; */
-}
-
-.volunteer-text-box {
-  width: 90%;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  line-height: 1.6;
-}
-
-.img-description {
-  color: #333;
 }
