@@ -75,6 +75,7 @@ p {
 /******************************************************/
 
 @media (max-width: 991px) {
+  /***************** NAV BAR *****************/
   .sidebar {
     background-color: #5f8fc6;
     backdrop-filter: blur(10px);
@@ -121,6 +122,7 @@ p {
     text-align: center;
   }
 
+  /***************** HERO *****************/
   .hero-section {
     padding: 20px; /* Adicionar padding à hero-section para espaçamento */
   }
@@ -142,6 +144,7 @@ p {
     display: none; /* Ocultar hero-description em telas menores */
   }
 
+  /***************** FOOTER *****************/
   .footer-menu {
     flex-direction: column; /* os itens são exibidos em coluna  */
     align-items: center;
@@ -152,6 +155,7 @@ p {
     margin: 15px 0;
   }
 
+  /***************** FORM *****************/
   .container-form {
     width: 90% !important; 
   }
@@ -160,15 +164,20 @@ p {
     height: 120px !important;  /* Altura da área de mensagem */
   }
 
-  .container-contact {
-    flex-direction: row; /* Ficam lado a lado em telas grandes */
-    flex-wrap: wrap; /* Quebram para a próxima linha em telas pequenas */
-    justify-content: space-evenly; /* Distribuir o espaço igualmente entre os contêineres */
+  /***************** CARDS *****************/
+  .row{
+    margin-bottom: 100px;   
   }
 
-  .container-card {
-    width: calc(33.333% - 20px); /* Distribuir igualmente em telas grandes com um espaçamento entre eles */
-    margin: 20px 0; /* Ajuste do espaçamento entre os contêineres */
+  .col {
+    margin-top: 50px !important;   
+    margin-bottom: 50px !important;   
+  }
+
+  .card {
+    width: 90% !important; /* Permita que os cards ocupem 100% da largura do contêiner */
+    max-width: none; /* Remova a largura máxima se definida */
+    margin: auto !important; 
   }
 
 
@@ -312,13 +321,13 @@ p {
 
 .container-aboutUs {
   display: flex;
-  margin: 50px 100px 50px 100px;
+  margin: 100px 100px 100px 100px;
   justify-content: space-between;
   align-items: center;
 }
 
 .img-square {
-  width: 55%;
+  width: 50%;
 }
 
 .text-aboutUs {
@@ -327,6 +336,26 @@ p {
   line-height: 1.6;
   width: 35%;
 }
+
+
+
+ /***************** INSTAGRAM *****************/
+.instagram-container{
+  margin-top: 60px;
+  margin-bottom: 150px;
+
+}
+
+
+.instagram-photo{
+  width: 250px;
+  margin: 10px;
+}
+
+
+
+
+
 
 /**********************************************/
 /***************** ABOUT PAGE *****************/
@@ -444,7 +473,6 @@ p {
 }
 
 /***************** FORMULÁRIO *****************/
-
 .album-blue {
   background-color: #afc4d8;
 }
@@ -474,7 +502,7 @@ p {
 
 .container-form {
   background-color: white;
-  width: 60%;
+  width: 58%;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -543,27 +571,24 @@ p {
   }
 }
 
-.container-contact {
-  display: flex;
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+/***************** CARDS *****************/
+.col{
+  text-align: center;
   justify-content: center;
+  margin-bottom: 100px;
 }
 
-.container-card {
+.card{
   background-color: white;
-  width: 25%;
-  margin-right: 60px;
-  margin-left: 60px;
-  margin-bottom: 100px;
+  margin: 60px 100px 60px 100px; 
   padding: 35px;
   align-items: center;
   text-align: center;
   display: flex;
   flex-direction: column;
-  border-radius: 22px;
+  border-radius: 22px;  
   box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.15);
+  border: transparent;
 }
 
 .round-img {
@@ -583,26 +608,6 @@ p {
   color: #333;
 }
 
-.card{
-  background-color: white;
-  width: 25%;
-  margin-right: 60px;
-  margin-left: 60px;
-  margin-bottom: 100px;
-  padding: 35px;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  border-radius: 22px;  
-  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.15);
-}
-
-.card-img-top{
-  width: 90%;
-  justify-content: center; 
-  text-align: center; 
-}
 
 /***********************************************/
 /******************** FOOTER *******************/
