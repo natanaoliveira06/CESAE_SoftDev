@@ -62,14 +62,6 @@ body {
   overflow-x: hidden; /* Evita a barra de rolagem horizontal causada pelo body margin */
 }
 
-p {
-  color: #333;
-}
-
-.paragraph-blue {
-  color: #334376;
-}
-
 /******************************************************/
 /** Estilos para telas médias e pequenas (até 991px) **/
 /******************************************************/
@@ -157,32 +149,75 @@ p {
 
   /***************** FORM *****************/
   .container-form {
-    width: 90% !important; 
+    width: 90% !important;
   }
 
   .col-md-12 textarea {
-    height: 120px !important;  /* Altura da área de mensagem */
+    height: 120px !important; /* Altura da área de mensagem */
   }
 
   /***************** CARDS *****************/
-  .row{
-    margin-bottom: 100px;   
-  }
-
-  .col {
-    margin-top: 50px !important;   
-    margin-bottom: 50px !important;   
+  .row {
+    margin-bottom: 100px;
   }
 
   .card {
-    width: 90% !important; /* Permita que os cards ocupem 100% da largura do contêiner */
-    max-width: none; /* Remova a largura máxima se definida */
-    margin: auto !important; 
+    width: 100% !important;
+    margin: 0 !important;
   }
 
-
+  .col {
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0;
+  }
 }
 
+.album-blue {
+  background-color: #afc4d8;
+}
+
+.album-beige {
+  background-color: #f4efed;
+  padding: 50px;
+}
+
+.heading-primary {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: white;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.05;
+  color: #334376;
+  letter-spacing: -0.5px;
+  padding-bottom: 50px;
+  margin-bottom: 0;
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.05;
+  color: #334376;
+  letter-spacing: -0.5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+p {
+  color: #333;
+}
+
+.paragraph-blue {
+  color: #334376;
+}
 /***********************************************/
 /******************* NAV BAR *******************/
 /***********************************************/
@@ -265,15 +300,6 @@ p {
   border-radius: 10px;
 }
 
-.heading-primary {
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 1.05;
-  color: white;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
-}
-
 .hero-description {
   font-size: 1.3rem;
   line-height: 1.6;
@@ -337,25 +363,21 @@ p {
   width: 35%;
 }
 
-
-
- /***************** INSTAGRAM *****************/
-.instagram-container{
+/***************** INSTAGRAM *****************/
+.instagram-container {
   margin-top: 60px;
   margin-bottom: 150px;
-
+  text-align: center;
+  align-items: center;
 }
 
+.link-instagram {
+}
 
-.instagram-photo{
+.instagram-photo {
   width: 250px;
-  margin: 10px;
+  padding: 10px;
 }
-
-
-
-
-
 
 /**********************************************/
 /***************** ABOUT PAGE *****************/
@@ -458,7 +480,7 @@ p {
   text-align: left;
   margin: 0;
   color: white;
-  height: 80vh; 
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -473,33 +495,6 @@ p {
 }
 
 /***************** FORMULÁRIO *****************/
-.album-blue {
-  background-color: #afc4d8;
-}
-
-.album-beige {
-  background-color: #f4efed;
-}
-
-.heading-secondary {
-  font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 1.05;
-  color: #334376;
-  letter-spacing: -0.5px;
-  padding-bottom: 50px;
-}
-
-.heading-tertiary {
-  font-size: 1.8rem;
-  font-weight: 600;
-  line-height: 1.05;
-  color: #334376;
-  letter-spacing: -0.5px;
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-
 .container-form {
   background-color: white;
   width: 58%;
@@ -572,21 +567,21 @@ p {
 }
 
 /***************** CARDS *****************/
-.col{
+.col {
   text-align: center;
   justify-content: center;
   margin-bottom: 100px;
 }
 
-.card{
+.card {
   background-color: white;
-  margin: 60px 100px 60px 100px; 
+  margin: 60px 100px 60px 100px;
   padding: 35px;
   align-items: center;
   text-align: center;
   display: flex;
   flex-direction: column;
-  border-radius: 22px;  
+  border-radius: 22px;
   box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.15);
   border: transparent;
 }
@@ -607,7 +602,6 @@ p {
 .img-description {
   color: #333;
 }
-
 
 /***********************************************/
 /******************** FOOTER *******************/
