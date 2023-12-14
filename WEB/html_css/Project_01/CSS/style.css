@@ -7,7 +7,7 @@ font-family: 'Figtree', sans-serif;
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 - Font weights:
-Ligth: 300  /  Regular: 400  /  Semi-bold: 600  /  Bold: 700
+Ligth: 300  /  Regular: 400  /  Medium: 500    /  Semi-bold: 600  /  Bold: 700
 
 - Line heigths:
 Default: 1    /    Small: 1.05
@@ -67,6 +67,7 @@ body {
 /******************************************************/
 
 @media (max-width: 991px) {
+
   /***************** NAV BAR *****************/
   .sidebar {
     background-color: #5f8fc6;
@@ -136,6 +137,12 @@ body {
     display: none; /* Ocultar hero-description em telas menores */
   }
 
+  /***************** HOME *****************/
+  .instagram-photo {
+    width: 140px !important;
+    padding: 6px !important;
+  }
+
   /***************** FOOTER *****************/
   .footer-menu {
     flex-direction: column; /* os itens são exibidos em coluna  */
@@ -179,11 +186,17 @@ body {
 
 .album-beige {
   background-color: #f4efed;
-  padding: 50px;
 }
 
+/*
+- Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 28 / 30 / 36 / 40 / 64
+
+*/
+
+
 .heading-primary {
-  font-size: 4rem;
+  font-size: 64px;
   font-weight: 700;
   line-height: 1.05;
   color: white;
@@ -192,9 +205,9 @@ body {
 }
 
 .heading-secondary {
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 600;
-  line-height: 1.05;
+  line-height: 1.2;
   color: #334376;
   letter-spacing: -0.5px;
   padding-bottom: 50px;
@@ -202,9 +215,9 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 1.8rem;
+  font-size: 28px;
   font-weight: 600;
-  line-height: 1.05;
+  line-height: 1.2;
   color: #334376;
   letter-spacing: -0.5px;
   padding-top: 10px;
@@ -345,33 +358,60 @@ p {
 /***************** HOME PAGE ******************/
 /**********************************************/
 
+.album-beige .about{
+  position: relative;
+}
+
 .container-aboutUs {
   display: flex;
-  margin: 100px 100px 100px 100px;
-  justify-content: space-between;
-  align-items: center;
+  display: flex;
+  align-items: flex-start; /* Alinha os itens na parte superior do container */
+  /* justify-content: flex-start;  */  /* Alinha os itens à esquerda do container */
+  position: relative; /* Adicionado para posicionar elementos filhos relativamente a este elemento */
+  z-index: 2; /* Certifica-se de que o container-aboutUs está sobre a img-base */
+  padding: 50px 20px; /* Ajuste do padding conforme necessário */
+  /* padding: 100px 200px 0px 200px; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+
+.img-base{
+width: 100%;
+position: absolute; /* Posiciona absolutamente dentro do album-beige */
+bottom: 0; /* Alinha na base inferior do album-beige */
+left: 0; /* Alinha à esquerda do album-beige */
+z-index: 1; /* */
 }
 
 .img-square {
   width: 50%;
+  z-index: 3;
 }
 
 .text-aboutUs {
   color: #334376;
-  font-size: 25px;
+  font-size: 28px;
   line-height: 1.6;
-  width: 35%;
+  font-weight: 400;
+  width: 34%;
+  margin-left: 50px; /* Adiciona algum espaço à esquerda do texto */
+  z-index: 3;
 }
+
 
 /***************** INSTAGRAM *****************/
 .instagram-container {
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 150px;
   text-align: center;
   align-items: center;
 }
 
-.link-instagram {
+.instagram-container .link-instagram {
+  display: block;
+  margin-bottom: 25px;
+  color: #334376;
+  text-decoration: none;
 }
 
 .instagram-photo {
@@ -575,7 +615,7 @@ p {
 
 .card {
   background-color: white;
-  margin: 60px 100px 60px 100px;
+  margin: 100px 100px 100px 100px;
   padding: 35px;
   align-items: center;
   text-align: center;
