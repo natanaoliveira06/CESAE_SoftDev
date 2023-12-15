@@ -138,11 +138,33 @@ body {
   }
 
   /***************** HOME *****************/
-  .instagram-photo {
-    width: 140px !important;
+  .container-aboutUs {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .img-square {
+    width: 90% !important;
+    padding-bottom: 50px;
+  }
+
+  .text-aboutUs {
+    font-size: 22px !important;
+    width: 90% !important;
+    margin: 0 !important;
+    /* padding-bottom: 20px; */
+  }
+
+  .instagram-photo {    
     padding: 6px !important;
   }
 
+  .img-base{
+    width: 220% !important;
+    height: 550px !important;
+  }
+
+  
   /***************** FOOTER *****************/
   .footer-menu {
     flex-direction: column; /* os itens são exibidos em coluna  */
@@ -365,22 +387,23 @@ p {
 .container-aboutUs {
   display: flex;
   display: flex;
-  align-items: flex-start; /* Alinha os itens na parte superior do container */
-  /* justify-content: flex-start;  */  /* Alinha os itens à esquerda do container */
   position: relative; /* Adicionado para posicionar elementos filhos relativamente a este elemento */
-  z-index: 2; /* Certifica-se de que o container-aboutUs está sobre a img-base */
-  padding: 50px 20px; /* Ajuste do padding conforme necessário */
-  /* padding: 100px 200px 0px 200px; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
+  z-index: 2; /* O container está sobre a img-base */
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
+  
+  justify-content: space-between; 
+  align-items: center; 
 }
 
 .img-base{
 width: 100%;
 position: absolute; /* Posiciona absolutamente dentro do album-beige */
-bottom: 0; /* Alinha na base inferior do album-beige */
+bottom: 0; /* Alinha na base inferior */
 left: 0; /* Alinha à esquerda do album-beige */
-z-index: 1; /* */
+z-index: 1; 
 }
 
 .img-square {
@@ -398,11 +421,71 @@ z-index: 1; /* */
   z-index: 3;
 }
 
+/***************** INEWSLETTER *****************/
+
+.newsletter {
+  padding: 80px 0;
+  background: url('/images/NEWSLETTER (1).png') center center/cover no-repeat;
+}
+
+.row-newsletter {
+  margin-left: 20%; 
+  flex-direction: column; 
+  align-items: center;
+}
+  
+.newsletter .content {
+  width: 23%;
+  padding-bottom:25px;
+  text-align: center;
+  position: relative;
+  z-index: 2; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+
+.newsletter .content h2 {
+  color: white;
+  padding-bottom: 30px;
+  /* margin-bottom: 40px;  */
+}
+
+.newsletter .content p {
+  color: white;
+  line-height: 1.8;
+}
+
+.newsletter .form-inline {
+  display: flex;
+  align-items: center;
+  
+}
+
+.newsletter .form-group {
+  margin-right: 0px; /* Adapte a margem conforme necessário */
+}
+
+.newsletter form .form-control {
+    background:#eff1f4;
+    border:none;
+    border-radius:8px;
+    box-shadow:none;
+    outline:none;
+    color:inherit;
+    text-indent:9px;
+    height:48px;
+    margin-right:10px;
+    min-width:150px;
+    width: 350px;
+  }
+    
 
 /***************** INSTAGRAM *****************/
+
 .instagram-container {
-  margin-top: 50px;
-  margin-bottom: 150px;
+ padding-top: 100px;
+ padding-bottom: 180px;
   text-align: center;
   align-items: center;
 }
