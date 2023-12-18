@@ -1,4 +1,4 @@
-package Domain;
+package Domain.Propriedade;
 
 public class AcessoriosModa extends Propriedade{
 
@@ -9,6 +9,11 @@ public class AcessoriosModa extends Propriedade{
         super(nomePropriedade, custo, estatutoPropriedade);
         this.marca = marca;
         this.formal = formal;
+    }
+    public void exibirDetalhes(){
+        super.exibirDetalhes();
+        System.out.print("Marca: " + this.marca + "\t|  Formal: " + this.formal);
+        System.out.println();
     }
 
 }

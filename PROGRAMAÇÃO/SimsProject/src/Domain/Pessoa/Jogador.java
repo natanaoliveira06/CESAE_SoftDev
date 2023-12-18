@@ -1,4 +1,8 @@
-package Domain;
+package Domain.Pessoa;
+
+import Domain.Objetivo;
+import Domain.Profissao;
+import Domain.Propriedade.Propriedade;
 
 import java.util.ArrayList;
 
@@ -28,25 +32,36 @@ public class Jogador extends Pessoa {
     }
 
     public void exibirDetalhes() {
-        System.out.println("Nome do Personagem: " + this.nomePersonagem);
+        System.out.println("\nNome do Personagem: " + this.nomePersonagem);
         System.out.println("Dinheiro: " + this.dinheiro + " Galeões");
         System.out.println("Objetivo do Jogo: " + this.objetivoVida);
         System.out.println("Profissão Atual: " + this.profissaoAtual);
-        System.out.println("Necessidade de Dormir: " + this.necessidadeSono);
-        System.out.println("Necessidade de Alimentar: " + this.necessidadeRefeicao);
-        System.out.println(" Necessidade de Divertir: " + this.necessidadeSocial);
+        System.out.println("Necessidade de Dormir: " + this.necessidadeSono + " Sonos");
+        System.out.println("Necessidade de Alimentar: " + this.necessidadeRefeicao + " Comidas Mágicas");
+        System.out.println("Necessidade de Divertir: " + this.necessidadeSocial + " Poções do Riso");
         System.out.println("Estatuto: " + this.estatuto);
         System.out.println("Nível de Formação: " + this.educacao);
         System.out.println("Propriedades: ");
         for (Propriedade propriedadeAtual : propriedades) {
-            propriedadeAtual.exibirDetalhesPropriedades();
+            propriedadeAtual.exibirDetalhes();
         }
         System.out.println("Família: ");
         for (NPC npcAtual : familia) {
-            npcAtual.exibirDetalhesNPC();
+            npcAtual.exibirDetalhes();
         }
     }
 
-    //todo TRANSFORMAR EM SINGLETON
+    public void addPropriedade(Propriedade propriedadeAdquirida) {
+
+        for (Propriedade propriedadeAtual : propriedades) {
+            this.propriedades.add(propriedadeAdquirida);
+        }
+    }
+
+
 }
+
+
+//todo TRANSFORMAR EM SINGLETON
+
 
