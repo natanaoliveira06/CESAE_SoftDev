@@ -26,7 +26,7 @@ public class Shopping {
         return coisasParaComprar;
     }
 
-    public void Vender(Jogador personagem) {
+    public void vender(Jogador personagem) {
         Scanner input = new Scanner(System.in);
         String seccao;
         int itemEscolhido;
@@ -65,7 +65,7 @@ public class Shopping {
                 while (arrayIndexAleatorio.size() < itensParaImprimir) { //Vai parar o ciclo enquanto o tamanho do array for menor que 10
                     int indexAleatorio = random.nextInt(0, this.coisasParaComprar.size()); //O indexAleatorio vai ser um numero random (que começa no 0 e vai até o tamanho do array de itens disponiveis)
 
-                    if (arrayIndexAleatorio.size() == 0) {  // O array novo "Montra" está vazio
+                    if (arrayIndexAleatorio.size() == 0 && coisasParaComprar.get(indexAleatorio) instanceof AcessoriosModa) {  // O array novo "Montra" está vazio
                         arrayIndexAleatorio.add(indexAleatorio); // É preciso passar um aleatório para o array ficar preeencido
                     }
 
@@ -100,7 +100,7 @@ public class Shopping {
 
                 while (arrayIndexAleatorio2.size() < itensParaImprimir) {
                     int indexAleatorio = random.nextInt(0, this.coisasParaComprar.size());
-                    if (arrayIndexAleatorio2.size() == 0) {
+                    if (arrayIndexAleatorio2.size() == 0 && coisasParaComprar.get(indexAleatorio) instanceof Veiculo) {
                         arrayIndexAleatorio2.add(indexAleatorio);
                     }
                     if (!arrayIndexAleatorio2.contains(indexAleatorio) && coisasParaComprar.get(indexAleatorio) instanceof Veiculo) {
@@ -133,7 +133,7 @@ public class Shopping {
 
                 while (arrayIndexAleatorio3.size() < itensParaImprimir) {
                     int indexAleatorio3 = random.nextInt(0, this.coisasParaComprar.size());
-                    if (arrayIndexAleatorio3.size() == 0) {
+                    if (arrayIndexAleatorio3.size() == 0 && coisasParaComprar.get(indexAleatorio3) instanceof Veiculo) {
                         arrayIndexAleatorio3.add(indexAleatorio3);
                     }
                     if (!arrayIndexAleatorio3.contains(indexAleatorio3) && coisasParaComprar.get(indexAleatorio3) instanceof Imovel) {

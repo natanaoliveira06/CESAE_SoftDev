@@ -11,19 +11,15 @@ public class Propriedade {
         this.custo = custo;
         this.estatutoPropriedade = estatutoPropriedade;
     }
-
     public String getNomePropriedade() {
         return nomePropriedade;
     }
-
     public double getCusto() {
         return custo;
     }
-
     public int getEstatutoPropriedade() {
         return estatutoPropriedade;
     }
-
     public void exibirDetalhes(){
         System.out.print(this.nomePropriedade + "\t|  Valor: " + this.custo + "\t|  Galeões"+ "Estatuto da propriedade: "+ this.estatutoPropriedade);
     }

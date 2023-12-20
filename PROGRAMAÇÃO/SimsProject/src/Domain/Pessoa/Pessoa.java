@@ -14,10 +14,14 @@ public abstract class Pessoa {
     public String getNomePersonagem() {
         return nomePersonagem;
     }
-
     public double getDinheiro() {
         return dinheiro;
     }
+
+    public void setDinheiro(double dinheiro) {
+        this.dinheiro = dinheiro;
+    }
+
     public void exibirDetalhes() {
         System.out.print("Nome do Personagem: " + this.nomePersonagem + "\t| Dinheiro: " + this.dinheiro + " Galeões");
     }
