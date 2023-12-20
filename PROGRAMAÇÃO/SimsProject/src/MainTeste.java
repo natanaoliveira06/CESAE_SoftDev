@@ -9,6 +9,7 @@ import Tools.CSVShoppingReader;
 import View.PlayerView;
 
 import java.io.FileNotFoundException;
+
 public class MainTeste {
     public static void main(String[] args) throws FileNotFoundException {
 
@@ -16,7 +17,7 @@ public class MainTeste {
 
         // shopping.imprimirShopping(); // Teste imprimir Array na consola
 
-        // Jogador jogador1 = new Jogador("Luna", 5555520, Objetivo.PROFESSOR_HOGWARTS, new Profissao("Estudante", 0, false, 120, 800), 5, 50, 250, 550, 800);
+        Jogador jogador1 = new Jogador("Luna", 5555520, Objetivo.PROFESSOR_HOGWARTS, new Profissao("Estudante", 0, false, 120, 800), 5, 50, 250, 550, 800);
 
         // shopping.vender(jogador1); // Teste do Método Vender
 
@@ -24,10 +25,13 @@ public class MainTeste {
 
 
 
+    //    PlayerView.menuEntrada();
 
 
-        PlayerView.menuEntrada();
+        Sims sims = new Sims();
+     //   sims.imprimirProfissoes();
 
+        sims.procuraProfissao(jogador1);
 
 
 
