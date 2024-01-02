@@ -1,5 +1,8 @@
 package Domain.Propriedade;
 
+/**
+ * Classe Imovel que extend Propriedade
+ */
 public class Imovel extends Propriedade {
     private int capacidadePessoas;
 
@@ -7,9 +10,17 @@ public class Imovel extends Propriedade {
         super(nomePropriedade, custo, estatutoPropriedade);
         this.capacidadePessoas = capacidadePessoas;
     }
+
+    public int getCapacidadePessoas() {
+        return capacidadePessoas;
+    }
+
+    /**
+     * Método para exibir detalhes dos Imóveis
+     */
     public void exibirDetalhes(){
         super.exibirDetalhes();
-        System.out.print("Lotação Máxima: " + this.capacidadePessoas);
+        System.out.print("  |   Lotação Máxima: " + this.capacidadePessoas);
         System.out.println();
     }
 }

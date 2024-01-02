@@ -67,7 +67,6 @@ body {
 /******************************************************/
 
 @media (max-width: 991px) {
-
   /***************** NAV BAR *****************/
   .sidebar {
     background-color: #5f8fc6;
@@ -117,20 +116,24 @@ body {
 
   /***************** HERO *****************/
   .hero-section {
-    padding: 20px; /* Adicionar padding à hero-section para espaçamento */
+    padding: 20px;
   }
 
   .hero-text-box {
-    max-width: 100%; /* Usar largura total da tela */
-    margin-left: 50px !important; /* Ajustar margem esquerda */
-    margin-top: 20px !important; /* Ajustar margem superior */
+    max-width: 100%;
+    margin-left: 50px !important;
+    margin-top: 20px !important;
     margin-right: 50px;
   }
 
   .heading-primary {
-    font-size: 2.8rem !important; /* Reduzir o tamanho da fonte para telas menores */
+    font-size: 2.8rem !important;
     line-height: 1.2 !important;
     margin-bottom: 1.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.2rem !important;
   }
 
   .hero-description {
@@ -139,7 +142,7 @@ body {
 
   /***************** HOME *****************/
   .container-aboutUs {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
   }
 
@@ -152,19 +155,74 @@ body {
     font-size: 22px !important;
     width: 90% !important;
     margin: 0 !important;
-    /* padding-bottom: 20px; */
   }
 
-  .instagram-photo {    
-    padding: 6px !important;
-  }
-
-  .img-base{
+  .img-base {
     width: 220% !important;
     height: 550px !important;
   }
 
-  
+  .container-community {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px !important;
+  }
+
+  .container-community .text {
+    width: 90% !important;
+    padding-bottom: 65px;
+  }
+
+  .text-community {
+    font-size: 22px !important;
+    margin: 0 !important;
+  }
+
+  .player {
+    width: 95% !important;
+  }
+
+  .newsletter {
+    background-position: right 10% center !important; /* Alinha à direita e deixa 15% para fora */
+  }
+
+  .row-newsletter {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 90% !important;
+  }
+
+  .newsletter .form-inline {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .newsletter form .form-control {
+    width: 80%; /* Ajuste a largura conforme necessário */
+    max-width: 300px;
+    margin-right: 0 !important;
+    margin-bottom: 10px;
+  }
+
+  .instagram-container h2 {
+    max-width: 80%;
+    padding-bottom: 35px !important;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .instagram-container .link-instagram {
+    font-size: 20px;
+    margin-bottom: 35px !important;
+  }
+
+  .instagram-photo {
+    padding: 6px !important;
+    width: 45% !important;
+  }
+
   /***************** FOOTER *****************/
   .footer-menu {
     flex-direction: column; /* os itens são exibidos em coluna  */
@@ -202,6 +260,21 @@ body {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .newsletter .form-inline {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .newsletter form .form-control {
+    width: auto;
+    max-width: none;
+    margin-bottom: 0;
+    margin-right: 10px !important;
+  }
+}
+
 .album-blue {
   background-color: #afc4d8;
 }
@@ -209,13 +282,6 @@ body {
 .album-beige {
   background-color: #f4efed;
 }
-
-/*
-- Font sizes (px):
-10 / 12 / 14 / 16 / 18 / 20 / 28 / 30 / 36 / 40 / 64
-
-*/
-
 
 .heading-primary {
   font-size: 64px;
@@ -380,30 +446,28 @@ p {
 /***************** HOME PAGE ******************/
 /**********************************************/
 
-.album-beige .about{
+.album-beige .about {
   position: relative;
 }
 
 .container-aboutUs {
   display: flex;
-  display: flex;
-  position: relative; /* Adicionado para posicionar elementos filhos relativamente a este elemento */
-  z-index: 2; /* O container está sobre a img-base */
+  position: relative;
+  z-index: 2;
   padding-top: 100px;
   padding-bottom: 100px;
   padding-left: 10%;
   padding-right: 10%;
-  
-  justify-content: space-between; 
-  align-items: center; 
+  justify-content: space-between;
+  align-items: center;
 }
 
-.img-base{
-width: 100%;
-position: absolute; /* Posiciona absolutamente dentro do album-beige */
-bottom: 0; /* Alinha na base inferior */
-left: 0; /* Alinha à esquerda do album-beige */
-z-index: 1; 
+.img-base {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .img-square {
@@ -417,41 +481,90 @@ z-index: 1;
   line-height: 1.6;
   font-weight: 400;
   width: 34%;
-  margin-left: 50px; /* Adiciona algum espaço à esquerda do texto */
   z-index: 3;
+}
+
+.album-blue .community {
+  position: relative;
+}
+
+.container-community {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  padding-left: 10%;
+  padding-right: 8%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-community .text {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-community {
+  color: white;
+  font-size: 28px;
+  line-height: 1.6;
+  font-weight: 400;
+  z-index: 3;
+  padding-bottom: 35px;
+}
+
+.link-white {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  margin: auto;
+}
+
+.link-white:hover {
+  color: #334376;
+}
+
+.player {
+  aspect-ratio: 16/9;
+  width: 58%;
 }
 
 /***************** INEWSLETTER *****************/
 
 .newsletter {
   padding: 80px 0;
-  background: url('/images/NEWSLETTER (1).png') center center/cover no-repeat;
+  background: url("/images/NEWSLETTER (1).png") center center/cover no-repeat;
+  background-position: right center;
 }
 
 .row-newsletter {
-  margin-left: 20%; 
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin-left: 15%;
+  max-width: 28%;
 }
-  
-.newsletter .content {
-  width: 23%;
-  padding-bottom:25px;
+
+.content-newsletter {
+  padding-bottom: 25px;
   text-align: center;
   position: relative;
-  z-index: 2; 
-  display: flex; 
-  flex-direction: column; 
-  align-items: center;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
 }
 
-.newsletter .content h2 {
+.content-newsletter h2 {
   color: white;
   padding-bottom: 30px;
-  /* margin-bottom: 40px;  */
+  text-align: center; /* Ajuste conforme necessário */
+  margin-left: 0;
 }
 
-.newsletter .content p {
+.newsletter-text {
+  /* width: 40%; */
   color: white;
   line-height: 1.8;
 }
@@ -459,33 +572,28 @@ z-index: 1;
 .newsletter .form-inline {
   display: flex;
   align-items: center;
-  
-}
-
-.newsletter .form-group {
-  margin-right: 0px; /* Adapte a margem conforme necessário */
+  justify-content: center;
 }
 
 .newsletter form .form-control {
-    background:#eff1f4;
-    border:none;
-    border-radius:8px;
-    box-shadow:none;
-    outline:none;
-    color:inherit;
-    text-indent:9px;
-    height:48px;
-    margin-right:10px;
-    min-width:150px;
-    width: 350px;
-  }
-    
+  background: #eff1f4;
+  border: none;
+  border-radius: 8px;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+  text-indent: 9px;
+  height: 48px;
+  margin-right: 10px;
+  min-width: 150px;
+  width: 350px;
+}
 
 /***************** INSTAGRAM *****************/
 
 .instagram-container {
- padding-top: 100px;
- padding-bottom: 180px;
+  padding-top: 100px;
+  padding-bottom: 180px;
   text-align: center;
   align-items: center;
 }

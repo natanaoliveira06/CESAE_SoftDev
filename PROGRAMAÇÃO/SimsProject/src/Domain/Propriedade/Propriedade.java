@@ -1,5 +1,8 @@
 package Domain.Propriedade;
 
+/**
+ * Super Classe Propriedade
+ */
 public class Propriedade {
 
     protected String nomePropriedade;
@@ -20,8 +23,12 @@ public class Propriedade {
     public int getEstatutoPropriedade() {
         return estatutoPropriedade;
     }
+
+    /**
+     * Método Exibir detalhes da Propriedadaes
+     */
     public void exibirDetalhes(){
-        System.out.print(this.nomePropriedade + "\t|  Valor: " + this.custo + "\t|  Galeões"+ "Estatuto da propriedade: "+ this.estatutoPropriedade);
+            System.out.print(this.nomePropriedade + "\t|  Valor: " + this.custo + " Galeões |   Estatuto da propriedade: "+ this.estatutoPropriedade);
     }
 
 }

@@ -17,6 +17,11 @@ public class CSVShoppingReader {
         this.filePath = filePath;
     }
 
+    /**
+     * Reader do Ficheiro de Shopping
+     * @return coisasParaComprar (array de coisas para comprar)
+     * @throws FileNotFoundException
+     */
     public ArrayList<Propriedade> readCSVToRepository() throws FileNotFoundException {
 
         File file = new File(this.filePath);

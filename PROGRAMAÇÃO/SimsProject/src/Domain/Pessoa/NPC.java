@@ -1,5 +1,12 @@
 package Domain.Pessoa;
 
+import Domain.Profissao;
+
+import java.util.ArrayList;
+
+/**
+ * Classe NPC que extend Pessoa
+ */
 public class NPC extends Pessoa {
 
     private int estatutoMinimo;
@@ -8,9 +15,19 @@ public class NPC extends Pessoa {
         super(nomePersonagem, dinheiro);
         this.estatutoMinimo = estatutoMinimo;
     }
+
+    public int getEstatutoMinimo() {
+        return estatutoMinimo;
+    }
+
+    /**
+     * Método Exibir detalhes do NPC
+     */
     public void exibirDetalhes() {
         super.exibirDetalhes();
         System.out.print("\t| Estatuto Mímimo: " + this.estatutoMinimo);
     }
+
+
 }
 
