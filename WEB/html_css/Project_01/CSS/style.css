@@ -679,6 +679,67 @@ p {
   background-position: center;
 }
 
+.carousel-events{
+  width:30%;
+}
+
+
+
+
+.container-block-event{
+  background-color: blue;  
+}
+
+.row-block-event{
+  position: relative;
+  align-items: center;
+  background-color: green;
+}
+
+.card-event{
+  background-color: pink;
+  width:1200px;
+  margin: auto;
+  display: flex;
+}
+
+.coluna-1 {
+  position: relative; /* Adiciona posição relativa para servir como referência para o position absolute */
+}
+
+.img-event{
+  width:85%
+}
+
+.events-date {
+  text-align: center;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-color: #198754;
+  padding: 12px 20px 12px 20px;
+  text-transform: uppercase
+}
+
+.event-day{
+  font-size:28 px;
+  color: #fff;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.event-month{
+  font-size:14 px;
+  color: #fff;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.coluna-2{
+}
+
+
+
 /***********************************************/
 /****************** BLOG PAGE ******************/
 /***********************************************/

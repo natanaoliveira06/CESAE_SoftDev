@@ -50,7 +50,7 @@ public class MainTeste {
 
         //sims.jogo(jogador1);
 
-        //sims.segurancaSocial(jogador1);
+       // sims.segurancaSocial(jogador1);
 
        // sims.fimJogo(jogador1);
 
