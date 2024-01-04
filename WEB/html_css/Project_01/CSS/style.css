@@ -679,13 +679,12 @@ p {
   background-position: center;
 }
 
+/* Past Events */
 .carousel-events{
-  width:30%;
+  width:25%;
 }
 
-
-
-
+/* Upcoming Events */
 .container-block-event{
   background-color: blue;  
 }
@@ -693,22 +692,25 @@ p {
 .row-block-event{
   position: relative;
   align-items: center;
-  background-color: green;
+  background-color: white;
+  padding-bottom:50px;
 }
 
 .card-event{
-  background-color: pink;
+ // background-color: pink;
   width:1200px;
   margin: auto;
-  display: flex;
+  display: flex;  
+  box-shadow: 0px 0px 16px 0px rgba(187, 187, 187, 0.48);
 }
 
 .coluna-1 {
   position: relative; /* Adiciona posição relativa para servir como referência para o position absolute */
+//background-color: purple;
 }
 
 .img-event{
-  width:85%
+  width:80%
 }
 
 .events-date {
@@ -729,14 +731,104 @@ p {
 }
 
 .event-month{
-  font-size:14 px;
+  font-size:18 px;
   color: #fff;
   margin-bottom: 0;
   line-height: 1.5;
 }
 
 .coluna-2{
+//  background-color: yellow;
+  margin: auto;
 }
+  
+.events-date {
+  text-align: center;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-color: #198754;
+  padding: 12px 20px 12px 20px;
+  text-transform: uppercase
+}
+
+.event-day{
+  font-size:28 px;
+  color: #fff;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.event-month{
+  font-size:18 px;
+  color: #fff;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.coluna-2{
+//  background-color: yellow;
+  margin: auto;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.list-event-details {
+  padding: 0;
+}
+
+.event-title{
+text-decoration: none;
+font-weight: 600;
+color: black;
+padding-bottom: 25px;
+}
+
+.event-details{
+  color: black;
+  line-height:2;
+  list-style: none;
+}
+
+.event-description{
+  color: black;
+  line-height:1.5;
+  padding-top:25px;
+  padding-bottom:45px;
+}
+
+.event-link{
+padding-bottom: 25px;
+font-size: 15px;
+}
+
+.event-title{
+text-decoration: none;
+font-weight: 600;
+color: black;
+padding-bottom: 25px;
+}
+
+.event-details{
+  color: black;
+  line-height:2;
+  list-style: none;
+}
+
+
+
+.event-description{
+  color: black;
+  line-height:1.5;
+  padding-top:25px;
+  padding-bottom:45px;
+}
+
+.event-link{
+padding-bottom: 25px;
+font-size: 15px;
+}
+
 
 
 
