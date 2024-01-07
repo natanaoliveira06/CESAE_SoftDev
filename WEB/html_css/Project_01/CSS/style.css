@@ -1,6 +1,5 @@
 /* 
 ----- 01 TYPOGRAPHY SYSTEM -----
-
 font-family: 'Figtree', sans-serif;
 
 - Font sizes (px):
@@ -10,29 +9,18 @@ font-family: 'Figtree', sans-serif;
 Ligth: 300  /  Regular: 400  /  Medium: 500    /  Semi-bold: 600  /  Bold: 700
 
 - Line heigths:
-Default: 1    /    Small: 1.05
-Medium: 1.2   /    Paragraph default: 1.6
+Default: 1    /    Small: 1.05   /    Medium: 1.2   /    Paragraph default: 1.6
 
 - Letter spacing
 0.5px   /   0.75px
 
 ------- 02 COLORS -------
-
 - Primary: 
-#334376
-#5F8FC6
-#5cd1be
-#f1d3b6
+#334376     #5F8FC6     #5cd1be     #f1d3b6
 
 - Tints: 
-  #fdf2e9   
+#fdf2e9  
 
-- Greys: 
-#888
-#767676
-#6f6f6f
-#555
-#333
 
 ------- 05 SHADOWS  -------
 box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
@@ -66,8 +54,7 @@ body {
 /** Estilos para telas médias e pequenas (até 991px) **/
 /******************************************************/
 
-/* Media Query mais geral */
-@media (max-width: 991px) {
+@media (max-width: 991px) { /* Media Query mais geral */
   /***************** NAV BAR *****************/
   .sidebar {
     background-color: #5f8fc6;
@@ -114,7 +101,6 @@ body {
     display: block;
     text-align: center;
   }
-
   /***************** HERO *****************/
   .hero-section {
     padding: 20px;
@@ -128,13 +114,12 @@ body {
   }
 
   .heading-tertiary {
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
   }
 
   .hero-description {
     display: none;
   }
-
   /***************** HOME *****************/
   .container-aboutUs {
     flex-direction: column;
@@ -235,7 +220,6 @@ body {
     width: 100% !important;
     margin-top: 40px;
   }
-
   /***************** Community *****************/
   .row-crew {
     margin-top: 0px !important;
@@ -253,7 +237,6 @@ body {
     width: 50%;
     margin-bottom: 0px !important;
   }
-
   /***************** Events *****************/
   .carousel-events {
     padding-top: 50px !important;
@@ -291,7 +274,6 @@ body {
     padding-right: 15px;
     margin-bottom: 50px !important;
   }
-
   /************** FORM CONTACT **************/
   .container-form {
     width: 90% !important;
@@ -300,7 +282,6 @@ body {
   .col-md-12 textarea {
     height: 120px !important;
   }
-
   /************* CARDS CONTACT **************/
   .container-cards-contact {
     padding-bottom: 250px !important;
@@ -319,14 +300,17 @@ body {
     margin-top: 100px !important;
     margin-bottom: 0px !important;
   }
+
+  .img-error {
+    height: 100vh !important; 
+  }
 }
 
-/* Media Query for TABLETS Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px) {
+
+@media (min-width: 768px) and (max-width: 1024px) { /* Media Query for TABLETS Ipads portrait mode */
   .row-newsletter {
     max-width: 50% !important;
   }
-
   /********* Community **********/
   .col-card-crew {
     width: 50%;
@@ -343,7 +327,6 @@ body {
   .player-group {
     width: 48% !important;
   }
-
   /********* Event **********/
   .card-event {
     width: 60% !important;
@@ -358,12 +341,20 @@ body {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+  /********* Blog **********/
+  .col-blog-gr{
+    width: 100%;
+    flex: 0 0 100%;
+  }
 
-  /*****/
+  .col-blog {
+    width: 50%; 
+    flex: 0 0 50%; 
+  }
+
 }
 
-/* Media Query for MOBILE Devices */
-@media (max-width: 767px) {
+@media (max-width: 767px) { /* Media Query for MOBILE Devices */
   .heading-primary {
     font-size: 2.8rem !important;
     line-height: 1.2 !important;
@@ -465,6 +456,14 @@ body {
   }
 
   /******/
+  .img-error p {
+    font-size: 20px !important;
+  }
+
+  .img-error .btn--full {
+    font-size: 14px;
+  }
+  
 
   /***************** FOOTER *****************/
   .footer-menu {
@@ -540,7 +539,6 @@ p {
 }
 
 .navbar-brand {
-  /* herdada do bootstrap */
   margin-right: 0px;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -573,7 +571,6 @@ p {
   color: #334376;
   font-weight: 700;
 }
-
 /************************************************/
 /***************** HERO SECTION *****************/
 /************************************************/
@@ -587,7 +584,7 @@ p {
   text-align: left;
   margin: 0;
   color: white;
-  height: 100vh; /* 100% da altura da tela */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -647,11 +644,9 @@ p {
 .btn--full:active {
   background-color: #5f8fc6;
 }
-
 /**********************************************/
 /***************** HOME PAGE ******************/
 /**********************************************/
-
 .album-beige .about {
   position: relative;
 }
@@ -736,9 +731,38 @@ p {
   aspect-ratio: 16/9;
   width: 58%;
 }
+/***************** BLOG *****************/
+.btn .btn-blog{
+  text-align: center;
+  margin: 0 4px;
+  font-weight: 500;
+  color: #334376;
+  padding: 0;
+  line-height: 41px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+ 
+.blog-card{
+  height: 100%;
+  border-radius: 22px;
+  border: transparent;
+  /* box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.05);  */
+}
 
+.blog-card .card-body {
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card .card-title {
+  flex-grow: 1; 
+}
+
+.blog-card img{
+  border-radius: 22px 22px 0 0;  
+}
 /***************** INEWSLETTER *****************/
-
 .newsletter {
   padding: 80px 0;
   background: linear-gradient(
@@ -762,7 +786,7 @@ p {
 .content-newsletter h2 {
   color: white;
   padding-bottom: 30px;
-  text-align: center; /* Ajuste conforme necessário */
+  text-align: center; 
   margin-left: 0;
 }
 
@@ -791,9 +815,7 @@ p {
   min-width: 150px;
   width: 350px;
 }
-
 /***************** INSTAGRAM *****************/
-
 .instagram-container {
   padding-top: 100px;
   padding-bottom: 180px;
@@ -812,11 +834,9 @@ p {
   width: 250px;
   padding: 10px;
 }
-
 /**********************************************/
 /***************** ABOUT PAGE *****************/
 /**********************************************/
-
 .img-aboutpage {
   position: relative;
   text-align: left;
@@ -884,17 +904,15 @@ p {
   line-height: 1.6;
   font-weight: 400;
 }
-
 /**********************************************/
 /*************** COMMUNITY PAGE ***************/
 /**********************************************/
-
 .img-communitypage {
   position: relative;
   text-align: left;
   margin: 0;
   color: white;
-  height: 80vh; /* 100% da altura da tela */
+  height: 80vh; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -926,17 +944,15 @@ p {
   width: 30%;
   padding: 15px;
 }
-
 /***********************************************/
 /***************** EVENTS PAGE *****************/
 /***********************************************/
-
 .img-eventspage {
   position: relative;
   text-align: left;
   margin: 0;
   color: white;
-  height: 80vh; /* 100% da altura da tela */
+  height: 80vh; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -950,7 +966,6 @@ p {
   background-position: center;
 }
 
-/* Past Events */
 .carousel-events {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -967,7 +982,6 @@ p {
   margin: auto;
 }
 
-/* Upcoming Events */
 .calendar-events {
   background-color: #f4efed;
   padding-bottom: 200px;
@@ -986,6 +1000,7 @@ p {
 }
 
 .card-event {
+  position: relative; 
   width: 1200px;
   margin: auto;
   display: flex;
@@ -1061,17 +1076,15 @@ p {
   padding-bottom: 25px;
   font-size: 15px;
 }
-
 /***********************************************/
 /****************** BLOG PAGE ******************/
 /***********************************************/
-
 .img-blogpage {
   position: relative;
   text-align: left;
   margin: 0;
   color: white;
-  height: 80vh; /* 100% da altura da tela */
+  height: 80vh; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1085,10 +1098,153 @@ p {
   background-position: center;
 }
 
+.article-card {
+  padding: 30px;
+  border-radius: 22px;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.15);
+  border: transparent;
+  text-align: left; /
+}
+
+.card-image .post-info {
+  position: absolute;
+  right: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.card-image .post-info span {
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 10px;
+  padding-top: 8px;
+  background-color: #5f8fc6;
+  color: #fff;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  border-radius: 22px;
+}
+
+.article-card:hover .card-image img {
+  filter: brightness(70%); 
+  transition: filter 0.3s ease-in-out; 
+}
+
+.post-title {
+  color: #334376;
+  display: inline;
+  text-decoration: none;
+}
+
+.post-meta {
+  padding-left: 0;
+}
+
+.post-meta li {
+  list-style-type: none;
+  display: inline-block;
+  color: #888;
+  font-weight: 500;  
+  margin-bottom: 20px;
+}
+.post-meta li a {
+  display: inline-block;
+  background-color: #f4efed;
+  border-radius: 6px;
+  color: #334376;
+  text-decoration: none;
+  padding: 4px 10px;
+  font-size: 14px;
+}
+
+.post-meta li a:hover {
+  background-color: #5f8fc6;
+  color: white;
+}
+
+.post-meta li svg {
+  display: inline-block;
+}
+
+.card-text{
+  color: #334376;
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+.card-body h3{
+  margin-bottom: 0;
+}
+
+.read-more-btn{
+  color: #334376;
+  font-size: 16px;
+  margin-bottom: 30px;
+  position: absolute;
+  bottom: 0;
+}
+
+.content a {
+  position: inline;
+  bottom: 0;
+  display: inline;
+  text-decoration: none;
+  background-image: linear-gradient(#5f8fc6, #5f8fc6);
+  background-position: 0% 110%;
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  transition: 0.3s;
+}
+
+.content a:hover {
+  color: white;
+  background-size: 120% 120%;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.pagination .page-item .page-link {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50px;
+  border: transparent;
+  text-align: center;
+  margin: 0 4px;
+  font-weight: 500;
+  color: #334376;
+  padding: 0;
+  line-height: 41px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+
+.pagination .page-item .page-link:focus,
+.pagination .page-item .page-link:hover {
+  box-shadow: none;
+  background: #5f8fc6;
+  color: #fff; 
+}
+
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+  border-radius: 0;
+}
+
+.pagination .page-item.active .page-link {
+  background: #5f8fc6;
+  color: #fff;
+  border-color: #5f8fc6;
+}
 /***********************************************/
 /**************** CONTACT PAGE *****************/
 /***********************************************/
-
 .img-contactpage {
   position: relative;
   text-align: left;
@@ -1107,7 +1263,6 @@ p {
   background-size: cover;
   background-position: center;
 }
-
 /***************** FORMULÁRIO *****************/
 .container-form {
   background-color: white;
@@ -1179,9 +1334,7 @@ p {
     transform: scale(1);
   }
 }
-
 /***************** CARDS *****************/
-
 .row-card-contact {
   width: 60%;
   margin: 0 auto;
@@ -1223,11 +1376,9 @@ p {
 .img-description {
   color: #333;
 }
-
 /***********************************************/
 /******************** FOOTER *******************/
 /***********************************************/
-
 footer {
   display: flex;
   justify-content: flex-end;
@@ -1270,7 +1421,7 @@ footer {
 .social-icon li a {
   font-size: 2rem;
   color: #e8f2f3;
-  margin: 0 20px; /* espaçamento entre os icones*/
+  margin: 0 20px; 
   display: inline-block;
   transition: all 0.3s;
 }
@@ -1365,4 +1516,49 @@ hr {
   100% {
     background-position-x: 1000px;
   }
+}
+/***********************************************/
+/****************** ERROR PAGE *****************/
+/***********************************************/
+.img-error {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-error img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.img-error p {
+  position: absolute; 
+  top: 70%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+  text-align: center; 
+  font-size: 32px; 
+  line-height: 1.6;
+}
+
+.img-error .btn--full {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff73;
+  color: #334376;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.img-error .btn--full:hover {
+  background-color: #334376;
+  color: white;
 }
