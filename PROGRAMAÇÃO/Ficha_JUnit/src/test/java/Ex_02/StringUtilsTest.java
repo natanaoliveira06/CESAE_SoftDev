@@ -7,16 +7,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class StringUtilsTest {
 
-    private StringUtils stringUtils;
-
-    @BeforeEach
-    public void setUp() {
-        stringUtils = new StringUtils();
-    }
-
     @Test
     public void testIsPalindrome() {
-        assertTrue(StringUtils.isPalindrome("ana"));
+        assertEquals(true, StringUtils.isPalindrome("ANA"));
+        assertTrue(StringUtils.isPalindrome("Ana"));
         assertTrue(StringUtils.isPalindrome("RIR"));
         assertTrue(StringUtils.isPalindrome("arara"));
         assertTrue(StringUtils.isPalindrome("ovo"));
@@ -28,7 +22,6 @@ public class StringUtilsTest {
         assertTrue(StringUtils.isPalindrome("anotaramadatadamaratona"));
 
         assertFalse(StringUtils.isPalindrome("natana"));
-        assertFalse(StringUtils.isPalindrome("Ana"));
         assertFalse(StringUtils.isPalindrome("123456"));
         assertFalse(StringUtils.isPalindrome("*-/+"));
         assertFalse(StringUtils.isPalindrome(null));

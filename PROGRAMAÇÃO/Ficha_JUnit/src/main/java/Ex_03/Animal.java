@@ -27,5 +27,4 @@ public class Animal {
             System.out.println(nome + " não come " + comida + ".");
         }
     }
-
 }

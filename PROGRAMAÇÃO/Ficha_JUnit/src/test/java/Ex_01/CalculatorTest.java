@@ -22,6 +22,17 @@ public class CalculatorTest {
     }
 
     @Test
+    public void testSubtract() {
+        int result = calculator.subtract(15, 3);
+        assertEquals(12, result);
+    }
+
+    @Test
+    public void testMultiply() {
+        int result = calculator.multiply(5, 3);
+        assertEquals(15, result);
+    }
+    @Test
     public void testDivide() {
         int result = calculator.divide(10, 2);
         assertEquals(5, result);

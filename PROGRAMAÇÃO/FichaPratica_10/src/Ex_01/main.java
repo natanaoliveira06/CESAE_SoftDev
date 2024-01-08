@@ -45,6 +45,7 @@ public class main {
 
         Carro carroUtilizador = new Carro(marca,modelo,ano,potencia,cilindrada,tipoCombustivel,consumo);
        */
+
         Carro mercedesA45 = new Carro("Mercedes", "A45", 2023, 420, 2000, TipoCombustivel.GASOLINA, 12);
         Carro datsun = new Carro("Datsun", "1200", 1970, 90, 1200, TipoCombustivel.GASOLINA, 25);
         Carro ferrari = new Carro("Ferrari", "SF90", 2023, 800, 5000, TipoCombustivel.GASOLINA, 18);
@@ -58,7 +59,13 @@ public class main {
         System.out.println("\n\n****************************  CORRIDA  ****************************");
         Carro vencedorCorrida1 = mercedesA45.corrida(datsun);
         Carro vencedorCorrida2 = datsun.corrida(ferrari);
-
+        System.out.println("\n*******************************");
+        System.out.println("Vencedor Corrida 1");
+        vencedorCorrida1.exibirDetalhes();
+        System.out.println("\n*******************************");
+        System.out.println("Vencedor Corrida 2");
+        vencedorCorrida2.exibirDetalhes();
+        System.out.println("\n*******************************");
         Carro vencedorFinal = vencedorCorrida1.corrida(vencedorCorrida2);
         System.out.println("Vencedor Final");
         vencedorFinal.exibirDetalhes();
