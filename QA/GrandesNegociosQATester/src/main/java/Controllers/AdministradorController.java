@@ -12,11 +12,10 @@ import java.util.ArrayList;
 public class AdministradorController {
     private ArrayList<Venda> todasVendas;
 
-    public AdministradorController() throws FileNotFoundException {
-        VendasRepository repository = new VendasRepository("Ficheiros/minimercado.csv");
+    public AdministradorController(String path) throws FileNotFoundException {
+        VendasRepository repository = new VendasRepository(path);
         this.todasVendas = repository.getVendaArray();
     }
-
     public Venda produtoMaisVendido() {
 
         double quantidadeProdutoMaisVendido = 0;
@@ -24,11 +23,9 @@ public class AdministradorController {
 
         ArrayList<Venda> vendasLinhasTotais = new ArrayList<>();
 
-
         //criação vetor produtos sem repetidos
         for (Venda vendaAtual : this.todasVendas) {
             double quantidadeTotal = 0;
-
             for (Venda vendaIterador : this.todasVendas) {
                 if (vendaAtual.getProduto().equalsIgnoreCase(vendaIterador.getProduto())) {
                     quantidadeTotal += vendaIterador.getQuantidadeVendida();
@@ -71,8 +68,8 @@ public class AdministradorController {
         return produtoMaisValor;
     }
 
-    public  void adicionarUtilizador(String tipoUtilizador, String username, String password) throws IOException, IOException {
-        File file = new File("Ficheiros/login_grandesNegocios.csv");
+    public  void adicionarUtilizador(String tipoUtilizador, String username, String password, String filePath) throws IOException, IOException {
+        File file = new File(filePath);
         FileWriter fW = new FileWriter(file,true);
 
         fW.append("\n" + tipoUtilizador + ";" + username + ";" + password);
@@ -81,12 +78,10 @@ public class AdministradorController {
 
 
     public double valorVendas (){
-
         double somaVendas=0;
 
         for (Venda vendaAtual: this.todasVendas) {
             somaVendas += vendaAtual.getPrecoUnitario()*vendaAtual.getQuantidadeVendida();
-
         }
         return somaVendas;
     }
