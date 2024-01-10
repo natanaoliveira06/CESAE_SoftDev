@@ -27,9 +27,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+<<<<<<< Updated upstream
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+=======
+>>>>>>> Stashed changes
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -42,6 +45,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< Updated upstream
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "C:/Users/softdev/Documents/GitHub/CESAE_SoftDev/PROGRAMAÇÃO/Ficha_JUnit/src/main/java/Ex_06",
@@ -49,6 +53,11 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
+=======
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/natan/OneDrive/Documentos/CESAE_SoftDev/PROGRAMAÇÃO/SimsProject",
+    "onboarding.tips.debug.path": "C:/Users/natan/OneDrive/Documentos/CESAE_SoftDev/PROGRAMAÇÃO/Ficha_JUnit/src/main/java/org/example/Main.java"
+>>>>>>> Stashed changes
   }
 }]]></component>
   <component name="RecentsManager">
