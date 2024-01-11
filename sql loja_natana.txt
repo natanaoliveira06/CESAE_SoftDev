@@ -1,0 +1,13 @@
+- SELECT * FOM cliente
+- SELECT DISTINCT cidade FROM cliente
+- SELECT descricao, preco * 1.23 AS "Preço + IVA" FROM produto
+- SELECT * FROM cliente WHERE data_inscricao between "2000-01-01" and  "2009-01-01" and pontos > 1000
+- SELECT * FROM produto WHERE stock IN (0,15, 60)
+- SELECT * FROM cliente WHERE nome LIKE "ana" ORDER BY id_cliente DESC
+- SELECT * FROM cliente WHERE nome LIKE "____a"
+- SELECT * FROM produto WHERE descricao LIKE "P%" OR "T%" OR "%ca"
+- SELECT pontos FROM `cliente` ORDER By pontos desc limit 3 OFFSET 5
+- SELECT cidade, COUNT(nome) as clientes_cidade FROM cliente GROUP by cidade HAVING COUNT(nome) > 1
+- SELECT * FROM venda WHERE desconto = 0
+- SELECT * FROM produto ORDER BY preco DESC limit 3
+- SELECT * FROM venda WHERE desconto > 0.11
