@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 09/01/2024 às 18:39
+-- Tempo de geração: 11/01/2024 às 17:53
 -- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.0.30
+-- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -50,7 +50,7 @@ INSERT INTO `cliente` (`id_cliente`, `nome`, `cidade`, `data_inscricao`, `pontos
 (8, 'Bruna', 'Porto', '2020-07-15', 1589),
 (9, 'Joana', 'Gaia', '2021-04-14', 324),
 (10, 'Raquel', 'Maia', '2019-01-21', 1899),
-(11, 'Vitor', 'Gaia', '2020-09-29', 127),
+(11, 'Vitorino', 'Gaia', '2020-09-29', 127),
 (26, 'Maria', 'Valbom', '2006-05-21', 3234),
 (27, 'Joana', 'Maia', '2011-08-07', 678),
 (28, 'Anabela', 'Ermesinde', '2012-03-21', 864),
@@ -124,14 +124,13 @@ INSERT INTO `produto` (`id_produto`, `preco`, `stock`, `descricao`) VALUES
 (2, 0.99, 241, 'Parafuso'),
 (3, 0.2, 147, 'Prego'),
 (4, 0.3, 0, 'Rosca'),
-(5, 35.99, 15, 'Berbequim'),
+(5, 35.99, 13, 'Berbequim'),
 (6, 20.99, 11, 'Torneira'),
 (7, 1.5, 0, 'Lampada'),
 (8, 2.6, 60, 'Broca'),
 (9, 10.5, 0, 'Extensão'),
 (10, 5.5, 16, 'Tripla'),
 (11, 3.99, 34, 'Pincel'),
-(12, 2.99, 0, 'Calha'),
 (13, 5.99, 23, 'Martelo'),
 (14, 0.99, 241, 'Parafuso'),
 (15, 0.2, 147, 'Prego'),
@@ -143,7 +142,6 @@ INSERT INTO `produto` (`id_produto`, `preco`, `stock`, `descricao`) VALUES
 (21, 10.5, 0, 'Extensão'),
 (22, 5.5, 16, 'Tripla'),
 (23, 3.99, 34, 'Pincel'),
-(24, 2.99, 0, 'Calha'),
 (25, 5.99, 23, 'Martelo'),
 (26, 0.99, 241, 'Parafuso'),
 (27, 0.2, 147, 'Prego'),
@@ -155,7 +153,6 @@ INSERT INTO `produto` (`id_produto`, `preco`, `stock`, `descricao`) VALUES
 (33, 10.5, 0, 'Extensão'),
 (34, 5.5, 16, 'Tripla'),
 (35, 3.99, 34, 'Pincel'),
-(36, 2.99, 0, 'Calha'),
 (37, 49.99, 20, 'Furadeira'),
 (38, 0.99, 1000, 'Lixa'),
 (39, 22.99, 187, 'Tinta'),

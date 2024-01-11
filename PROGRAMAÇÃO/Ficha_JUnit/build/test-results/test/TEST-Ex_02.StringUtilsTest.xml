@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Ex_02.StringUtilsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-08T15:08:23" hostname="PRTCPU915W10AIO" time="0.003">
+  <properties/>
+  <testcase name="testIsPalindrome()" classname="Ex_02.StringUtilsTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Ex_03.AnimalTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-01-08T15:08:23" hostname="PRTCPU915W10AIO" time="0.014">
+  <properties/>
+  <testcase name="comerTeste()" classname="Ex_03.AnimalTest" time="0.011"/>
+  <testcase name="getNomeTest()" classname="Ex_03.AnimalTest" time="0.0"/>
+  <testcase name="getTipoAlimentacao()" classname="Ex_03.AnimalTest" time="0.001"/>
+  <system-out><![CDATA[Tobias comeu FRUTAS.
+Fido nÃ£o come PEIXE.
+Fido comeu CARNE.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
