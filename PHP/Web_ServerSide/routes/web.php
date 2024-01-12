@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,14 +19,12 @@ Route::get('/', function () {
     return view('welcome');
 })->name('bemvindos');
 
-Route::get('/home', function () {
-    return view('main.home');
-})->name('home.index');
+Route::get('/home', [IndexController::class, 'index'])->name('home.index');
 
 
-Route::get('/ola', function () {
-    return '<h1>Hello Turma de Software</h1>';
-})->name('home.hello');
+Route::get('/ola', function () {  //nome do frontEnd
+    return '<h1>Hello Turma de Software</h1>'; //nome da view
+})->name('home.hello'); // caminho para chamar a rota
 
 
 Route::get('/hello/{nome}', function ($nome) {
@@ -33,9 +33,9 @@ Route::get('/hello/{nome}', function ($nome) {
 
 // rotas de user
 
-Route::get('/users/add', function () {  //nome do frontEnd
-    return view('users.add_user'); //nome da view
-})->name('users.add');  // caminho para chamar a rota
+Route::get('/users/add', [UserController::class, 'addUser'])->name('users.add');
+
+Route::get('/users/all',  [UserController::class, 'allUsers'])->name('users.all');
 
 
 Route::fallback(function () {
