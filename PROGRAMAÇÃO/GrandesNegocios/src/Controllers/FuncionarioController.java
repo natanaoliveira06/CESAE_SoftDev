@@ -38,4 +38,5 @@ public class FuncionarioController {
         return stock;
     }
 
+
 }

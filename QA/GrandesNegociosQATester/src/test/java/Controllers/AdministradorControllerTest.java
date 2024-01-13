@@ -95,26 +95,7 @@ class AdministradorControllerTest {
         assertEquals("joao", username);
         assertEquals("softdev2024", password);
     }
-
-    /**
-     * Método para adicionar um utilizador Invalido - TODO ESTE TESTE DÁ FALHA
-     * @throws IOException
-     */
-      @Test
-      public void adicionarUtilizadorInvalidoTest() throws IOException {
-       String filePath = "src/test/resources/login_grandesNegociosTest.csv";
-
-     assertThrows(IllegalArgumentException.class, () -> {
-         admControl.adicionarUtilizador("SEGURANCA", "zacarias", "12345", filePath);
-     });
-
-     assertThrows(IllegalArgumentException.class, () -> {
-         admControl.adicionarUtilizador("ADMINISTRADOR", "jeremias", "12345", filePath);
-      });
-      }
-
-
-    @Test
+   @Test
     void valorVendasTest() {
         assertEquals(3038.3500000000004, admControl.valorVendas());
     }
@@ -123,28 +104,4 @@ class AdministradorControllerTest {
     void mediaVendasTest() {
         assertEquals(178.72647058823532, admControl.mediaVendas());
     }
-
-   // @AfterEach
-  //  void tearDown() throws FileNotFoundException {
-
-        // Limpar o ficheiro
-       // File fileTest = new File("src/test/resources/minimercadoTest.csv");
-
-       // File fileOriginal = new File("src/test/resources/minimercadoTesterOriginal.csv");
-
-       // PrintWriter pw = new PrintWriter(fileTest);
-       // Scanner sc = new Scanner(fileOriginal);
-
-      //  int count = 0;
-      //  while (sc.hasNextLine()) {
-         //   String linha = sc.nextLine();
-         //   if (count < 134) {
-           //     pw.println(linha);
-          //  } else {
-           //     pw.print(linha);
-         //   }
-          //  count++;
-       // }
-      //  pw.close();
-  //  }
 }

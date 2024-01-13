@@ -1,11 +1,13 @@
 package Controllers;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -38,7 +40,7 @@ class FuncionarioControllerTest {
 
         while (scanner.hasNextLine()) {
 
-            linha=scanner.nextLine();
+            linha = scanner.nextLine();
             String[] linhaSeparada = linha.split(",");
 
             tipoProduto = linhaSeparada[0];
@@ -59,7 +61,29 @@ class FuncionarioControllerTest {
         assertEquals(1100, funcionario.consultarStockProduto("Sacos do Lixo"));
         assertEquals(1170, funcionario.consultarStockProduto("Azeite"));
         assertEquals(1150, funcionario.consultarStockProduto("Sabao Azul e Branco"));
-
-
     }
+
+    @AfterEach
+    void tearDown() throws FileNotFoundException {
+        // Limpar o ficheiro
+        File fileTest = new File("src/test/resources/minimercadoTest.csv");
+        File fileOriginal = new File("src/test/resources/minimercadoTesterOriginal.csv");
+
+        PrintWriter pw = new PrintWriter(fileTest);
+        Scanner sc = new Scanner(fileOriginal);
+
+        int count = 0;
+
+        while (sc.hasNextLine()) {
+            String linha = sc.nextLine();
+            if (count < 134) {
+                pw.println(linha);
+            } else {
+                pw.print(linha);
+            }
+            count++;
+        }
+        pw.close();
+    }
+
 }
