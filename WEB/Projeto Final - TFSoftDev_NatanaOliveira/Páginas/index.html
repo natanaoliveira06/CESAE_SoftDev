@@ -30,12 +30,14 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/general.css" />
     <link
       rel="shortcut icon"
       href="/images/favicon-32x32.png"
@@ -179,6 +181,119 @@
           </div>
         </div>
       </section>
+
+      <section class="album-beige">
+        <div class="card blog-card">
+          <img
+            class="card-img-top"
+            src="/images/News 1 1.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Paddle, Paddle, Paddle!</h5>
+            <p class="card-text">by Kim Feldmann</p>
+            <p class="card-text" style="padding-bottom: 20px">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Swiper -->
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide blog-card">
+            <img
+              class="card-img-top"
+              src="/images/News 1 1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Paddle, Paddle, Paddle!</h5>
+              <p class="card-text">by Kim Feldmann</p>
+              <p class="card-text" style="padding-bottom: 20px">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide blog-card">
+            <img
+              class="card-img-top"
+              src="/images/News 1 1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Paddle, Paddle, Paddle!</h5>
+              <p class="card-text">by Kim Feldmann</p>
+              <p class="card-text" style="padding-bottom: 20px">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide blog-card">
+            <img
+              class="card-img-top"
+              src="/images/News 1 1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Paddle, Paddle, Paddle!</h5>
+              <p class="card-text">by Kim Feldmann</p>
+              <p class="card-text" style="padding-bottom: 20px">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide blog-card">
+            <img
+              class="card-img-top"
+              src="/images/News 1 1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Paddle, Paddle, Paddle!</h5>
+              <p class="card-text">by Kim Feldmann</p>
+              <p class="card-text" style="padding-bottom: 20px">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">Slide 5</div>
+
+          <div class="swiper-slide">Slide 6</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+      /**********************************/
 
       <section class="blog">
         <div class="album-beige">
