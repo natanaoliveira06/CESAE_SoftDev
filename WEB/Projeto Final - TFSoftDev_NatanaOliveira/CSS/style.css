@@ -1,6 +1,3 @@
-/***********************************************/
-/******************* NAV BAR *******************/
-/***********************************************/
 .navbar {
   background-color: transparent;
   text-align: center;
@@ -44,9 +41,7 @@
   color: #334376;
   font-weight: 700;
 }
-/************************************************/
-/***************** HERO SECTION *****************/
-/************************************************/
+
 .hero-section {
   margin: 0;
   padding: 0;
@@ -117,18 +112,16 @@
 .btn--full:active {
   background-color: #5f8fc6;
 }
-/**********************************************/
-/***************** HOME PAGE ******************/
-/**********************************************/
+
 .album-beige .about {
   position: relative;
-}
+img-baselink-}
 
 .container-aboutUs {
   display: flex;
   position: relative;
   z-index: 2;
-  padding-top: 180px;
+  padding-top: 150px;
   padding-bottom: 100px;
   padding-left: 10%;
   padding-right: 10%;
@@ -204,7 +197,7 @@
   aspect-ratio: 16/9;
   width: 58%;
 }
-/***************** BLOG *****************/
+
 .mySwiper {
   width: 100%;
   max-width: 1430px;
@@ -238,6 +231,15 @@
   position: relative;
 }
 
+.card-body-blog {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 100%;
+  text-align: left;
+}
+
 .card-title {
   color: #334376;
   font-weight: 600;
@@ -249,7 +251,7 @@
   bottom: 15px;
   left: 0;
   width: 100%;
-  padding: 0 15px;
+  padding-left: 40px;
 }
 
 .card-img-top {
@@ -261,7 +263,6 @@
   transition: filter 0.3s ease-in-out;
 }
 
-/***************** INEWSLETTER *****************/
 .newsletter {
   padding: 80px 0;
   background: linear-gradient(
@@ -290,7 +291,6 @@
 }
 
 .newsletter-text {
-  /* width: 40%; */
   color: white;
   line-height: 1.8;
 }
@@ -314,7 +314,7 @@
   min-width: 150px;
   width: 350px;
 }
-/***************** INSTAGRAM *****************/
+
 .instagram-container {
   padding-top: 100px;
   padding-bottom: 180px;
@@ -339,15 +339,12 @@
   transition: filter 0.3s ease-in-out;
 }
 
-/**********************************************/
-/***************** ABOUT PAGE *****************/
-/**********************************************/
 .img-aboutpage {
   position: relative;
   text-align: left;
   margin: 0;
   color: white;
-  height: 80vh; /* 100% da altura da tela */
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -387,8 +384,6 @@
 .container-ourVision {
   position: relative;
   padding: 100px 10% 250px 10%;
-  justify-content: space-between;
-  align-items: center;
   text-align: center;
 }
 
@@ -415,9 +410,7 @@
   line-height: 1.6;
   font-weight: 400;
 }
-/**********************************************/
-/*************** COMMUNITY PAGE ***************/
-/**********************************************/
+
 .img-communitypage {
   position: relative;
   text-align: left;
@@ -443,7 +436,7 @@
 
 .col-card-crew {
   text-align: center;
-  padding: 0;
+  padding-bottom: 40px;
 }
 
 .card-crew {
@@ -460,14 +453,19 @@
   margin: 0 auto;
 }
 
+.link-instagram-container {
+  display: block;
+  color: #334376;
+  text-decoration: none;
+}
+
+
 .player-group {
   aspect-ratio: 16/9;
   width: 30%;
   padding: 15px;
 }
-/***********************************************/
-/***************** EVENTS PAGE *****************/
-/***********************************************/
+
 .img-eventspage {
   position: relative;
   text-align: left;
@@ -576,18 +574,18 @@
 .event-title {
   text-decoration: none;
   font-weight: 600;
-  color: black;
+  color: #334376;
   padding-bottom: 25px;
 }
 
 .event-details {
-  color: black;
+  color: #334376;
   line-height: 2;
   list-style: none;
 }
 
 .event-description {
-  color: black;
+  color: #334376;
   line-height: 1.5;
   padding-top: 25px;
   padding-bottom: 45px;
@@ -597,9 +595,7 @@
   padding-bottom: 25px;
   font-size: 15px;
 }
-/***********************************************/
-/****************** BLOG PAGE ******************/
-/***********************************************/
+
 .img-blogpage {
   position: relative;
   text-align: left;
@@ -660,7 +656,7 @@
 }
 
 .fixed-height-image {
-  height: 500px; /* ou qualquer valor desejado */
+  height: 500px;
 }
 
 .card-image .post-info {
@@ -682,8 +678,9 @@
   padding: 25px 35px 35px;
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto; /* Modificado */
+  flex: 1 1 auto;
   min-height: 100%;
+  text-align: left;
 }
 
 .post-meta {
@@ -749,8 +746,6 @@
   background-size: 120% 120%;
 }
 
-/*******************/
-
 .pagination {
   justify-content: center;
 }
@@ -788,9 +783,6 @@
   border-color: #5f8fc6;
 }
 
-/***********************************************/
-/**************** CONTACT PAGE *****************/
-/***********************************************/
 .img-contactpage {
   position: relative;
   text-align: left;
@@ -809,7 +801,7 @@
   background-size: cover;
   background-position: center;
 }
-/***************** FORMULÁRIO *****************/
+
 .container-form {
   background-color: white;
   width: 58%;
@@ -880,7 +872,7 @@
     transform: scale(1);
   }
 }
-/***************** CARDS *****************/
+
 .row-card-contact {
   width: 60%;
   margin: 0 auto;
@@ -906,6 +898,7 @@
   box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.15);
   border: transparent;
   width: 27rem;
+  height: 100%;
 }
 
 .round-img {
@@ -922,9 +915,7 @@
 .img-description {
   color: #333;
 }
-/***********************************************/
-/******************** FOOTER *******************/
-/***********************************************/
+
 footer {
   display: flex;
   justify-content: flex-end;
@@ -1063,9 +1054,7 @@ hr {
     background-position-x: 1000px;
   }
 }
-/***********************************************/
-/****************** ERROR PAGE *****************/
-/***********************************************/
+
 .background-error-img,
 .error-img-404 {
   width: 100%;
@@ -1111,12 +1100,8 @@ hr {
   color: white;
 }
 
-/******************************************************/
-/** Estilos para telas médias e pequenas (até 991px) **/
-/******************************************************/
 @media (max-width: 991px) {
   /* Media Query geral */
-  /***************** NAV BAR *****************/
   .sidebar {
     background-color: #5f8fc6;
     backdrop-filter: blur(10px);
@@ -1132,7 +1117,6 @@ hr {
 
   .nav-link {
     padding: 25px;
-    font-size: 1.5rem !important;
     text-align: center;
   }
 
@@ -1162,76 +1146,73 @@ hr {
     display: block;
     text-align: center;
   }
-  /***************** HERO *****************/
 
   .hero-text-box {
     max-width: 100%;
-    margin-left: 50px !important;
-    margin-top: 20px !important;
+    margin-left: 50px;
+    margin-top: 20px;
     margin-right: 50px;
   }
 
   .heading-tertiary {
-    font-size: 1.8rem !important;
+    font-size: 1.8rem;
   }
 
   .hero-description {
     display: none;
   }
-  /***************** HOME *****************/
+
   .container-aboutUs {
     flex-direction: column;
     align-items: center;
   }
 
   .img-square {
-    width: 90% !important;
+    width: 100%;
     padding-bottom: 50px;
   }
 
   .text-aboutUs {
-    font-size: 22px !important;
-    width: 90% !important;
-    margin: 0 !important;
+    width: 90%;
+    margin: 0;
   }
 
   .img-base {
-    width: 220% !important;
-    height: 550px !important;
+    width: 220%;
+    height: 550px;
   }
 
   .container-community {
     flex-direction: column;
     align-items: center;
-    padding-top: 100px !important;
+    padding-top: 100px;
   }
 
   .container-community .text {
-    width: 90% !important;
+    width: 90%;
     padding-bottom: 65px;
   }
 
   .text-community {
-    font-size: 22px !important;
-    margin: 0 !important;
+    margin: 0;
   }
 
   .player {
-    width: 95% !important;
+    width: 100%;
   }
 
   .newsletter {
-    background-position: right 10% center !important;
+    background-position: right 10% center;
   }
 
   .row-newsletter {
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .instagram-container h2 {
     max-width: 80%;
-    padding-bottom: 35px !important;
+    padding-bottom: 35px;
     line-height: 1.6;
     margin-left: auto;
     margin-right: auto;
@@ -1239,20 +1220,20 @@ hr {
 
   .link-instagram {
     font-size: 20px;
-    margin-bottom: 35px !important;
+    margin-bottom: 35px;
   }
 
   .instagram-photo {
-    padding: 6px !important;
-    width: 45% !important;
+    padding: 6px;
+    width: 45%;
   }
-  /***************** About Us *****************/
+
   .img-aboutUs {
     margin-bottom: 100px;
   }
 
   .text-aboutUs-Page {
-    padding-top: 0 !important;
+    padding-top: 0 ;
     width: 100% !important;
   }
 
@@ -1270,21 +1251,13 @@ hr {
   }
 
   .container-text-Mission {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    transform: none !important;
-    margin-left: 0px !important;
-    width: 100% !important;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-left: 0px;
+    width: 100%;
     margin-top: 40px;
-  }
-  /***************** Community *****************/
-  .row-crew {
-    margin-top: 0px !important;
-  }
-
-  .card-crew h3 {
-    padding: 0 50px 20px 50px;
   }
 
   .videos {
@@ -1293,95 +1266,83 @@ hr {
 
   .photo-gallery .col-lg-3 {
     width: 50%;
-    margin-bottom: 0px !important;
+    margin-bottom: 0px;
   }
-  /***************** Events *****************/
-  .carousel-events {
-    padding-top: 50px !important;
-  }
-
+ 
   .past-events {
-    width: 100% !important;
+    width: 100%;
   }
-
-  .past-events .heading-secondary {
-    margin: 45px !important;
-  }
-
+  
   .card-event {
     flex-direction: column;
-    width: 100% !important;
   }
 
   .img-event {
-    width: 100% !important;
-    border-radius: 22px 22px 0 0 !important;
-  }
-
-  .coluna-1 {
-    margin-bottom: 40px;
-  }
-
-  .events-date {
-    position: static;
-    margin-top: 10px;
+    width: 100%;
+    border-radius: 22px 22px 0 0;
   }
 
   .coluna-2 {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 50px !important;
+    margin-bottom: 50px;
   }
 
   .post-meta li {
     padding-bottom: 10px;
   }
 
-  /************** FORM CONTACT **************/
   .container-form {
-    width: 90% !important;
+    width: 90% ;
   }
 
   .col-md-12 textarea {
-    height: 120px !important;
+    height: 120px;
   }
-  /************* CARDS CONTACT **************/
+
   .container-cards-contact {
-    padding-bottom: 250px !important;
+    padding-bottom: 250px;
   }
 
   .card-contact {
-    width: 85% !important;
+    width: 85%
   }
 
   .row-card-contact {
-    width: 100% !important;
-    margin: 0px !important;
+    width: 100%;
+    margin: 0px;
   }
 
   .col-sm-6 {
-    margin-top: 100px !important;
-    margin-bottom: 0px !important;
+    margin-top: 100px;
+    margin-bottom: 0px;
+  }
+
+  .volunteer-text-box h3{
+    padding-right: 42px;
+    padding-left: 42px;
   }
 
   .error-img-404 {
-    width: 195% !important;
+    width: 195%;
     position: absolute;
-    object-fit: contain !important;
-    top: 50% !important;
-    left: 50% !important;
+    object-fit: contain;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* Media Query for TABLETS Ipads portrait mode */
+  .nav-link {
+    font-size: 2rem !important;
+    padding: 35px;
+  }
+
   .mySwiper {
     width: 95%;
   }
 
   .blog-card {
-    width: 23rem !important;
     min-height: 27rem;
   }
 
@@ -1390,28 +1351,31 @@ hr {
   }
 
   .row-newsletter {
-    max-width: 50% !important;
+    max-width: 50%;
   }
-  /********* Community **********/
+
+  .col-exist img {
+    width: 90% !important;
+  }
+
   .col-card-crew {
     width: 50%;
-    margin-bottom: 50px;
   }
 
   .card-crew {
-    width: 100% !important;
+    width: 100%;
   }
 
   .card-crew .volunteer-text-box {
     margin: 40px 0 0 0;
   }
-
+ 
   .player-group {
-    width: 48% !important;
+    width: 48%;
   }
-  /********* Event **********/
+
   .card-event {
-    width: 60% !important;
+    width: 60%;
   }
 
   .coluna-1 {
@@ -1420,10 +1384,10 @@ hr {
   }
 
   .coluna-2 {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+    padding-left: 0px;
+    padding-right: 0px;
   }
-  /********* Blog **********/
+
   .col-blog-gr {
     width: 100%;
     flex: 0 0 100%;
@@ -1448,112 +1412,98 @@ hr {
     line-height: 1.5 !important;
   }
 
-  .blog-card {
-    width: 20rem !important;
-    min-height: 25rem;
+  .text-aboutUs {
+    font-size: 22px;
   }
 
-  .mySwiper {
-    margin-left: 10px;
+  .text-community {
+    font-size: 22px;
+  }
+
+  .link-white {
+    font-size: 26px;
+  }
+
+  .blog-card {
+    min-height: 25rem;
   }
 
   .swiper-slide {
     width: 20rem !important;
-  }
+    margin-right: 0;
+    margin-left: 30px;  }
 
   .row-newsletter {
-    max-width: 90% !important;
+    max-width: 90%;
   }
 
   .newsletter .form-inline {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+     width: 100%;
   }
 
   .newsletter form .form-control {
-    width: 80%;
-    max-width: 300px;
-    margin-right: 0 !important;
+    width: 100%;
+    min-width: 300px;
+    margin-right: 0;
     margin-bottom: 10px;
   }
 
-  /***************** About Us *****************/
   .text-aboutUs-Page {
-    font-size: 18px !important;
+    font-size: 18px;
   }
 
   .img-aboutUs {
-    width: 100% !important;
+    width: 100%;
   }
 
   .container-text-Mission {
-    padding: 0px !important;
+    padding: 0px;
   }
 
   .text-mission {
-    font-size: 18px !important;
+    font-size: 18px;
   }
 
   .card-crew {
-    width: 100% !important;
-  }
-
-  /***************** Community *****************/
-  .card-crew {
-    margin-bottom: 30px;
+    width: 100%;
   }
 
   .player-group {
-    width: 100% !important;
+    width: 100%;
   }
 
   .photo-gallery .col-lg-3 {
     padding: 0 8px 0 8px;
   }
 
-  /***************** Events *****************/
   .carousel-events {
-    padding-top: 50px !important;
-  }
-
-  .past-events {
-    width: 100% !important;
-  }
-
-  .past-events .heading-secondary {
-    margin: 45px !important;
+    padding-top: 80px;
   }
 
   .card-event {
     flex-direction: column;
-    width: 100% !important;
+    width: 80%;
   }
 
-  .img-event {
-    width: 100% !important;
+  .title-events h2{
+    margin-bottom: 0 !important;
   }
 
   .coluna-1 {
     margin-bottom: 40px;
   }
 
-  .events-date {
-    position: static;
-    margin-top: 10px;
-  }
-
   .coluna-2 {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 50px !important;
+    padding: auto;
   }
 
   .card-body h3 {
-    font-size: 1.6rem !important;
+    font-size: 1.6rem;
   }
 
-  /***************** FOOTER *****************/
   .footer-menu {
     flex-direction: column;
     align-items: center;
@@ -1572,6 +1522,5 @@ hr {
 @media (min-width: 1600px) {
   .row-crew {
     width: 80%;
-    margin: auto;
   }
 }
