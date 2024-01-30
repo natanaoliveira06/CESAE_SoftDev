@@ -1,0 +1,25 @@
+<!-- <h1>Olá meu nome é {{ meuNome }}</h1>
+<p>{{ mensagem }}</p>
+<img src="{{ imagem1 }}" alt="" /> -->
+
+<h2>Olá meu nome é {{ meuNome }}</h2>
+<p>{{ mensagem }}</p>
+<img [src]="imagem1" alt="" />
+<button (click)="alterarImagem()">Alterar imagem</button>
+<button (click)="alterarImagem2()">Alterar imagem 2</button>
+
+<hr />
+
+<p [style.color]="pCorTexto" [style.backgroundColor]="pCorFundo">
+  Eu também gosto de flores!
+</p>
+
+<button (click)="alterarCores()" [disabled]="!pAlterarCores">
+  Alterar cor texto/fundo
+</button>
+<button (click)="alterarAtivo()">Desativar</button>
+
+<hr />
+
+<h3>{{ contador }}</h3>
+<button (click)="incrementar()">Incrementar</button>

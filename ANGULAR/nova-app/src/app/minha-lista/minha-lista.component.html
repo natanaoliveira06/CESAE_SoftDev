@@ -1,0 +1,9 @@
+<h1>Lista de Cidades</h1>
+<div>
+  <ul>
+    @for (cidade of cidades; track $index) {
+      <app-minha-lista-item [cidade]="cidade"></app-minha-lista-item>
+    <!-- <li>{{ cidade }}</li> -->
+    }
+  </ul>
+</div>
