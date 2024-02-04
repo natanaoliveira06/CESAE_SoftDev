@@ -1,5 +1,6 @@
 package com.example.slides04e05
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -73,18 +74,23 @@ class MainActivity : AppCompatActivity() {
 
         binding.buttonLogin.setOnClickListener {  // Ao clicar no botão da vista
 
-            var username = binding.textUser.text.toString().trim() //Transformar usuario inserido de texto para string
-            var password = binding.textPass.text.toString().trim()  //Transformar password inserido de texto para string
+            var username = binding.editTextUser.text.toString() //Transformar usuario inserido de texto para string
+            var password = binding.editTextPass.text.toString() //Transformar password inserido de texto para string
+
+            binding.editTextUser.setText("") // limpa os parâmetros
+            binding.editTextPass.setText("")
 
             if (username.equals("user") && password.equals("pass")) {
                 //Login Válido
                 Toast.makeText(applicationContext, "Login Válido", Toast.LENGTH_SHORT).show()
+
+                // Mudar de atividade(página)
+                startActivity(Intent(this, MainActivity2::class.java))
+
             } else { //Login Inválido
                 Toast.makeText(applicationContext, "Login Inválido", Toast.LENGTH_SHORT).show()
             }
 
-            binding.editTextUser.setText("") // limpa os parâmetros
-            binding.editTextPass.setText("")
-        }
+                  }
     }
 }

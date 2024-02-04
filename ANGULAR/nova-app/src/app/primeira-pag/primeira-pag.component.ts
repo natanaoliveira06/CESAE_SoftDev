@@ -18,6 +18,10 @@ export class PrimeiraPagComponent {
   atulizar(valor: number): void {
     this.contadorPai = valor;
   }
+
+  changeMeuNomePai() {
+    this.meuNomePai = 'Miguel';
+  }
 }
 
 

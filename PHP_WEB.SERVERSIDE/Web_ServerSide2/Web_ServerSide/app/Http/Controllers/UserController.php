@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -37,6 +38,19 @@ class UserController extends Controller
         return view('users.view', compact('myUser'));
     }
 
+    public function deleteUser($id) {
+
+        Db::table('tasks')
+        ->where('user_id', ($id))
+        ->delete();
+
+        Db::table('users')
+        ->where('id', ($id))
+        ->delete();
+
+        return back();
+    }
+
     public function addUser(){
 
         DB::table('users')
@@ -59,10 +73,48 @@ class UserController extends Controller
         ->where('password', '12345')
         ->first();
 
-        dd($myUser);
+        // dd($myUser);
 
        return view('users.add_user');
     }
+
+    public function createUser(Request $request){
+       //   $request->all(); //traz toda a informação do pedido
+      //   $request->email; //traz o input com o name email
+      
+
+      $request->validate([
+        'name' => 'required|string|max:10',
+        'email' => 'required|unique:users',       
+    ]);
+
+        User::insert([
+        'name' => $request->name,  // lado esquerdo é a coluna no SQL e lado direito é a variavel
+        'email' =>$request->email,
+        'password'=> Hash::make($request->password), //o hash encripta a password  
+    ]);
+
+    return redirect()->route('users.all')->with('message', 'Boa, estamos a caminho de ter uma super app com utilizadores adicionados!');   //Quando inserir volta para a tabela de todos os utilizadores e volta com uma mensagem
+}
+
+
+public function updateUser(Request $request){
+
+    //dd($request->all());
+     $request->validate([
+         'phone' => 'min:9|max:15',   
+     ]);
+
+    User::where('id', $request->id)
+    ->update([
+        'name' => $request->name,
+        'address' => $request->address,
+        'phone' => $request->phone,
+    ]);  
+
+    return redirect()->route('users.all')->with('message', 'Utilizador actualizado');  
+}
+
 
     private function getWeekDays(){
 
@@ -92,7 +144,7 @@ class UserController extends Controller
         // ];
 
         $users = DB::table('users')
-        -> whereNull('updated_at')
+       // -> whereNull('updated_at')
         -> get();
 
        // $users = User::get();

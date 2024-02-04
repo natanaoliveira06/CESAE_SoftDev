@@ -5,6 +5,7 @@ import { SegundaAaaComponent } from './segunda-aaa/segunda-aaa.component';
 import { SegundaBbbComponent } from './segunda-bbb/segunda-bbb.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { MinhaListaComponent } from './minha-lista/minha-lista.component';
+import { ListaAnimaisComponent } from './lista-animais/lista-animais.component';
 
 export const routes: Routes = [
   {
@@ -29,6 +30,12 @@ export const routes: Routes = [
     path: 'minha-lista', 
     title: 'Minha Lista', 
     component: MinhaListaComponent,
+  },
+
+  {
+    path: 'lista-animais', 
+    title: 'Lista Animais', 
+    component: ListaAnimaisComponent,
   },
 
   

@@ -34,6 +34,16 @@
                       <li><a class="dropdown-item" href="{{route("users.all")}}">All User</a></li>
                     </ul>
                   </li>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Tasks
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{{route("tasks.add")}}">Add Tasks</a></li>
+                    <li><a class="dropdown-item" href="{{route("tasks.all")}}">All Tasks</a></li>
+                  </ul>
+                </li>
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -49,7 +59,7 @@
 
         </div>
 
-
+{{-- 
           <footer class="fixed-bottom">
             <div class="card text-center">
                 <div class="card-header">
@@ -61,7 +71,7 @@
                   </div>
               </div>
           </footer>
-
+ --}}
 
 
 

@@ -173,6 +173,7 @@
         android:ems="10"
         android:inputType="text"
         android:gravity="center"
+        android:minWidth="200dp"
         />
 
     </LinearLayout>

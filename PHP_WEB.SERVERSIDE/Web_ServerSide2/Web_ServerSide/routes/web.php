@@ -33,16 +33,26 @@ Route::get('/hello/{nome}', function ($nome) {
 });
 
 // rotas de user
-
 Route::get('/users/add', [UserController::class, 'addUser'])->name('users.add');
+Route::post('/user/create', [UserController::class, 'createUser'])->name('user.create');
+// precisa dos dois (get e post) porque antes de mandar os dados é preciso buscar a view para apresentar
+// cada pedido é uma ação, precisamos de duas ações ver e enviar dados
+Route::post('/users/update', [UserController::class, 'updateUser'])->name('users.update');
+
 Route::get('/users/all',  [UserController::class, 'allUsers'])->name('users.all');
-
-
 Route::get('/users/view/{id}', [UserController::class, 'viewUser'])->name('users.view');
+Route::get('/users/delete/{id}', [UserController::class, 'deleteUser'])->name('users.delete');
 
-Route::get('/allTasks', [TaskController::class, 'allTasks'])->name('tasks.all'); 
+
+//rotas de tasks
+Route::get('/tasks/all', [TaskController::class, 'allTasks'])->name('tasks.all'); 
 //primeiro é o nome do frontEnd // segundo é o nome da função que chama view // caminho que chama a rota
+Route::get('/tasks/view/{id}', [TaskController::class, 'viewTask'])->name('tasks.view');
+Route::get('/tasks/delete/{id}', [TaskController::class, 'deleteTask'])->name('tasks.delete');
 
+Route::get('tasks/add', [TaskController::class, 'addTask'])->name('tasks.add'); // visualizar a view
+Route::post('tasks/create', [TaskController::class, 'createTask'])->name('tasks.create'); // enviar os dados
+Route::post('/tasks/update', [TaskController::class, 'updateTask'])->name('tasks.update');
 
 
 Route::fallback(function () {

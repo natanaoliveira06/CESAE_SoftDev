@@ -6,7 +6,9 @@
 
 <app-meu-componente></app-meu-componente>
 
-<app-meu-componente (mudancaContador)="atulizar($event)"></app-meu-componente>
+<app-meu-componente (mudancaContador)="atulizar($event)" [meu-nome] = "meuNomePai"></app-meu-componente>
 <div style="background-color: bisque">
   <p>Contador: {{ contadorPai }}</p>
 </div>
+
+<button (click)="changeMeuNomePai()">Sou o Miguel</button>

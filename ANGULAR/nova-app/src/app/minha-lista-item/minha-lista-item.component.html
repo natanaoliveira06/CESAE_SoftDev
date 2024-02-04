@@ -1,1 +1,15 @@
-<p>{{ cidade }}</p>
+<!-- <p>{{ cidade }}</p> -->
+<li>
+  <b>{{ cidade.nome }}</b>,
+{{ cidade.pais}}
+<small><i>
+  (Pop.:
+  @if (cidade!.populacao && cidade.populacao> 2000000) {
+    <b>{{ cidade.populacao }}</b>
+  }
+  @else {
+    {{ cidade.populacao}}
+  }
+  )
+</i></small>
+</li>
