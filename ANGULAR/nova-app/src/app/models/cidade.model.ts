@@ -1,5 +1,6 @@
 export interface ICidade {
-  nome: string, 
-  pais: string, 
+  id: number;
+  nome: string;
+  pais: string; 
   populacao?: number;
 }

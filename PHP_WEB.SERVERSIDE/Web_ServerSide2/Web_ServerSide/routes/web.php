@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\TaskController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,10 +50,12 @@ Route::get('/tasks/all', [TaskController::class, 'allTasks'])->name('tasks.all')
 //primeiro é o nome do frontEnd // segundo é o nome da função que chama view // caminho que chama a rota
 Route::get('/tasks/view/{id}', [TaskController::class, 'viewTask'])->name('tasks.view');
 Route::get('/tasks/delete/{id}', [TaskController::class, 'deleteTask'])->name('tasks.delete');
-
 Route::get('tasks/add', [TaskController::class, 'addTask'])->name('tasks.add'); // visualizar a view
 Route::post('tasks/create', [TaskController::class, 'createTask'])->name('tasks.create'); // enviar os dados
 Route::post('/tasks/update', [TaskController::class, 'updateTask'])->name('tasks.update');
+
+//rotas de backoffice
+Route::get('/backoffice', [DashboardController::class, 'backOfficeView'])->name('backoffice.view')->middleware('auth'); // para autenticar os users
 
 
 Route::fallback(function () {

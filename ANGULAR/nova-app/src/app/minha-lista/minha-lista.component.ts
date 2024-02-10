@@ -1,34 +1,21 @@
 import { Component } from '@angular/core';
 import { MinhaListaItemComponent } from '../minha-lista-item/minha-lista-item.component';
-import { CidadesService } from '../services/cidades.service';
+import { CidadesService } from '../services/cidades-ls.service';
 import { ICidade } from '../models/cidade.model';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-minha-lista',
     standalone: true,
     templateUrl: './minha-lista.component.html',
     styleUrl: './minha-lista.component.scss',
-    imports: [MinhaListaComponent, MinhaListaItemComponent]
+    imports: [MinhaListaComponent, MinhaListaItemComponent, RouterLink]
 })
 export class MinhaListaComponent {
-  // cidades: Array<string> = [
-  //   "Porto",
-  //   "Aveiro",
-  //   "Barcelona",
-  //   "Paris",
-  //   "Edimburgo",
-  //   "Londres"
-  // ];
 
-  cidades: Array<ICidade> = [
-    {nome: 'Porto', pais: 'Portugal', populacao: 78450},
-    {nome: 'Aveiro', pais: 'Portugal', populacao: 181494},
-    {nome: 'Barcelona', pais: 'Espanha', populacao: 1620343},
-    {nome: 'Paris', pais: 'França', populacao: 2148271},
-    {nome: 'Berlim', pais: 'Alemanha', populacao: 3645000}
-  ];
+  cidades: Array<ICidade> = [];
 
-  constructor(private cidadesService: CidadesService){
+  constructor(private cidadesService: CidadesService, private router: Router){
 
     console.log('MinhaListaComponent.constructor()');
 
@@ -54,14 +41,23 @@ valores a propriedades, etc…*/
 
   console.log('MinhaListaComponent.ngOnInit()');
 
+  this.cidadesService.readAll();
   this.cidades = this.cidadesService.cidades;
   }
 
 
-  adicionarCidade() {
-    this.cidadesService.create({nome: 'Lisboa', pais: 'Portugal'});
+  adicionarCidade():void {
+    this.cidadesService.create({id: 0, nome: 'Lisboa', pais: 'Portugal'});
   }
 
+  irAdicionarCidade():void {
+    this.router.navigate(['/formulario-cidade-td']);
+  }
+
+  limparDados():void {
+    this.cidadesService.limparDados();
+    this.cidades = this.cidadesService.cidades;
+  }
 
 
   ngDoCheck(){

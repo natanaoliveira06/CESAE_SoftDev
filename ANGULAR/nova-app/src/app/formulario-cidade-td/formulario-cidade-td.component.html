@@ -1,0 +1,20 @@
+<h1>Formulário Cidade</h1>
+
+<div>
+    <label for="nome">nome cidade: </label>
+    <input type="text" id="nome" [(ngModel)]="minhaCidade.nome" name="nome"/>
+</div><br>
+<div>
+    <label for="pais">nome pais: </label>
+    <input type="text" id="pais" [(ngModel)]="minhaCidade.pais" name="pais"/>
+</div><br>
+<div>
+    <label for="populacao">populacao: </label>
+    <input type="text" id="populacao" [(ngModel)]="minhaCidade.populacao" name="populacao"/>
+</div><br>
+<div>
+    O nome escrito foi: {{ minhaCidade.nome }}
+</div><br>
+<div>
+    <button type="submit" (click)="formSubmit()">Ok</button>
+</div>

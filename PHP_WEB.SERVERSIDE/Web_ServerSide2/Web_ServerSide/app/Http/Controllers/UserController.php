@@ -16,7 +16,32 @@ class UserController extends Controller
          $daysOfWeek = $this->getWeekDays();
          $info = $this->info();
 
-        $users = $this->getContacts();
+    //    $users = $this->getContacts(); // função acessoria
+    
+
+    // filtro que vem do que colocamos no FrontEnd
+    $search = request()->query('search') ? request()->query('search') : null;
+    // define a variável $search e faz uma validação se no meu pedido encontrar atribui ao search esse valor se não o valor fica a nulo
+    // Essa linha é um ternário (simplificação) da função abaixo
+     
+	//   $search = ''; 
+    //   if(request()->query('search'){
+    //         $search = request()->query('search');
+    //   }else{
+    //         $search = null;
+    //   }
+
+    // objeto que carregamos na tabela do F.End
+    $users = DB::table('users');
+
+    if($search) { // se tiver um search
+        $users = $users // adiciona a querie o where
+        -> where('name', 'like', "%{$search}%") //atenção que deve ser aspas no search
+        -> orWhere('email', 'like', "%{$search}%"); 
+    }
+
+    $users = $users->get();
+
 
       //  dd($users);
       
@@ -84,7 +109,7 @@ class UserController extends Controller
       
 
       $request->validate([
-        'name' => 'required|string|max:10',
+        'name' => 'required|string|max:90',
         'email' => 'required|unique:users',       
     ]);
 

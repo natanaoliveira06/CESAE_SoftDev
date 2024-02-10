@@ -12,12 +12,21 @@
     <p>{{ $info['name'] }}</p>
     <p>{{ $info['modules'][0] }}</p> --}}
 
+
+ {{-- *** FILTRO *** --}}
+    <form method="GET">  {{-- tem que ser get --}}
+       <input type="text" value="" name="search" id=""> 
+       <button class="btn btn-info" type="submit">Procurar</button>
+    </form>
+    
+   
+
     @if (session('message')) {{-- se tiver uma mensagem na sessão--}}
     <div class="alert alert-success">
         {{session('message')}}
     </div>
     @endif
-
+<br><br>
     <table class="table">
         <thead>
             <tr>
@@ -38,8 +47,12 @@
                     <td>{{ $user->address}}</td>
                     <td>{{ $user->phone }}</td>
                     <td>{{ $user->email }}</td>
+
+
                     <td><a href="{{route('users.view',$user->id)}}" class="btn btn-info">Ver / Actualizar</a></td>
-                    <td><a href="{{ route('users.delete', $user->id) }}" class="btn btn-danger">Delete</a></td>               
+                    <td><a href="{{ route('users.delete', $user->id) }}" class="btn btn-danger">Delete</a></td>     
+                    
+                    
                 </tr>
             @endforeach
         </tbody>

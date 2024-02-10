@@ -6,11 +6,11 @@ import { ICidade } from '../models/cidade.model';
 })
 export class CidadesService {
   cidades: Array<ICidade> = [
-    {nome: 'Porto', pais: 'Portugal', populacao: 78450},
-    {nome: 'Aveiro', pais: 'Portugal', populacao: 181494},
-    {nome: 'Barcelona', pais: 'Espanha', populacao: 1620343},
-    {nome: 'Paris', pais: 'França', populacao: 2148271},
-    {nome: 'Berlim', pais: 'Alemanha', populacao: 3645000}
+    {id: 0, nome: 'Porto', pais: 'Portugal', populacao: 78450},
+    {id: 1, nome: 'Aveiro', pais: 'Portugal', populacao: 181494},
+    {id: 2, nome: 'Barcelona', pais: 'Espanha', populacao: 1620343},
+    {id: 3, nome: 'Paris', pais: 'França', populacao: 2148271},
+    {id: 4, nome: 'Berlim', pais: 'Alemanha', populacao: 3645000}
   ];
 
   constructor() { }

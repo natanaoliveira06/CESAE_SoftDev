@@ -27,31 +27,34 @@ class TaskController extends Controller
         ->select('tasks.*', 'users.name as usname')
         ->first();
 
-        $users= DB::table('users')->get();
+        $users= DB::table('users')->get(); // querie que vai buscar todos os usuários
 
         return view('tasks.view_task', compact ('myTask','users'));  // retorna uma view (com compact da task)
         //depois construir a view
     }
 
     public function addTask(){
-        $users = DB::table('users')->get();
+        $users = DB::table('users')->get(); // essa querie vai buscar todos os usuários
 
         return view('tasks.add_task', compact ('users'));
     }
 
-    public function createTask(Request $request){
-        $request->validate([
-            'name' => 'required|string|max:30',      
+    public function createTask(Request $request){  // importar request (pagar dados e enviar pra base de dados)
+        $request->validate([ // é prerciso validar os dados
+            'name' => 'required|string|max:50', 
+            'description' => 'string|max:200',
+            'user_id' => 'required|integer|exists:users,id' // o usuário tem que existir na tabela
+            //integer é inteiro(número)
         ]);
 
         Task::insert([
             'name' => $request->name,
             'description' => $request->description,
             'user_id' => $request->user_id,
-        ]);
-
-    
-    return redirect()->route('tasks.all')->with('message', 'Boa, acabou de adicionar uma tarefa!');   //Quando inserir volta para a tabela de todas as tarefas e volta com uma mensagem
+        ]);  
+        
+        return redirect()->route('tasks.all')->with('message', 'Boa, acabou de adicionar uma tarefa!');   
+            //Quando inserir os dados retorna para a tabela de todas as tarefas e volta com uma mensagem
     }
 
     public function deleteTask($id) { //recebemos um id
@@ -65,7 +68,9 @@ class TaskController extends Controller
     public function updateTask(Request $request){
 
         $request->validate([
-            'name' => 'required|string|max:30',      
+            'name' => 'required|string|max:30',    
+            'description' => 'string|max:200',
+            'user_id' => 'required|integer|exists:users,id'  
         ]);
 
         Task::where('id', $request->id)

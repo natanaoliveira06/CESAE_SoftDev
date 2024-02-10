@@ -1,12 +1,23 @@
 <h1>Lista de Cidades</h1>
-<div>
+<!-- <div>
   <button type="button" (click)="adicionarCidade()">
     Adicionar Nova Cidade</button>
+</div> -->
+<!-- <div>
+  <button type="button" (click)="irAdicionarCidade()">
+    Adicionar Nova Cidade (2: via Objeto)</button>
 </div>
+<br><br> 
+<div>-->
 <div>
+  <button type="button" (click)="irAdicionarCidade()">Adicionar nova cidade</button> 
+</div><br><br>
+  <div>
+    <button type="button" (click)="limparDados()">
+      Limpar Dados</button>
+  </div><br><br>
   <ul>
     @for (cidade of cidades; track $index) {
       <app-minha-lista-item [cidade]="cidade"></app-minha-lista-item>
     }
   </ul>
-</div>
