@@ -14,5 +14,6 @@
 </i></small>
  <!-- <a [routerLink]="'/formulario-cidade-td/' + cidade.id">Editar</a> -->
  <!-- OU -->
-<a [routerLink]="['/formulario-cidade-td/', cidade.id]">Editar</a>
+<a [routerLink]="['/form-api', cidade.id]">Editar</a>
+<a (click)="del()">Eliminar</a>
 </li>
