@@ -18,7 +18,8 @@ class User extends Authenticatable
      * @var array<int, string>
      */
 
-     CONST TYPE_ADMIN = 1;
+    const TYPE_ADMIN = 1;
+    const TYPE_TRAINEER = 2;
 
 
 

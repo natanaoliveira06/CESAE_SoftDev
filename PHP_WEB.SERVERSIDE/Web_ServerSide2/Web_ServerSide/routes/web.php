@@ -30,7 +30,7 @@ Route::get('/ola', function () {  //nome do frontEnd
 
 
 Route::get('/hello/{nome}', function ($nome) {
-    return '<h1>Hello Turma de Software</h1>'.$nome;
+    return '<h1>Hello Turma de Software</h1>' . $nome;
 });
 
 // rotas de user
@@ -40,13 +40,13 @@ Route::post('/user/create', [UserController::class, 'createUser'])->name('user.c
 // cada pedido é uma ação, precisamos de duas ações ver e enviar dados
 Route::post('/users/update', [UserController::class, 'updateUser'])->name('users.update');
 
-Route::get('/users/all',  [UserController::class, 'allUsers'])->name('users.all');
+Route::get('/users/all', [UserController::class, 'allUsers'])->name('users.all');
 Route::get('/users/view/{id}', [UserController::class, 'viewUser'])->name('users.view');
 Route::get('/users/delete/{id}', [UserController::class, 'deleteUser'])->name('users.delete');
 
 
 //rotas de tasks
-Route::get('/tasks/all', [TaskController::class, 'allTasks'])->name('tasks.all'); 
+Route::get('/tasks/all', [TaskController::class, 'allTasks'])->name('tasks.all');
 //primeiro é o nome do frontEnd // segundo é o nome da função que chama view // caminho que chama a rota
 Route::get('/tasks/view/{id}', [TaskController::class, 'viewTask'])->name('tasks.view');
 Route::get('/tasks/delete/{id}', [TaskController::class, 'deleteTask'])->name('tasks.delete');
@@ -55,7 +55,9 @@ Route::post('tasks/create', [TaskController::class, 'createTask'])->name('tasks.
 Route::post('/tasks/update', [TaskController::class, 'updateTask'])->name('tasks.update');
 
 //rotas de backoffice
-Route::get('/backoffice', [DashboardController::class, 'backOfficeView'])->name('backoffice.view')->middleware('auth'); // para autenticar os users
+Route::get('/backoffice', [DashboardController::class, 'index'])->name('backoffice.view')->middleware('auth'); // para autenticar os users
+//Costuma ser ...class, 'index'... porque é a pagina principal
+//DashboardController::class, 'backOfficeView'
 
 
 Route::fallback(function () {

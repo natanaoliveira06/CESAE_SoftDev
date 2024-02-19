@@ -2,19 +2,21 @@
 @section('content')
 
 <br>
-<h2>BackOffice</h2>
-<br><br>
+<h3>Olá, {{ Auth::user ()->name}}</h3>  {{-- aparece o nome do usuário --}}
 
-<h3>Olá, {{ Auth::user ()->name}}!</h3>  {{-- aparece o nome do usuário --}}
-<br>
 
 @auth  {{-- quando o user for autenticado --}}
- @if(Auth::user()->user_typer == 1 )  {{-- e for do tipo 1 (ADM - definido na base de dados) --}}
+ {{-- @if(Auth::user()->user_typer == 1) --}}
+  {{-- e for do tipo 1 (ADM - definido na base de dados) --}}
+{{-- @endif  --}} 
+{{-- Pode fazer no front end ou no back end --}}
 
- <div class="alert alert-info" role="alert">
-  Conta de Administrador
+@if ($message)
+<div class="alert alert-success">
+  <h4>Boa, és admin desta app.</h4>
 </div>
-@endif
-@endauth
+@endif 
+@endauth 
 
+, está no BackOffice 
 @endsection
