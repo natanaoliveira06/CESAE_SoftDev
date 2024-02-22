@@ -2,12 +2,12 @@
   "animais": [
     {
       "id": "982a",
-      "nome": "Lola Pit",
+      "nome": "Lola",
       "especie": "Cão",
       "raca": "Dálmata",
       "sexo": "f",
       "dataNascimento": "2021-04-10T00:00",
-      "tutorId": "1"
+      "tutorId": ""
     },
     {
       "id": "ab75",
@@ -16,21 +16,21 @@
       "raca": "Siamês",
       "sexo": "f",
       "dataNascimento": "2020-07-20T00:00",
-      "tutorId": "2"
+      "tutorId": ""
     }
   ],
   "tutores": [
     {
       "id": "892a",
-      "nome": "Ana Elisa",
+      "nome": "Ana",
       "telemovel": "934567891",
       "email": "ana@hotmail.com"
     },
     {
-      "id": "a587",
-      "nome": "Luisa",
-      "telemovel": "999999999",
-      "email": "ana@hotmail.com"
+      "id": "58aa",
+      "nome": "Carlos",
+      "telemovel": "978912345",
+      "email": "carlos@gmail.com"
     }
   ],
   "marcacoes": [
@@ -39,16 +39,21 @@
       "tipo": "Consulta",
       "animalId": "982a",
       "tutorId": "892a",
-      "dataHora": "2024-02-21T09:25",
-      "realizada": true
+      "dataHora": "2024-02-21T09:25"
     },
     {
       "id": "ac25",
       "tipo": "Consulta",
       "animalId": "ab75",
       "tutorId": "58aa",
-      "dataHora": "2024-02-21T010:10",
-      "cancelada": true
+      "dataHora": "2024-02-21T010:10"
+    },
+    {
+      "id": "55fa",
+      "tipo": "Vacina",
+      "animalId": "982a",
+      "tutorId": "892a",
+      "dataHora": "2024-02-29T09:50"
     }
   ]
 }
