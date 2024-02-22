@@ -1,18 +1,8 @@
 <nav>
   <ul>
-    <li>
-      <a [routerLink]="'/primeira'" [routerLinkActive]="'active'"
-        >Primeira Página</a>
-    </li>
-    <li>
-      <a routerLink="/segunda" routerLinkActive="active">Segunda Página</a>
-    </li>
-    <li>
-      <a routerLink="/minha-lista" routerLinkActive="active">Minha Lista</a>
-    </li>
-    <li>
-      <a routerLink="/lista-animais" routerLinkActive="active">Lista Animais</a>
-    </li>
+    <li><a [routerLink]="['/primeira']" [routerLinkActive]="'active'">Primeira Página</a></li>
+    <li><a routerLink="/segunda" routerLinkActive="active">Segunda Página</a></li>
+    <li><a routerLink="/minha-lista" routerLinkActive="active">Minha Lista</a></li>
   </ul>
 </nav>
 

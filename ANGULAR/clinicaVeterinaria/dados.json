@@ -1,0 +1,54 @@
+{
+  "animais": [
+    {
+      "id": "982a",
+      "nome": "Lola Pit",
+      "especie": "Cão",
+      "raca": "Dálmata",
+      "sexo": "f",
+      "dataNascimento": "2021-04-10T00:00",
+      "tutorId": "1"
+    },
+    {
+      "id": "ab75",
+      "nome": "Mimi",
+      "especie": "Gato",
+      "raca": "Siamês",
+      "sexo": "f",
+      "dataNascimento": "2020-07-20T00:00",
+      "tutorId": "2"
+    }
+  ],
+  "tutores": [
+    {
+      "id": "892a",
+      "nome": "Ana Elisa",
+      "telemovel": "934567891",
+      "email": "ana@hotmail.com"
+    },
+    {
+      "id": "a587",
+      "nome": "Luisa",
+      "telemovel": "999999999",
+      "email": "ana@hotmail.com"
+    }
+  ],
+  "marcacoes": [
+    {
+      "id": "992a",
+      "tipo": "Consulta",
+      "animalId": "982a",
+      "tutorId": "892a",
+      "dataHora": "2024-02-21T09:25",
+      "realizada": true
+    },
+    {
+      "id": "ac25",
+      "tipo": "Consulta",
+      "animalId": "ab75",
+      "tutorId": "58aa",
+      "dataHora": "2024-02-21T010:10",
+      "cancelada": true
+    }
+  ]
+}

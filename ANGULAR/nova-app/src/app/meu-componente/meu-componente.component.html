@@ -1,25 +1,33 @@
-<!-- <h1>Olá meu nome é {{ meuNome }}</h1>
+<h1>Olá, o meu nome é {{ obj.nome }}</h1>
 <p>{{ mensagem }}</p>
-<img src="{{ imagem1 }}" alt="" /> -->
+<img src="{{ imagem }}" alt="" />
 
-<h2>Olá meu nome é {{ meuNome }}</h2>
+<hr />
+
+<h1>Olá, o meu nome é {{ meuNome }}</h1>
 <p>{{ mensagem }}</p>
-<img [src]="imagem1" alt="" />
+<img [src]="imagem" alt="" />
+
 <button (click)="alterarImagem()">Alterar imagem</button>
 <button (click)="alterarImagem2()">Alterar imagem 2</button>
+<button (click)="meuNome = 'Teixeira'">Alterar nome</button>
 
 <hr />
 
 <p [style.color]="pCorTexto" [style.backgroundColor]="pCorFundo">
-  Eu também gosto de flores!
+  E também gosto de cães!
 </p>
-
 <button (click)="alterarCores()" [disabled]="!pAlterarCores">
   Alterar cor texto/fundo
 </button>
-<button (click)="alterarAtivo()">Desativar</button>
+<button (click)="alterarAtivo()">desativar</button>
 
 <hr />
 
 <h3>{{ contador }}</h3>
-<button (click)="incrementar()">Incrementar</button>
+<button (click)="incrementar()">incrementar</button>
+
+<hr />
+<hr />
+<hr />
+<hr />

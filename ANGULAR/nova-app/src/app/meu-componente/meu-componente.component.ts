@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnChanges, Output, SimpleChange, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, Output, Signal, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-meu-componente',
@@ -8,53 +8,62 @@ import { Component, EventEmitter, Input, OnChanges, Output, SimpleChange, Simple
   styleUrl: './meu-componente.component.scss',
 })
 export class MeuComponenteComponent implements OnChanges {
-  //  @Input({ required: true }) meuNome = 'Natana';
-  // @Input({ alias: 'meu-nome' }) meuNome = 'Natana';
-  @Input('meu-nome') meuNome: string = 'Natana';
-  mensagem = 'Adoro doces! 🧁 ';
-  imagem1 =
-    'https://saborecia.com.br/wp-content/uploads/2020/08/MG_4421-scaled.jpg';
+  //@Input({ required: true, alias: 'meu-nome' }) meuNome: string = 'João';
+  //@Input({ alias: 'meu-nome' }) meuNome: string = 'João';
+  @Input('meu-nome') meuNome: string = 'João';
+  mensagem: string = 'Eu adoro gatos! 😀';
+  imagem: string =
+    'https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?w=500';
 
   @Output() mudancaContador: EventEmitter<number> = new EventEmitter<number>();
   contador: number = 0;
 
   imagens: string[] = [
-    'https://saborecia.com.br/wp-content/uploads/2020/08/MG_4421-scaled.jpg',
-    'https://s2-receitas.glbimg.com/mB4Q7uHW7J-XujkwuTAT4_fEgkE=/0x0:652x408/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/7/9/jeDVVATiAdAVd6CxfAZg/mousse-de-chocolate.jpg',
-    'https://cdn0.casamentos.com.br/vendor/8920/3_2/640/jpg/opcoes-de-doces-para-substituir-o-bem-casado-pao-de-mel-para-casamentos_13_268920-158169604631284.webp',
+    'https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?w=500',
+    'https://t1.ea.ltmcdn.com/pt/posts/4/8/5/gato_fraco_o_que_fazer_24584_orig.jpg',
+    'https://sadanduseless.b-cdn.net/wp-content/uploads/2021/02/cat-taxidermy14.jpg',
   ];
 
-  obj: {} = {
+  /*arr: Array<string> = [
+    'https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?w=500',
+    'https://t1.ea.ltmcdn.com/pt/posts/4/8/5/gato_fraco_o_que_fazer_24584_orig.jpg',
+    'https://sadanduseless.b-cdn.net/wp-content/uploads/2021/02/cat-taxidermy14.jpg'
+  ]*/
+
+  obj: { id: number; nome: string /*, fn?: Function*/ } = {
     id: 80,
-    nome: 'natana',
+    nome: 'joaoo',
+    //fn: () => {}
   };
 
   pCorTexto: string = '#336699';
   pCorFundo: string = '#99ccff';
   pAlterarCores: boolean = true;
 
-  ngOnChanges(changes: SimpleChanges){
-    console.log('MeuComponent.ngOnChanges()', changes);
-
+  ngOnChanges(changes: SimpleChanges) {
+    console.log('MeuComponenteComponent.ngOnChanges()', changes);
+    
     if(changes['meuNome']) {
-      console.log('O nome foi alterado para ' + changes['meuNome']);
+      console.log('O meuNome foi alterado para ' + changes['meuNome'].currentValue);
+    }
+    
+    if(changes['meuNome2']) {
+      //...
     }
   }
   
-
   alterarImagem(): void {
-    this.imagem1 = this.imagens[1];
+    this.imagem = this.imagens[1];
   }
 
   alterarImagem2(): void {
-    this.imagem1 =
-      'https://cdn0.casamentos.com.br/vendor/8920/3_2/640/jpg/opcoes-de-doces-para-substituir-o-bem-casado-pao-de-mel-para-casamentos_13_268920-158169604631284.webp';
+    this.imagem = this.imagens[2];
   }
 
   alterarCores(): void {
-    let cor: string = this.pCorTexto;
+    let auxCor: string = this.pCorTexto;
     this.pCorTexto = this.pCorFundo;
-    this.pCorFundo = cor;
+    this.pCorFundo = auxCor;
   }
 
   alterarAtivo(): void {

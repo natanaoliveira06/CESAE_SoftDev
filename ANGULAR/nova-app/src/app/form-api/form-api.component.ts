@@ -20,7 +20,7 @@ export class FormApiComponent {
   form: FormGroup;
 
   minhaCidade: ICidade = {
-    id:0,
+    id:'',
     nome:'',
     pais:'',
   }
@@ -38,21 +38,48 @@ export class FormApiComponent {
       })
       }
  
-  ngOnInit() {
-    this.minhaCidade.id = parseInt(
-      this.route.snapshot.paramMap.get('id') ??  '0'
-    ); 
-    console.log('id:', this.minhaCidade.id);
-    
-    if(this.minhaCidade.id > 0) {
-      this.cidadesService.read(this.minhaCidade.id).subscribe
-      ((cidade)=>{
-        console.log(cidade);
-    })
-    }     
-  }
+      ngOnInit() { 
+        // CONFERIR CODIGO
+        this.minhaCidade.id =
+          this.route.snapshot.paramMap.get('id') ?? '0'
+        ;
+        console.log('id:', this.minhaCidade.id);
+     
+        if (this.minhaCidade.id) {
+          this.cidadesService.read(this.minhaCidade.id).subscribe((cidade) => {
+            console.log(cidade);
+            this.minhaCidade = cidade;
+            this.form.controls['nome'].setValue(cidade.nome);
+            this.form.controls['pais'].setValue(cidade.pais);
+            this.form.controls['populacao'].setValue(cidade.populacao);
+          });
+        }
+      }
 
   formSubmit(){
+    if(this.form.invalid){
+
+    } else {
+      if(this.minhaCidade.id){
+        this.cidadesService.update({
+          nome: this.form.controls['nome'].getRawValue(),
+          pais: this.form.controls['pais'].getRawValue(),
+          populacao: this.form.controls['populacao'].getRawValue(),
+        }).subscribe(
+          next => {
+            console.log('foi editado')
+          },
+          error => {
+            console.error('não foi editado')
+
+          }
+        )
+      }
+      else {
+
+      }
+
+    }
 
   }
 }
