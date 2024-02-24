@@ -1,0 +1,23 @@
+/* 
+#7144D8
+#9C44D8 
+#2a2a2a
+#989898
+*/
+
+.btn-search {
+    background-color: #7144d8;
+    border: none;
+    color: white;
+}
+
+.search {
+    background-color: #2a2a2a;
+    border: none;
+    color: white;
+    margin-right: 5px;
+}
+
+.search::placeholder {
+    color: #989898;
+}
