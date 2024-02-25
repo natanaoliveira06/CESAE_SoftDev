@@ -14,7 +14,7 @@ return new class extends Migration {
             $table->id();
             $table->string('albumName');
             $table->string('cover');
-            $table->date('dateRelease');
+            $table->integer('dateRelease');
             $table->unsignedBigInteger('bands_id');
             $table->foreign('bands_id')->references('id')->on('bands');
             $table->timestamps();

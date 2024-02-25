@@ -17,6 +17,10 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+
+    const TYPE_ADMIN = 1;
+    const TYPE_REGIST = 0;
+
     protected $fillable = [
         'name',
         'email',
