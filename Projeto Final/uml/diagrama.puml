@@ -1,7 +1,0 @@
-@startuml
-skinparam Style strictuml
-
-
-A-> B : Hello word
-
-@enduml
