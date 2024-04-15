@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.JokenpoGame" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/primary_iten</item>
+
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorSecondaryVariant">@color/primary</item>
+        <item name="colorOnSecondary">@color/primary_iten</item>
+
+        <!--  Cor da barra de status  -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!--  Cor da barra de status  -->
+        <item name="android:windowBackground">@color/background</item>
+
+    </style>
+
+    <style name="Theme.JokenpoGame" parent="Base.Theme.JokenpoGame" />
+</resources>

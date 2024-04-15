@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4bfaf56-75ef-4db8-8064-7a3e18cfc190" name="Changes" comment="" />
+    <list default="true" id="c4bfaf56-75ef-4db8-8064-7a3e18cfc190" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANDROID/SplashScreen/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/SplashScreen/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANDROID/SplashScreen/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/SplashScreen/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoFinalCESAE/Projeto-Final/database/migrations/2014_10_12_200000_add_two_factor_columns_to_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoFinalCESAE/Projeto-Final/database/migrations/2024_02_17_153642_add_photo_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoFinalCESAE/Projeto-Final/database/migrations/2024_02_26_093238_add_info_to_formadores_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoFinalCESAE/Projeto-Final/database/migrations/2024_02_27_163835_add_first_login_to_users_table.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -34,7 +47,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/softdev/Documents/GitHub/CESAE_SoftDev/PROGRAMAÇÃO/FichaPratica_Singleton"
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/natan/OneDrive/Documentos/CESAE_SoftDev/ANDROID/LinearLayoutAPP"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

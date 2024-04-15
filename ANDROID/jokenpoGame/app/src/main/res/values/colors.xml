@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#9C27B0</color>
+    <color name="primary_variation">#7D1A8E</color>
+    <color name="primary_iten">#FFFFFFFF</color>
+
+    <color name="secondary">#AC57CC</color>
+    <color name="secondary_iten">#FFFFFFFF</color>
+
+
+     <color name="background">#f1e3f6</color>
+
+    <!--  Dark Mode -->
+    <color name="primary_dark">#9C27B0</color>
+    <color name="secondary_dark">#AC57CC</color>
+    <color name="background_dark">#130119</color>
+
+</resources>
